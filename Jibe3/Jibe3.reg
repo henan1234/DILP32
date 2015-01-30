@@ -1,0 +1,13 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+
+HKEY_CLASSES_ROOT\Jibe3.Application = Jibe3 Application
+HKEY_CLASSES_ROOT\Jibe3.Application\CLSID = {56718AA1-22BD-11D1-AEF5-444553540000}
+
+HKEY_CLASSES_ROOT\CLSID\{56718AA1-22BD-11D1-AEF5-444553540000} = Jibe3 Application
+HKEY_CLASSES_ROOT\CLSID\{56718AA1-22BD-11D1-AEF5-444553540000}\ProgId = Jibe3.Application
+HKEY_CLASSES_ROOT\CLSID\{56718AA1-22BD-11D1-AEF5-444553540000}\LocalServer32 = JIBE3.EXE

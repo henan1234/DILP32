@@ -1,0 +1,73 @@
+;	Title : Satellits
+;	
+;	Can a satellit have a satellit ?
+;	And can its satellit have a satellit ?
+;
+
+
+[Universe Parameters]
+3D Physical Model=0
+BlackBackGround=1
+Change Resolution=0
+Comets creation (1/)=50000
+Colision relative speed max=5
+Constant of gravity (G)=80
+Delete trajectories=0
+Display Lines=0
+Dust life length=3
+Dust max number=0
+Dust size max=2
+; You may change the distance multiplicator for different screen resolutions
+Distance multiplicator=3000
+Dust scattering=75
+Escape Velocity %=20
+Initial planets number=50
+; Max Zoom = 0 for now camera zoom
+Max zoom factor=0
+Max distance=0
+Nb images by second=25
+Planets max number=300
+Planets min number=1
+Radius multiplicator=0.0015
+Starfield density ( 0 for no star )=2000
+Solar wind=2
+Time interval max=0
+Time multiplicator=1.5
+Traveling=0.01
+Thread Priority=1
+Universe creation method=5
+
+[Masses]
+Mass 1=1
+Mass 2=10
+Mass 3=100
+Mass 4=1000
+Mass 5=10000
+Mass 6=100000
+Mass 7=1000000
+Mass 8=10000000
+
+[Planet0]
+Mass=10000000
+Position=0,0,0
+Speed=0,0,0
+Rotation=1
+
+[Planet1]
+Mass=900000
+Orbit=0
+Distance=1000000
+Rotation=1
+
+[Planet2]
+Mass=90000
+Orbit=1
+Distance=200000
+Rotation=-1
+
+[Planet3]
+Mass=9000
+Orbit=2
+Distance=40000
+Rotation=1
+

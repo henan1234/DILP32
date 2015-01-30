@@ -1,0 +1,355 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SoftCollection.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.fra\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SoftCollection.ico"
+IDI_MEDIA               ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_DOSSIER             ICON    DISCARDABLE     "res\\ico00001.ico"
+IDI_FICHIER             ICON    DISCARDABLE     "res\\dossier1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "A propos de SoftCollection"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SoftCollection version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2000",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SOFTCOLLECTION_DIALOG DIALOGEX 0, 0, 408, 335
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Soft Collection"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Medias",IDC_STATIC,7,7,394,77
+    CONTROL         "List1",IDC_LISTEMEDIAS,"SysListView32",LVS_SINGLESEL | 
+                    LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | LVS_EDITLABELS | 
+                    LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,13,18,335,59
+    GROUPBOX        "Contenu du média",IDC_STATIC,7,88,394,217
+    CONTROL         "Tree1",IDC_CONTENUMEDIA,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    TVS_TRACKSELECT | TVS_SINGLEEXPAND | TVS_INFOTIP | 
+                    TVS_FULLROWSELECT | WS_BORDER | WS_TABSTOP,13,100,166,
+                    195
+    CONTROL         "List1",IDC_ATTRIBUTS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_AUTOARRANGE | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_GROUP | WS_TABSTOP,186,100,204,173
+    PUSHBUTTON      "Ajouter...",IDC_AJOUTE_ATTRIBUT,186,281,50,14
+    PUSHBUTTON      "Modifier...",IDC_MODIFIE_ATTRIBUT,263,281,50,14
+    PUSHBUTTON      "Supprimer",IDC_SUPPRIME_ATTRIBUT,340,281,50,14
+    PUSHBUTTON      "Ajoute...",ID_MEDIAS_AJOUTER,351,18,39,14
+    PUSHBUTTON      "Supprime",ID_MEDIAS_SUPPRIMER,351,39,39,14
+END
+
+IDD_SCANNING DIALOG DISCARDABLE  0, 0, 264, 82
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTER | WS_POPUP | 
+    WS_CAPTION
+CAPTION "Scanning..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Annuler",IDCANCEL,207,61,50,14
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    50,7,207,8
+    CONTROL         "Fichier",IDC_FICHIER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_SUNKEN | WS_GROUP,50,20,207,11
+    LTEXT           "Checksum:",IDC_STATIC,50,33,36,8
+    CONTROL         "Progress1",IDC_CHECKSUM,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,50,46,207,8
+    CONTROL         "Animate1",IDC_ANIMATE1,"SysAnimate32",ACS_CENTER | 
+                    ACS_TRANSPARENT | ACS_AUTOPLAY,7,7,35,31
+END
+
+IDD_RECHERCHE DIALOG DISCARDABLE  0, 0, 445, 319
+STYLE DS_MODALFRAME | DS_NOIDLEMSG | DS_3DLOOK | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Recherche"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TEXTE,40,7,398,14,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Dans tous les attributs",IDC_TOUS_ATTRIBUTS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,7,25,85,10
+    CONTROL         "Dans l'attribut:",IDC_UN_ATTRIBUT,"Button",
+                    BS_AUTORADIOBUTTON,7,40,61,10
+    COMBOBOX        IDC_LISTE_ATTRIBUTS,100,36,338,252,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    PUSHBUTTON      "Chercher",IDC_CHERCHER,7,57,50,14,WS_GROUP
+    CONTROL         "List1",IDC_RESULTAT,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_GROUP | WS_TABSTOP,7,
+                    77,431,235
+    LTEXT           "Texte:",IDC_STATIC,7,7,21,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040C04B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Application MFC SoftCollection\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SoftCollection\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SoftCollection.EXE\0"
+            VALUE "ProductName", "Application SoftCollection\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SOFTCOLLECTION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 401
+        VERTGUIDE, 186
+        VERTGUIDE, 228
+        VERTGUIDE, 338
+        VERTGUIDE, 348
+        VERTGUIDE, 390
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 328
+        HORZGUIDE, 100
+        HORZGUIDE, 295
+    END
+
+    IDD_SCANNING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        VERTGUIDE, 50
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_RECHERCHE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 438
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 312
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "Medias"
+    BEGIN
+        MENUITEM "Ajouter...",                  ID_MEDIAS_AJOUTER
+        MENUITEM "Supprimer",                   ID_MEDIAS_SUPPRIMER
+        MENUITEM "Rafraichir",                  ID_MEDIAS_RAFRAICHIR
+        MENUITEM SEPARATOR
+        MENUITEM "Quitter",                     ID_MEDIAS_QUITTER
+    END
+    POPUP "Recherche"
+    BEGIN
+        MENUITEM "Chercher...",                 ID_RECHERCHE_CHERCHER
+        MENUITEM "Duppliqués...",               ID_RECHERCHE_DUPPLIQUS
+    END
+    POPUP "Options"
+    BEGIN
+        MENUITEM "Mot clés...",                 ID_OPTIONS_MOTCLS
+        MENUITEM "Propriétes...",               ID_OPTIONS_PROPRITES
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR1 TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_MEDIAS_AJOUTER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR1            BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_RECHERCHE DLGINIT
+BEGIN
+    IDC_LISTE_ATTRIBUTS, 0x403, 2, 0
+0x0078, 
+    IDC_LISTE_ATTRIBUTS, 0x403, 2, 0
+0x0079, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "Echec de l'initialisation OLE. Vérifiez que les bibliothèques OLE sont de la bonne version."
+    IDS_ABOUTBOX            "&A propos de SoftCollection..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MEDIAS_AJOUTER       "Ajoute un nouveau media\nAjoute media"
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\SoftCollection.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.fra\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

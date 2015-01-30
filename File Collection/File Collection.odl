@@ -1,0 +1,42 @@
+// File Collection.odl : type library source for File Collection.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (File Collection.tlb).
+
+[ uuid(D6233FAA-9695-4197-B30F-C73B998E1CE6), version(1.0) ]
+library FileCollection
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CFileCollectionDoc
+	
+	[ uuid(1ABA0DBC-F686-488A-8C01-AC8BB1617AEF) ]
+	dispinterface IFileCollection
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CFileCollectionDoc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CFileCollectionDoc)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CFileCollectionDoc
+	
+	[ uuid(1C254D04-DA2D-4F1E-91CB-F7BD7E0C92F5) ]
+	coclass Document
+	{
+		[default] dispinterface IFileCollection;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

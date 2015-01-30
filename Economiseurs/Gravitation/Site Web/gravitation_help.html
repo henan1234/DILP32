@@ -1,0 +1,83 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Gravitation, help</title>
+<meta name="KEYWORDS"
+content="win, windows, 95, 98, NT, saver, screensaver, screen saver, shareware, Gravitation, stars, planets, asteroids, universe, scrsave">
+<link REL="stylesheet" HREF="styles.css" TYPE="text/css">
+<meta HTTP-EQUIV="Page-Enter" CONTENT="filter:RevealTrans(Duration=1.000, Transition=2)">
+<base target="main">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" background="fond.jpg" bgproperties="fixed">
+
+<h2><a name="Help"><font face="Arial">Help</font></a></h2>
+
+<h3><font face="Arial">How to configure Gravitation ? (To be constructed)</font></h3>
+
+<h3><font face="Arial">How to create and use your own graphics ?</font></h3>
+
+<p><font face="Arial">With Gravitation, you can use your own pictures via a 'skin' file.
+To create your own skin, you can start from the two provided skins that are installed with
+Gravitation. I will assume that you know how to create/draw a bitmap and how to manipulate
+bitmap files.</font></p>
+
+<p><font face="Arial">What software to use:</font>
+
+<ul>
+  <li><font face="Arial">To create and manipulate the pictures, use any graphic editor or 3D
+    program, or ray-tracer you want ( Photoshop, PaintShop Pro, POV... ).</font></li>
+  <li><font face="Arial">To paste each individual animation frame into one file for one
+    planet, use the skinmaker utility you can download from this site.</font></li>
+  <li><font face="Arial">To edit the skin description file, use any text editor you are used
+    to.</font></li>
+</ul>
+
+<p><font face="Arial">To create a skin, you muste create:</font>
+
+<ul>
+  <li><font face="Arial">A bitmap for each planet. This bitmap file must be a 256 colors DIB
+    format file. It is a horizontal band containing each individual frame of the planet
+    animation. All planets must share the same 256 colors planet.</font></li>
+  <li><font face="Arial">A 256 colors palette file that will contain all colors used by the
+    planets. One color must be reserved for the transparent areas.</font></li>
+  <li><font face="Arial">A skin description text file. I suggest you start with the provided
+    samples.</font></li>
+</ul>
+
+<p><font face="Arial">Creating the pictures:</font>
+
+<ul>
+  <li><font face="Arial">Draw all your planet frames. Group the frames of each planet into a
+    single horizontal band. The SkinMaker utility can help you doing that. At this time, you
+    can create the bitmap in any color depht you want, but consider that all pictures will
+    share the same 256 colors.</font></li>
+  <li><font face="Arial">Save all your planet bands into a single file.</font></li>
+</ul>
+
+<p><font face="Arial">Sharing the 256 colors among the planets:</font>
+
+<ul>
+  <li><font face="Arial">Paste all the pictures into a single bitmap</font></li>
+  <li><font face="Arial">Decrease this bitmap color depth to 256. You will get the global
+    color palette that will be shared by all your skin's pictures.</font></li>
+  <li><font face="Arial">Decrease each planet picture color depth to 256 using the global
+    palette. Save them as DIB files.</font></li>
+  <li><font face="Arial">Create a new palette.dib from the sample. Change the color indexes to
+    your global palette.</font></li>
+</ul>
+
+<p><font face="Arial">Creating the skin description file:</font>
+
+<ul>
+  <li><font face="Arial">Start from one of the sample skin description file that is installed
+    with Gravitation. Be sure you work on a copy of the file.</font></li>
+  <li><font face="Arial">Open the description file with your favorite text editor program.</font></li>
+  <li><font face="Arial">Edit it to reference your own graphic file and colors.</font></li>
+</ul>
+
+<h3><font face="Arial">How to create a Universe file ? (To be constructed )</font></h3>
+</body>
+</html>

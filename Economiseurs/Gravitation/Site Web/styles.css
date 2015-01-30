@@ -1,0 +1,11 @@
+A:link, A:visited, A:active, A:hover { font-weight: bold; text-decoration: underlined;color:#00A0A0 }
+A:hover { color:#202020; background: #00FFFF ; text-decoration: overline }
+H1 { filter:DropShadow(Color=" #6699CC" ,OffX="5" ,OffY="5" ,Positive="1" ) }
+H2 { 
+background: black; 
+color:#00A0A0; 
+padding-top: 2;
+padding-left: 10;
+padding-right: 10;
+}
+.justified { text-align: justify }

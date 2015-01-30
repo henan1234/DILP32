@@ -1,0 +1,41 @@
+// Jibe3.odl : type library source for Jibe3.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (Jibe3.tlb).
+
+[ uuid(56718AA2-22BD-11D1-AEF5-444553540000), version(1.0) ]
+library Jibe3
+{
+	importlib("stdole32.tlb");
+	
+
+	//  Primary dispatch interface for CJibe3Doc
+	
+	[ uuid(56718AA3-22BD-11D1-AEF5-444553540000) ]
+	dispinterface IJibe3
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CJibe3DlgAutoProxy)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CJibe3DlgAutoProxy)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CJibe3Doc
+	
+	[ uuid(56718AA1-22BD-11D1-AEF5-444553540000) ]
+	coclass Jibe3
+	{
+		[default] dispinterface IJibe3;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

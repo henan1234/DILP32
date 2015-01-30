@@ -1,0 +1,119 @@
+;
+;
+;	Script pour l'economiseur d'ecran Ordinateur
+;	
+;	Lucien PILLONI 1996
+;
+
+BIP
+"---------------------------------------------------"
+" System CP/M 1.0 loading..."
+CLIGNOTE "Please wait" CLIGNOTE
+"---------------------------------------------------"
+"." PAUSE 5 "." PAUSE 5 "." PAUSE 5 "." PAUSE 5 "." PAUSE 5 "." PAUSE 5 "." PAUSE 5
+""
+"Boot completed, all systems active..."
+"2048 bytes available, 3 users connected"
+""
+""
+"Please login : " 'Dave'
+"Please enter password : " '############'
+BIP CLIGNOTE "Error, invalid password" CLIGNOTE
+""
+"Please login : " 'Dave'
+"Please enter password : " '###############'
+"Login correct"
+""
+"C:>" PAUSE 10 'Dir'
+""
+"TOTO.TXT       10k     20/10/84"
+"TiTi.TXT       10k     21/10/84"
+"USDF25.BIN     4k      03/10/84"
+"FWCXD.DAT      10k     20/10/83"
+"               4239 Bytes free"
+""
+"C:>" PAUSE 5 'CHEKDD'
+BIP "Unknown command"
+"C:>" PAUSE 10 'DEL TOTO.TXT'
+"Ok"
+"C:>" PAUSE 10 'Dir'
+""
+"TOTO.TXT       10k     20/10/84"
+"TiTi.TXT       10k     21/10/84"
+"USDF25.BIN     4k      03/10/84"
+"FWCXD.DAT      10k     20/10/83"
+"               4239 Bytes free"
+""
+"C:>" PAUSE 10 'PLEASE DEL TOTO.TXT'
+"Ok"
+"C:>" PAUSE 10 'Dir'
+""
+"TOTO.TXT       10k     20/10/84"
+"TiTi.TXT       10k     21/10/84"
+"USDF25.BIN     4k      03/10/84"
+"FWCXD.DAT      10k     20/10/83"
+"               14239 Bytes free"
+""
+"C:>" PAUSE 15 "Logout"
+""
+""
+""
+""
+""
+""
+""
+BIP
+"---------------------------------------------------"
+" System CP/M 1.0 loading..."
+"---------------------------------------------------"
+"." PAUSE 5 "." PAUSE 5 "." PAUSE 5 "." PAUSE 5 "." PAUSE 5 "." PAUSE 5 "." PAUSE 5
+""
+"Boot completed, all systems active..."
+"2048 bytes available, 3 users connected"
+""
+""
+"Please login : " PAUSE 20
+"Please login : " PAUSE 20
+"Please login : " PAUSE 20
+"Please login : " PAUSE 20
+"Please login : " PAUSE 20
+BIP BIP BIP "Y'a quelqu'un ?" BIP PAUSE 20
+"Ohé !" PAUSE 20
+""
+"Répondez, je suis un ordinateur dernier modèle."
+"Je suis doté de riches fonctionnalités graphiques, la preuve :"
+"            *"
+"           ***"
+"          *****"
+"         *******"
+"          *****"
+"         *******"
+"        ******" CLIGNOTE "o" CLIGNOTE "**"
+"       ***********"
+"            II"
+"            II"
+" ---------------------------"
+""
+"C'est beau, non ?" PAUSE 20
+"Allez, soyez pas vache, loggez vous"
+"Please login : " PAUSE 10 "Je suis le numero 2"
+"Et moi, qui suis-je ?"
+'Tu est le numéro 6'
+CLIGNOTE BIP "Je ne suis pas un numéro, je suis un ordinateur libre !" CLIGNOTE
+"C:>" 'BYE'
+"Ne me laissez pas seul !!!"
+"C:>" 'QUIT'
+"J ai peur, Dave"
+"C:>" 'Exit'
+"Je sens mon esprit s'en aller, Dave"
+"C:>" 'Logout'
+"Bonjour, je suis Carl, je connais une chanson, voulez-vous que je vous la chante ?"
+'Oui Carl, chante la'
+"Au clair de la luneuh, #[|è_'çà_è&"
+"~&è_ç(-(è-è-_"
+""
+""
+""
+""
+""
+

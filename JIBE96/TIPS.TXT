@@ -1,0 +1,15 @@
+Cliquez sur un objet avec le bouton droit pour dérouler son menu
+Cliquez sur la barre de Jibe avec le deuxième bouton pour ouvrir le menu général
+Vous pouvez sauvegarder le contenu de votre barre en copiant le fichier JIBE.JIB
+Combien de personnes de Microsoft faut-il pour changer une ampoule grillée ?
+Aucune, ils se contentent de redéfinir l'obscurité comme un nouveau standard.
+Vous pouvez déplacer la barre de Jibe à droite ou à gauche de l'écran
+Cliquez sur un objet avec le bouton gauche pour ouvrir sa fenêtre particulière
+Ce logiciel a été developpé à temps perdu, soyez indulgent
+Pour toute critique (constructive) ou remarque : Lucien PILLONI, 110 rue du 8 mai 1945, 38920 Crolles
+Le mot "Jibe" désigne une figure de planche à voile qui consiste à faire demi-tour dos au vent en profitant de la vitesse acquise et en prenant de la carre comme en ski
+Vous pouvez choisir la couleur de fond de la barre dans la boîte des préférences.
+Vous pouvez être averti de tout changement dans un répertoire en mettant en place une "Surveillance d'un répertoire" dans votre barre.
+Jibe est totalement écrit en C++ 32 bits.
+Vous pouvez garder une note importante dans votre barre, vous pouvez même choisir sa couleur.
+

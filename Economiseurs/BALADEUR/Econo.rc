@@ -1,0 +1,133 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include <afxres.h>
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "..\specif.h"
+#include "resource.h"
+#include <scrnsave.h>
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ID_APP                  ICON    DISCARDABLE     "ECONO.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_SCRNSAVECONFIGURE DIALOGEX 34, 32, 220, 149
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Economiseur d'écran."
+FONT 8, "Helv"
+BEGIN
+    EDITTEXT        IDC_NB_POINTS,79,24,27,13,ES_AUTOHSCROLL | WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,149,3,67,16,WS_GROUP
+    PUSHBUTTON      "Annuler",IDCANCEL,149,22,67,16
+    LTEXT           "&Nombre de traceurs :",IDC_STATIC,6,26,64,8
+    CONTROL         "&Noircir l'écran",IDC_NOIRCIR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,8,103,10
+    CONTROL         "Generic1",IDC_PLUSMOINS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,107,23,
+                    17,13
+    ICON            ID_APP,IDC_STATIC,192,116,18,20
+    LTEXT           "Ceci est un logiciel SHAREWARE, vous pouvez le tester et le distribuer sans le modifier.\nSi vous décidez de l'utiliser, procurez vous la version enregistrée. Pour 75f, vous bénéficierez pendant un an des améliorations et corrections de bugs.",
+                    IDC_STATIC,6,39,128,59
+    LTEXT           "Version enregistrée :\nLucien PILLONI\n110 rue du 8 mai 1945\n38920 Crolles",
+                    IDC_STATIC,6,99,128,45,0,WS_EX_STATICEDGE
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""afxres.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""..\\specif.h""\r\n"
+    "#include ""resource.h""\r\n"
+    "#include <scrnsave.h>\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    idsIsPassword           "PWProtected"
+    idsIniFile              "control.ini"
+    idsScreenSaver          "ScreenSaver"
+    idsPassword             "Password"
+    idsDifferentPW          "La confirmation du mot de passe ne correspond pas, recommencez."
+    idsChangePW             "Changer le mot de passe"
+    idsBadOldPW             "L'ancien mot de passe est incorrect.\n\nVérifiez et recommencez."
+    idsAppName              "ScreenSaver.Baladeurs"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    idsNoHelpMemory         "Not enough memory to start Help.\n\nQuit one or more applications to increase available memory, and then try again."
+    idsHelpFile             "control.hlp"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

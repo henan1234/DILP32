@@ -1,0 +1,12 @@
+NAME		AUTOMATE_SCR
+
+DESCRIPTION 'SCRNSAVE :Automate (c) Lucien PILLONI 1994'
+                                
+CODE        MOVEABLE DISCARDABLE PRELOAD
+DATA        MOVEABLE MULTIPLE PRELOAD
+
+HEAPSIZE    4000
+
+EXPORTS
+            ScreenSaverProc                 @1  
+            ScreenSaverConfigureDialog      @2

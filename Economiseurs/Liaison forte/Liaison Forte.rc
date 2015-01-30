@@ -1,0 +1,634 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "scrnsave.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_SCRNSAVECONFIGURE DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+
+IDD_PROPPAGE_MEDIUM DIALOG DISCARDABLE  0, 0, 313, 172
+STYLE DS_CENTER | DS_CONTEXTHELP | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Configuration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ATOMES,106,7,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISTANCE,106,25,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX,106,43,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AMORTISSEMENT,106,63,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CREATION,259,7,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INTENSITE,259,24,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AGITATION,259,41,36,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,58,66,10,34
+    EDITTEXT        IDC_LIENS,259,59,36,14,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,166,37,21,14
+    EDITTEXT        IDC_REPULSION,259,77,36,14,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_NB_IMAGES,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,18,109,277,18
+    PUSHBUTTON      "Background color...",IDC_COULEUR,7,148,69,14,BS_NOTIFY
+    PUSHBUTTON      "Links color...",IDC_COULEUR_LIENS,79,148,73,14
+    PUSHBUTTON      "Free atoms color...",IDC_COULEUR_LIBRE,155,148,73,14
+    PUSHBUTTON      "Saturated atoms color...",IDC_COULEUR_SATURE,231,148,73,
+                    14
+    RTEXT           "Atoms number:",IDC_STATIC,37,7,64,8
+    RTEXT           "Stabilization distance",IDC_STATIC,19,25,82,8
+    RTEXT           "Link force intensity",IDC_STATIC,161,25,91,8
+    RTEXT           "Motion softening",IDC_STATIC,51,64,50,8
+    RTEXT           "Turbulence",IDC_STATIC,188,44,64,8
+    RTEXT           "Links max length",IDC_STATIC,24,44,77,8
+    RTEXT           "Max distance for link creation",IDC_STATIC,146,7,106,8
+    RTEXT           "Max link number by atom",IDC_STATIC,164,63,88,8
+    RTEXT           "Linked atoms repulsion",IDC_STATIC,182,81,70,8
+    LTEXT           "+ details",IDC_STATIC,21,130,26,8
+    LTEXT           "+ fluidity",IDC_STATIC,270,128,25,8
+    GROUPBOX        "Animation",IDC_STATIC,7,98,299,44
+END
+
+IDD_PROPPAGE_SMALL DIALOGEX 0, 0, 358, 202
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Informations"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CTEXT           "Molecules\nSimulates atoms and chemical links.",
+                    IDC_STATIC,122,7,229,23,SS_SUNKEN,WS_EX_CLIENTEDGE
+    LTEXT           "This program will work only if your screen displays at least 65000 colors.",
+                    IDC_STATIC,122,68,229,13
+    CONTROL         120,IDC_STATIC,"Static",SS_BITMAP,7,7,111,188,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LTEXT           "Copyright (c) Lucien PILLONI 1997.",IDC_STATIC,122,39,
+                    113,8
+END
+
+IDD_PROPPAGE_REGISTERING DIALOG DISCARDABLE  0, 0, 329, 167
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Registering"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "This is a shareware program. You can freely test it and distribute it. If you decide to use it, you must obtain the registered version.",
+                    IDC_STATIC,7,7,315,17
+    LTEXT           "The registered version gives you all the program functionnalities and you will get all the new versions freely for one year.",
+                    IDC_STATIC,7,26,315,16
+    LTEXT           "To get the registered version, send 15$ ( i will prefer 75F ) to :\nLucien PILLONI\n110 rue du 8 mai 1945\n38920 Crolles\nFRANCE\ne-mail : pilloni@isl.fr",
+                    IDC_STATIC,7,44,315,50,SS_SUNKEN
+    LTEXT           "Please ask for the english or french version. DON'T FORGET to send me the following code number, i will send to you a key number that will unlock your program. Give me your e-mail adress, i will send your key number by mail, it will be quicker.",
+                    IDC_STATIC,7,101,315,25
+    LTEXT           "Your code number is :",IDC_STATIC,7,129,66,8
+    PUSHBUTTON      "Enter the key code...",IDC_ENTERCODE,187,126,73,14
+    LTEXT           "If you have lost your key number or the lock key has changed since you obtained the registered version, don't worry. Just send the new key number.",
+                    IDC_STATIC,7,142,315,18
+    EDITTEXT        IDC_KEY_CODE,76,126,93,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DEBLOCAGE DIALOG DISCARDABLE  0, 0, 229, 112
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter key code"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,105,91,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,172,91,50,14
+    LTEXT           "This key code is necessary to unlock this program.\nTo obtain this key code, you must get the registered version ( please see the registrering page ).\nAfter you have entered the key code, you will get access to all the software functionnalities.",
+                    IDC_STATIC,7,7,215,25
+    LTEXT           "If you already have the registered but you did reinstall Windows, just send me a message asking for the new key code ( don't forget to send me the new lock code ).",
+                    IDC_STATIC,7,37,215,30
+    LTEXT           "Unlock code :",IDC_STATIC,7,72,42,8
+    EDITTEXT        IDC_CODE,65,69,157,14,ES_AUTOHSCROLL
+END
+
+IDD_PRIORITE DIALOGEX 0, 0, 344, 155
+STYLE DS_MODALFRAME | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Priority"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "This page lets you set the priority level for the screen saver.",
+                    IDC_STATIC,7,7,187,8
+    LTEXT           "If you have background applications running while the screen saver is active, you can choose to allocate more processor time for them.",
+                    IDC_STATIC,7,21,322,22
+    LTEXT           "The screen saver will run less smoothly, but your background applications will run faster.",
+                    IDC_STATIC,7,44,322,16
+    LTEXT           "More priority for the screen saver",IDC_STATIC,7,95,104,
+                    8
+    LTEXT           "More priority for the background applications",
+                    IDC_STATIC,189,94,140,8
+    CONTROL         "Slider1",IDC_PRIORITE,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,7,109,322,29,WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    DLG_SCRNSAVECONFIGURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_PROPPAGE_MEDIUM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 306
+        VERTGUIDE, 7
+        VERTGUIDE, 101
+        VERTGUIDE, 106
+        VERTGUIDE, 140
+        VERTGUIDE, 156
+        VERTGUIDE, 176
+        VERTGUIDE, 252
+        VERTGUIDE, 259
+        VERTGUIDE, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_PROPPAGE_SMALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 351
+        VERTGUIDE, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_PROPPAGE_REGISTERING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_DEBLOCAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_PRIORITE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 329
+        VERTGUIDE, 70
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""scrnsave.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "icon1.ico"
+IDI_PRIORITE            ICON    DISCARDABLE     "nombres1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_UNLOCKED            "Congratulation !\nYour software is now unlocked. You will now have access to all this software functionnalities.\nThe Registration page will be removed the next time you launch this program."
+    IDS_NOT_UNLOCKED        "Sorry, you must obtain the registration key.\nThis is a SHAREWARE program.\nPlease see the registration page."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TROP_TARD           "This shareware program is for test only. You had time enough to test it. It is now time for you to obtain the registered version. Please check the configuration box."
+    IDS_MESSAGE_SHAREWARE   "This is a SHAREWARE program.\nYou can use it for testing purpose, if you decide to use it, you must obtain the registered version.\nCheck the configuration dialog box for information about how to obtain the registered version."
+    IDS_TITRE               "Enregistré"
+    IDS_TITRE_SETTINGS      "Molecules settings"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_SCRNSAVECONFIGURE DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+
+IDD_PROPPAGE_MEDIUM DIALOG DISCARDABLE  0, 0, 355, 193
+STYLE DS_CENTER | DS_CONTEXTHELP | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Configuration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ATOMES,106,7,34,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,42,40,10,34
+    EDITTEXT        IDC_DISTANCE,106,25,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX,106,43,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AMORTISSEMENT,106,63,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CREATION,275,7,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INTENSITE,275,24,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AGITATION,275,41,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LIENS,275,59,39,14,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,166,37,21,14
+    EDITTEXT        IDC_REPULSION,275,77,39,14,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_NB_IMAGES,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,37,132,277,18
+    PUSHBUTTON      "Couleur de fond...",IDC_COULEUR,7,169,79,14,BS_NOTIFY
+    PUSHBUTTON      "Couleur des liens...",IDC_COULEUR_LIENS,92,169,79,14
+    PUSHBUTTON      "Couleur atome libre...",IDC_COULEUR_LIBRE,177,169,79,14
+    PUSHBUTTON      "Couleur atome saturé...",IDC_COULEUR_SATURE,262,169,79,
+                    14
+    RTEXT           "Nombre d'atomes :",IDC_STATIC,37,7,64,8
+    RTEXT           "Distance d'équilibre :",IDC_STATIC,19,25,82,8
+    RTEXT           "Intensité de la force des liens :",IDC_STATIC,178,25,91,
+                    8
+    RTEXT           "Amortissement du mouvement :",IDC_STATIC,7,66,94,8
+    RTEXT           "Agitation thermique :",IDC_STATIC,205,44,64,8
+    RTEXT           "Distance max des liens :",IDC_STATIC,24,44,77,8
+    RTEXT           "Distance max de création d'un lien:",IDC_STATIC,140,7,
+                    129,8
+    RTEXT           "Nb max de liens par atome :",IDC_STATIC,181,63,88,8
+    RTEXT           "Répulsion entre les atomes liés au même:",IDC_STATIC,
+                    115,81,154,8
+    LTEXT           "+ de détails",IDC_STATIC,21,153,36,8
+    LTEXT           "+ Fluide",IDC_STATIC,289,151,25,8
+    GROUPBOX        "Animation",IDC_STATIC,7,121,341,44
+END
+
+IDD_PROPPAGE_SMALL DIALOGEX 0, 0, 385, 204
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Informations importantes"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Molécules\nCet économiseur d'écran simule des atomes et leurs liaisons moléculaires qui se forment et se rompent ( c'est une simulation très approximative ).",
+                    IDC_STATIC,127,7,251,30,SS_SUNKEN,WS_EX_CLIENTEDGE
+    LTEXT           "Ce programme ne marche que si votre écran affiche au moins 65000 couleurs.",
+                    IDC_STATIC,127,64,251,16
+    CONTROL         120,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE | 
+                    SS_SUNKEN,7,7,111,188,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    LTEXT           "Copyright (c) Lucien PILLONI 1997",IDC_STATIC,127,42,
+                    111,8
+END
+
+IDD_PROPPAGE_REGISTERING DIALOG DISCARDABLE  0, 0, 329, 167
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Version enregistrée"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Ceci est un programme SHAREWARE. Vous pouvez le tester et le distribuer librement. Si vous décidez de l'utiliser, vous devez acheter la version enregistrée.",
+                    IDC_STATIC,7,7,315,17
+    LTEXT           "La version enregistrée vous donne accès à toutes les fonctionnalitées du programme ainsi que toutes les nouvelles versions gratuitement pendant un an.",
+                    IDC_STATIC,7,26,315,16
+    LTEXT           "Pour obtenir la version enregistrée, envoyez 75F ( ou $15 ) à :\nLucien PILLONI\n110 rue du 8 mai 1945\n38920 Crolles\nFRANCE\ne-mail : pilloni@isl.fr",
+                    IDC_STATIC,7,44,315,50,SS_SUNKEN
+    LTEXT           "N'oubliez pas de m'envoyer votre clef de vérrouillage ci-dessous. Vous recevrez votre clef de dévérrouillage personnelle par courrier ou par e-mail au choix.",
+                    IDC_STATIC,7,101,315,19
+    LTEXT           "Votre clef est:",IDC_STATIC,7,122,46,8
+    PUSHBUTTON      "Dévérrouiller",IDC_ENTERCODE,170,120,73,14
+    LTEXT           "Si vous avez acheté la version enregistrée du logiciel, mais qu'il vous demande une autre clef ( par exemple parce que Windows a été réinstallé), vous pouvez en obtenir une nouvelle à la même adresse. N'oubliez pas de m'envoyer le nouveau code.",
+                    IDC_STATIC,7,136,315,24
+    EDITTEXT        IDC_KEY_CODE,62,120,96,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DEBLOCAGE DIALOG DISCARDABLE  0, 0, 250, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Entrez la clef de déblocage"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,133,92,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,193,92,50,14
+    LTEXT           "Cette clef est necéssaire pour débloquer le logiciel et accéder à toutes ses fonctionnalités. Pour obtenir cette clef, vous devez acheter la version enregistrée de ce logiciel.",
+                    IDC_STATIC,7,7,236,25
+    LTEXT           "Si vous avez déjà acheté ce logiciel, mais qu'il vous demande une nouvelle clef ( parce que Windows a été réinstallé, par exemple ), redemandez gratuitement une clef à l'auteur ( avec le nouveau code ).",
+                    IDC_STATIC,7,34,236,27
+    LTEXT           "Clef de déblocage:",IDC_STATIC,7,72,74,8
+    EDITTEXT        IDC_CODE,86,69,157,14,ES_AUTOHSCROLL
+END
+
+IDD_PHYSIQUE DIALOGEX 0, 0, 346, 154
+STYLE DS_MODALFRAME | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Physique"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Température",IDC_STATIC,7,7,68,137
+    CONTROL         "Slider1",IDC_TEMPERATURE,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,30,20,21,110,
+                    WS_EX_CLIENTEDGE
+    GROUPBOX        "Force de liaison",IDC_STATIC,95,7,68,137
+    GROUPBOX        "Amortissement",IDC_STATIC,183,7,68,137
+    GROUPBOX        "Répulsion",IDC_STATIC,271,7,68,137
+    CONTROL         "Slider1",IDC_LIAISON,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,118,20,21,110,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "Slider1",IDC_AMORTISSEMENT,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,206,20,21,110,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "Slider1",IDC_REPULSION,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,294,20,21,110,
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_NOMBRES DIALOG DISCARDABLE  0, 0, 346, 154
+STYLE DS_MODALFRAME | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Nombres"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Nombre d'atomes :",IDC_STATIC,7,13,91,8
+    CONTROL         "Slider1",IDC_NB_ATOMES,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_BOTH | WS_TABSTOP,98,7,241,21
+    LTEXT           "Nb max liens par atome:",IDC_STATIC,7,36,91,8
+    LTEXT           "Distance min création lien:",IDC_STATIC,12,62,86,8
+    LTEXT           "Longueur d'équilibre:",IDC_STATIC,12,84,75,8
+    LTEXT           "Longueur max des liens:",IDC_STATIC,12,106,74,8
+    LTEXT           "Qualité affichage / fluidité:",IDC_STATIC,7,130,91,8
+    CONTROL         "Slider2",IDC_LIENS,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_TABSTOP,98,29,241,23
+    CONTROL         "Slider3",IDC_MIN,"msctls_trackbar32",TBS_NOTICKS | 
+                    TBS_ENABLESELRANGE | WS_TABSTOP,98,59,234,15
+    CONTROL         "Slider4",IDC_EQUILIBRE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | TBS_ENABLESELRANGE | WS_TABSTOP,98,81,234,
+                    15
+    CONTROL         "Slider5",IDC_MAX,"msctls_trackbar32",TBS_TOP | 
+                    TBS_NOTICKS | TBS_ENABLESELRANGE | WS_TABSTOP,98,103,234,
+                    15
+    CONTROL         "Slider6",IDC_AFFICHAGE,"msctls_trackbar32",TBS_BOTH | 
+                    WS_TABSTOP,98,125,241,19
+    GROUPBOX        "Distances",IDC_STATIC,7,51,332,74
+END
+
+IDD_COULEURS DIALOG DISCARDABLE  0, 0, 346, 154
+STYLE DS_MODALFRAME | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Couleurs"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Atome libre...",IDC_LIBRE,76,21,177,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,67,15,194,27
+    PUSHBUTTON      "Atome saturé...",IDC_SATURE,76,52,177,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,67,46,194,27
+    PUSHBUTTON      "Liens...",IDC_LIENS,76,85,177,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,67,79,194,27
+    PUSHBUTTON      "Fond...",IDC_FOND,76,116,177,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,67,110,194,27
+END
+
+IDD_PRIORITE DIALOGEX 0, 0, 344, 188
+STYLE DS_MODALFRAME | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Priorité"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Cette page vous permet de régler le niveau de priorité de l'économiseur d'écrans.",
+                    IDC_STATIC,7,7,254,8
+    LTEXT           "Si vous avez des applications qui s'exécutent en tâche de fond pendant que l'économiseur d'écran est actif, vous pouvez décider de leur allouer plus de temps de calcul.",
+                    IDC_STATIC,7,21,322,22
+    LTEXT           "L'économiseur d'écran s'exécutera ainsi de façon moins fluide, mais il perturbera ainsi moins les applications.",
+                    IDC_STATIC,7,44,322,16
+    LTEXT           "Plus de priorité pour l'économiseur",IDC_STATIC,7,95,
+                    108,8
+    LTEXT           "Plus de priorité pour les tâches de fond",IDC_STATIC,
+                    206,94,123,8
+    CONTROL         "Slider1",IDC_PRIORITE,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,7,109,322,29,WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    DLG_SCRNSAVECONFIGURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_PROPPAGE_MEDIUM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        VERTGUIDE, 7
+        VERTGUIDE, 101
+        VERTGUIDE, 106
+        VERTGUIDE, 140
+        VERTGUIDE, 156
+        VERTGUIDE, 176
+        VERTGUIDE, 269
+        VERTGUIDE, 275
+        VERTGUIDE, 314
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_PROPPAGE_SMALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 378
+        VERTGUIDE, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_PROPPAGE_REGISTERING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_DEBLOCAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_PHYSIQUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_NOMBRES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 339
+        VERTGUIDE, 12
+        VERTGUIDE, 98
+        VERTGUIDE, 332
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_COULEURS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 339
+        VERTGUIDE, 67
+        VERTGUIDE, 76
+        VERTGUIDE, 253
+        VERTGUIDE, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_PRIORITE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 329
+        VERTGUIDE, 70
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON3               ICON    DISCARDABLE     "Lulu.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP  DISCARDABLE     "Liaison forte.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_UNLOCKED            "Félicitations !\nVotre programme est maintenant débloqué. Vous allez avoir maintenant accès à toutes les fonctionnalités du programme.\nLa page d'enregistrement sera supprimée au prochain lancement."
+    IDS_NOT_UNLOCKED        "Désolé, vous devez demander une clef d'enregistrement.\nCeci est un programme SHAREWARE, pour test seulement.\nVeuillez consulter la page d'enregistrement."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TROP_TARD           "Ceci est un programme SHAREWARE pour tests seulement. Vous avez eu le temps nécessaire pour le tester. Si vous voulez l'utiliser régulièrement, vous devez obtenir une version enregistrée."
+    IDS_MESSAGE_SHAREWARE   "Ceci est un programme SHAREWARE. Vous pouvez l'essayer librement. Si vous décidez de l'utiliser régulièrement, vous devez obtenir une version enregistrée. Consultez la boîte de configuration."
+    IDS_TITRE               "Registered"
+    IDS_TITRE_SETTINGS      "Configuration de Molécules"
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,52 @@
+;
+;	Skin file for gravitation
+;	Merry Christmas !
+;
+
+[Skin]
+; Palette index to display the crosshair
+CrossHair color=125
+Comet image=-1
+Nb background images=4
+Nb Images=6
+Transparency=125
+Palette=Christmas\Palette.dib
+Explosion=Christmas\explosion.dib
+Planet 0=Christmas\Gift1.dib
+Planet 1=Christmas\Gift2.dib
+Planet 2=Christmas\Bob.dib
+Planet 3=Christmas\snowman.dib
+Planet 4=Christmas\angel.dib
+Planet 5=Christmas\tree.dib
+Background 0=Christmas\holly1.dib
+Background 1=Christmas\santaf3.dib
+Background 2=Christmas\stocking.dib
+Background 3=Christmas\xbear.dib
+Background 4=
+Background 5=
+Background 6=
+Background 7=
+Background 8=
+Background 9=
+Background 10=
+Background 11=
+Background 12=
+Background 13=
+Background 14=
+Background 15=
+Nb Star colors=0
+Star color 0=246
+Star color 1=245
+Star color 2=244
+Star color 3=243
+Star color 4=242
+Star color 5=230
+Star color 6=229
+Star color 7=228
+Star color 8=227
+Star color 9=226
+Star color 10=201
+Star color 11=200
+Star color 12=194
+Nb Comet colors=0
+comet color 0=239

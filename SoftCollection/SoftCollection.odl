@@ -1,0 +1,42 @@
+// SoftCollection.odl : type library source for SoftCollection.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (SoftCollection.tlb).
+
+[ uuid(EE5C5A6B-3A72-4F8A-87BA-BBB9D1E1F0AF), version(1.0) ]
+library SoftCollection
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CSoftCollectionDoc
+	
+	[ uuid(299DF0A9-E9B6-4A5C-AD90-0E06799365E8) ]
+	dispinterface ISoftCollection
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CSoftCollectionDlgAutoProxy)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CSoftCollectionDlgAutoProxy)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CSoftCollectionDoc
+	
+	[ uuid(5B9340D9-2A92-4F82-A501-C366AC0848F7) ]
+	coclass SoftCollection
+	{
+		[default] dispinterface ISoftCollection;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

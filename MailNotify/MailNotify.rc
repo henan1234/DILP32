@@ -1,0 +1,408 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAILNOTIFY_DIALOG DIALOGEX 0, 0, 75, 34
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Mail Notify"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MailNotify MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MailNotify\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MailNotify.EXE\0"
+            VALUE "ProductName", "MailNotify Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAILNOTIFY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 68
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 27
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ACCOUNTS DIALOG DISCARDABLE  0, 0, 271, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Setup accounts"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST_ACCOUNTS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,188,169
+    PUSHBUTTON      "Add...",IDC_ADD,214,7,50,14
+    PUSHBUTTON      "Edit...",IDC_EDIT,214,28,50,14
+    PUSHBUTTON      "Remove",IDC_BUTTON3,214,53,50,14
+END
+
+IDD_ADD_ACCOUNT DIALOG DISCARDABLE  0, 0, 276, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mail account"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,92,7,114,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SERVER,92,28,114,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PORT,92,49,114,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_USERNAME,92,70,114,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,92,91,114,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,219,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,219,25,50,14
+    LTEXT           "Account friendly name:",IDC_STATIC,7,7,85,8
+    LTEXT           "POP3 server:",IDC_STATIC,7,28,85,8
+    LTEXT           "User name:",IDC_STATIC,7,70,37,8
+    LTEXT           "Password:",IDC_STATIC,7,91,34,8
+    LTEXT           "Port:",IDC_STATIC,7,49,16,8
+    GROUPBOX        "Ignore mail if:",IDC_STATIC,7,114,262,86
+    CONTROL         "List1",IDC_RULES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,13,125,187,68
+    PUSHBUTTON      "Add...",IDC_ADD_RESTRICTION,206,126,50,14
+    PUSHBUTTON      "Edit...",IDC_BUTTON2,206,152,50,14
+    PUSHBUTTON      "Remove",IDC_BUTTON3,206,178,50,14
+END
+
+IDD_SETUP DIALOG DISCARDABLE  0, 0, 314, 199
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_DELAY,75,7,40,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,115,7,10,14
+    CONTROL         "Animate tray bar icon",IDC_ANIMATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,24,47,82,10
+    CONTROL         "Flash ScrollLock LED",IDC_SCROLLLOCK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,24,62,84,10
+    CONTROL         "Play sound",IDC_PLAYSOUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,24,77,51,10
+    EDITTEXT        IDC_SOUND,79,76,147,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSESOUND,228,76,50,14
+    CONTROL         "Display headers",IDC_DISPLAYHEADERS,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,24,92,66,10
+    CONTROL         "Launch mail client",IDC_LAUNCHCLIENT,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,24,107,73,10
+    EDITTEXT        IDC_CLIENT,24,151,196,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSEMAILCLIENT,220,150,50,14
+    LTEXT           "Check mail every:",IDC_STATIC,7,7,57,8
+    LTEXT           "minutes",IDC_STATIC,131,7,25,8
+    GROUPBOX        "Mail notification",IDC_STATIC,7,31,300,97
+    GROUPBOX        "Mail Client",IDC_STATIC,7,133,300,40
+    DEFPUSHBUTTON   "OK",IDOK,173,178,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,257,178,50,14
+END
+
+IDD_RESTRICTION DIALOG DISCARDABLE  0, 0, 287, 84
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Restriction"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,175,63,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,230,63,50,14
+    LTEXT           "Do not display notification if:",IDC_STATIC,7,7,89,8
+    COMBOBOX        IDC_RULE,7,22,273,55,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_TEXTE,7,42,273,14,ES_AUTOHSCROLL
+END
+
+IDD_MESSAGES DIALOGEX 0, 0, 232, 137
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "New mails received..."
+FONT 7, "Arial", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_MESSAGES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_AUTOARRANGE | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,4,20,224,113
+    DEFPUSHBUTTON   "Mail Client",IDC_MAILCLIENT,4,4,66,11
+END
+
+IDD_MAIL DIALOG DISCARDABLE  0, 0, 308, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "From:",IDC_STATIC,7,7,18,8
+    LTEXT           "Subject:",IDC_STATIC,7,27,27,8
+    EDITTEXT        IDC_FROM,45,7,256,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SUBJECT,45,27,256,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Text:",IDC_STATIC,7,46,17,8
+    EDITTEXT        IDC_EDIT3,45,46,256,82,ES_AUTOHSCROLL | ES_READONLY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ACCOUNTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_ADD_ACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        VERTGUIDE, 92
+        VERTGUIDE, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        VERTGUIDE, 24
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+        HORZGUIDE, 139
+    END
+
+    IDD_RESTRICTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_MESSAGES, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 228
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_MAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 301
+        VERTGUIDE, 45
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+        HORZGUIDE, 27
+        HORZGUIDE, 46
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MailNotify.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_ICON_FLASHED        ICON    DISCARDABLE     "res\\MailNotify.ico"
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\idr_main.ico"
+IDR_CHECK               ICON    DISCARDABLE     "res\\ico00001.ico"
+IDR_ICON_FLASHED_3      ICON    DISCARDABLE     "res\\idr_icon.ico"
+IDR_ICON_FLASHED_4      ICON    DISCARDABLE     "res\\ico00002.ico"
+IDR_ICON_FLASHED_5      ICON    DISCARDABLE     "res\\ico00003.ico"
+IDR_ICON_FLASHED_6      ICON    DISCARDABLE     "res\\ico00004.ico"
+IDR_ICON_FLASHED_7      ICON    DISCARDABLE     "res\\ico00005.ico"
+IDR_ICON_FLASHED_8      ICON    DISCARDABLE     "res\\ico00006.ico"
+IDI_MAIL_FERME          ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_MAIL_OUVERT         ICON    DISCARDABLE     "res\\ico00007.ico"
+IDI_MAIL_REMOVE         ICON    DISCARDABLE     "res\\mail_ouv.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "d"
+    BEGIN
+        MENUITEM "Mail Notify",                 65535, GRAYED
+        MENUITEM "Check mail now",              ID_CHECKMAILNOW
+        MENUITEM "Hide messages...",            ID_SHOWMESSAGES
+        MENUITEM SEPARATOR
+        MENUITEM "Setup...",                    IDM_SETUP
+        MENUITEM "Accounts...",                 IDM_ACCOUNTS
+        MENUITEM SEPARATOR
+        MENUITEM "About...",                    ID_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        IDM_QUIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_GAUCHE              BITMAP  DISCARDABLE     "res\\gauche.bmp"
+IDB_DROITE              BITMAP  DISCARDABLE     "res\\droite.bmp"
+IDB_CENTRE              BITMAP  DISCARDABLE     "res\\centre.bmp"
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MailNotify.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

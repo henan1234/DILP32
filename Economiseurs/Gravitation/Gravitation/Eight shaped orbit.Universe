@@ -1,0 +1,74 @@
+;	Title : Binary stars
+;	
+;	Two stars orbiting around each other
+;	Each star has its own satellits
+;
+;
+
+[Universe Parameters]
+3D Physical Model=1
+Display Lines=0
+Dust scattering=25
+Change Resolution=0
+Escape Velocity %=2
+Comets creation (1/)=50000
+Colision relative speed max=1
+Starfield density ( 0 for no star )=400
+Universe creation method=3
+Max distance=0
+Delete trajectories=0
+Constant of gravity (G)=5
+Time multiplicator=0.1
+Nb images by second=25
+Dust max number=300
+Dust size max=2
+Solar wind=0.5
+Dust life length=3
+; Max Zoom = 0 for now camera zoom
+Max zoom factor=0
+Distance multiplicator=5
+Radius multiplicator=0.15
+Time interval max=0
+Initial planets number=50
+Planets max number=300
+Planets min number=1
+Traveling=0.00000000005
+Thread Priority=2
+BlackBackGround=1
+
+[Masses]
+Mass 1=0.1
+Mass 2=0.2
+Mass 3=4
+Mass 4=8
+Mass 5=10
+Mass 6=20
+Mass 7=30
+Mass 8=256
+
+[Planet0]
+Mass=8000
+Position=0,0,0
+Speed=0,0,0
+Rotation=1
+
+[Planet1]
+Mass=10
+Position=900,50,0
+Speed=0,0,5
+Rotation=-0.5
+
+
+[Planet2]
+Mass=10
+Position=-500,50,100
+Speed=0,-1,-0.5
+Rotation=1
+
+
+
+[Planet3]
+Mass=10
+Position=0,1100,-1000
+Speed=0.5,-1,0
+Rotation=1

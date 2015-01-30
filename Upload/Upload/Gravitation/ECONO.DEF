@@ -1,0 +1,14 @@
+NAME        GRAVITATION
+
+DESCRIPTION 'SCRNSAVE :Gravitation'
+
+
+CODE        MOVEABLE DISCARDABLE PRELOAD
+DATA        MOVEABLE MULTIPLE PRELOAD
+
+HEAPSIZE    4000
+
+EXPORTS
+            ScreenSaverProc                 @1
+            ScreenSaverConfigureDialog		@2
+           

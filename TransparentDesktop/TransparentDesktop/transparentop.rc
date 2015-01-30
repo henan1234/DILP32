@@ -1,0 +1,540 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Anglais (E.-U.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 72
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Transparent Desktop"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Transparent Desktop Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) Lucien PILLONI 1997",IDC_STATIC,40,25,119,
+                    8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+    LTEXT           "Adds a transparent layer on your desktop that enables you to add notes with your favorite image editor.",
+                    IDC_STATIC,40,43,170,22
+END
+
+IDD_ACTIVEDESKTOP_DIALOG DIALOGEX 0, 0, 336, 102
+STYLE DS_CENTER | DS_CONTEXTHELP | WS_CHILD | WS_DISABLED
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CONTEXTHELP | WS_EX_APPWINDOW
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Transparent Desktop\nThis programm lets you annotate your desktop background image.\nYou can put whatever you like, notes, drawing, schemas, telephone numbers...\nYou just use your favorite graphic editor.",
+                    IDC_STATIC,78,7,251,35,SS_SUNKEN,WS_EX_CLIENTEDGE
+    GROUPBOX        "Your favorite image editor",IDC_STATIC,76,46,253,49
+    EDITTEXT        IDC_EDITOR,84,60,160,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Change...",IDC_CHANGE_EDITOR,256,60,62,14
+    PUSHBUTTON      "Default",IDC_DEFAULT_EDITOR,256,76,62,14
+    CONTROL         IDR_WAITING,IDC_STATIC,"Static",SS_BITMAP | 
+                    SS_REALSIZEIMAGE,7,7,63,195
+END
+
+IDD_WORKING DIALOGEX 0, 0, 238, 109
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Show me another tip...",IDC_OTHER_TIP,181,77,50,25,
+                    BS_CENTER | BS_VCENTER | BS_MULTILINE
+    EDITTEXT        IDC_TIP,7,58,168,44,ES_MULTILINE | ES_NOHIDESEL | 
+                    ES_READONLY,WS_EX_NOPARENTNOTIFY
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,
+                    26,224,14
+    ICON            IDI_ICON1,IDC_STATIC,7,7,20,20
+    LTEXT           "Please wait while Transparent Desktop is scanning your image...",
+                    IDC_STATIC,31,7,195,8
+    LTEXT           "While your are waiting, just take a look at the tip of the day:",
+                    IDC_STATIC,7,46,172,8
+END
+
+IDD_PROPPAGE_MEDIUM DIALOG DISCARDABLE  0, 0, 282, 135
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Shareware version"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Your graphic desktop. Version 1. Copyright Lucien PILLONI 1997",
+                    IDC_STATIC,65,7,190,8
+    LTEXT           "This program lets you display on your desktop notes, texts, pictures, whatever you can draw with your FAVORITE IMAGE EDITOR",
+                    IDC_STATIC,63,25,212,17
+    LTEXT           "SHAREWARE Version.",IDC_STATIC,65,16,71,8
+    LTEXT           "You simply draw what you want on a black picture. Everything will be displayed on your desktop. All that you left black will be transparent.",
+                    IDC_STATIC,65,44,210,19
+    LTEXT           "See the ""Registering"" page to know how to get the registered version of this program.\nThe registered version gives you:\n- Severall pages\n- Password protection\n- Get all the new versions and bug fixes for one year",
+                    IDC_STATIC,65,70,210,58
+    CONTROL         IDR_WAITING,IDC_STATIC,"Static",SS_BITMAP,7,7,20,20
+END
+
+IDD_PROPPAGE_MEDIUM1 DIALOG DISCARDABLE  0, 0, 329, 167
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Registering"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "This is a shareware program. You can freely test it and distribute it. If you decide to use it, you must obtain the registered version.",
+                    IDC_STATIC,7,7,315,17
+    LTEXT           "The registered version gives you all the program functionnalities and you will get all the new versions freely for one year.",
+                    IDC_STATIC,7,26,315,16
+    LTEXT           "To get the registered version, send 15$ ( i will prefer 75F ) to :\nLucien PILLONI\n110 rue du 8 mai 1945\n38920 Crolles\nFRANCE\ne-mail : pilloni@isl.fr",
+                    IDC_STATIC,7,44,315,50,SS_SUNKEN
+    LTEXT           "Please ask for the english or french version. DON'T FORGET to send me the following code number, i will to you a key number that will unlock your program. Give me your e-mail adress, i will send your key number by mail, it will be quicker.",
+                    IDC_STATIC,7,101,315,25
+    LTEXT           "Your code number is :",IDC_STATIC,7,129,66,8
+    PUSHBUTTON      "Enter the key code...",IDC_ENTERCODE,130,126,73,14
+    LTEXT           "If you have lost your key number or the lock key has changed since you obtained the registered version, don't worry. Just send the new key number.",
+                    IDC_STATIC,7,141,315,19
+    EDITTEXT        IDC_KEY_CODE,76,126,52,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_PROPPAGE_MEDIUM2 DIALOG DISCARDABLE  0, 0, 316, 131
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Pages"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | 
+                    LVS_EDITLABELS | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,7,21,207,103
+    LTEXT           "Pages:",IDC_STATIC,7,7,26,8
+    PUSHBUTTON      "Change password...",IDC_MDP_CHANGE,229,40,79,14
+    CONTROL         "Password protected",IDC_PROTEGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,229,21,86,10
+    PUSHBUTTON      "Add new page",IDC_BUTTON2,229,63,80,14
+    PUSHBUTTON      "Delete page",IDC_DELETE,229,109,80,14
+    PUSHBUTTON      "Import page...",IDC_IMPORT,229,86,80,14
+END
+
+IDD_IMPORT_PAGE_CHILD DIALOG DISCARDABLE  0, 0, 252, 31
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,2,6,20,20
+    LTEXT           "Page name :",IDC_STATIC,30,3,39,8
+    CONTROL         "Make local copy",IDC_LOCAL_COPY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,30,17,66,10
+    EDITTEXT        IDC_PAGE_NAME,75,1,172,14,ES_AUTOHSCROLL
+END
+
+IDD_CHANGE_PWD DIALOG DISCARDABLE  0, 0, 243, 64
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Password"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PWD,7,17,164,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CONFIRM,7,43,164,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,186,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,186,26,50,14
+    LTEXT           "Please enter the new password for this page:",
+                    IDC_STATIC,7,5,134,8
+    LTEXT           "Confirm password :",IDC_STATIC,7,33,58,8
+END
+
+IDD_CHOOSE_EDITOR_CHILD DIALOG DISCARDABLE  0, 0, 252, 31
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Warning !\nYou must choose an application that can edit image files ( Bitmap Files ).\nIf you are not sure please leave the default image editor.",
+                    IDC_STATIC,30,0,217,27,SS_SUNKEN
+    ICON            IDR_MAINFRAME,IDC_STATIC,2,6,16,16
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Transparent Desktop\0"
+            VALUE "FileVersion", "1, 0, 0, beta\0"
+            VALUE "InternalName", "TransparentDesktop\0"
+            VALUE "LegalCopyright", "Copyright (C) Lucien PILLONI 1997\0"
+            VALUE "OriginalFilename", "TransparentDesktop.EXE\0"
+            VALUE "ProductName", "Transparent Desktop Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_ACTIVEDESKTOP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 329
+        VERTGUIDE, 76
+        VERTGUIDE, 84
+        VERTGUIDE, 244
+        VERTGUIDE, 256
+        VERTGUIDE, 318
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+        HORZGUIDE, 60
+    END
+
+    IDD_WORKING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_PROPPAGE_MEDIUM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        VERTGUIDE, 65
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_PROPPAGE_MEDIUM1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_PROPPAGE_MEDIUM2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        VERTGUIDE, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 124
+        HORZGUIDE, 21
+    END
+
+    IDD_IMPORT_PAGE_CHILD, DIALOG
+    BEGIN
+        RIGHTMARGIN, 247
+        BOTTOMMARGIN, 27
+    END
+
+    IDD_CHANGE_PWD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 57
+    END
+
+    IDD_CHOOSE_EDITOR_CHILD, DIALOG
+    BEGIN
+        RIGHTMARGIN, 247
+        BOTTOMMARGIN, 27
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Transparent Desktop..."
+    IDS_TIP                 "Right clic to activate the menu"
+    IDS_WAITING             "Transparent Desktop is waiting your background image beeing edited"
+    IDS_CONFIRM_NOBACKUP    "If you don't make backups of your initial image, you will lose it after edition\nEach version of your image is backed up before it is modified. You can get your old backup files in the Backup directory under the directory where this program is installed. You can delete them with the Explorer if you do not have enough disk space.\nDo you confirm that  you don't want to make backup ?"
+    IDS_TITRE               "Transparent desktop"
+    IDS_TITRE_FENETRE       "Your graphic desktop"
+    IDS_TITRE_PAGE1         "Graphic Editor"
+    IDS_BUTTON              "Hide"
+    IDS_COLONNE_NOM         "Name"
+    IDS_COLONNE_PASSWORD    "Password"
+    IDS_ERREUR_REGION       "Warning ! Your image is too complex. Windows cannot handle so complex regions.\nYou should edit your image to symplify it.\nThe old region has been kept."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TITRE_REGION        "Image to complex"
+    IDS_FORMAT_NOM_PAGE     "Page %d"
+    IDS_FORMAT_NOM_IMAGES   "Pages\\Image %d.BMP"
+    IDS_UNLOCKED            "Congratulation !\nYour Transparent Desktop is now unlocked. You will now have access to all this software functionnalities.\nThe Registration page will be removed the next time you launch this program."
+    IDS_NOT_UNLOCKED        "Sorry, you must obtain the registration key.\nThis is a SHAREWARE program.\nPlease see the registration page."
+    IDS_OUI                 "Yes"
+    IDS_NON                 "No"
+    IDS_IMAGE_NON_MODIFIEE  "Transparent Desktop has detected that you exited form your graphic editor without saving your image.\nDo you wan Transparent Desktop to scan your image anyway ?"
+    IDS_PASSWORD_DIFFERENT  "The new and confirm password do not match. Please type them again."
+    IDS_PASSWORD_INCORRECT  "The password you typed is incorrect. Try typing it again."
+    IDS_SUPP_IMAGE_COURANTE "Sorry, you cannot delete the current image.\nIf you want to delete this image, you must first display another one using the menu in the tray bar."
+    IDS_CONFIRM_SUPP_IMAGE  "Do you really want to delete this image ?"
+    IDS_NO_BITMAP           "Oops ! The needed bitmap has not been found.\nThe associated file may be missing or corrupted.\nYou should select another page and delete this one from Transparent Desktop."
+    IDS_TIP1                "You should draw your notes in colorfull rectangles\r\nThis enable Transparent Desktop to optimize the region for the background window. So it will need less memory ( see help file )."
+    IDS_TIP2                "You can clic on a note, this will move all the notes in front of your screen."
+    IDS_TIP3                "Right clic on the Transparent Desktop icon in the tray bar to access the menu."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TIP4                "Left clic on the Transparent Desktop icon in the tray bar to move your notes to foreground."
+    IDS_TIP5                "You can have as many background notes pages as you want ( depending on your disk space )."
+    IDS_TIP6                "You can switch between the pages by selecting the ""Display"" sub menu in the tray bar menu."
+    IDS_TIP7                "You can display the configuration window by selecting the ""Configure"" command in the menu."
+    IDS_TIP8                "You can set your favorite image editor in the configuration box."
+    IDS_TIP9                "You can rename the pages.\r\nJust click on a page name in the configuration page and hit F2 ( just like you rename a file in the Windows Explorer )."
+    IDS_TIP10               "You can protect your pages with a password.\r\nEach page can have a different password. Don't forget them !\r\nI suggest you choose the same password for all the protected pages."
+    IDS_TIP11               "Left double clic on the tray icon to edit your notes."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CANNOT_HELP         "Warning !\nTransparent Desktop could not open the help file. This file may be missing.\nPlease check the installation ( and may be reinstall the program if the help file was deleted )."
+    IDS_TIMEOUT_EDIT        "Transparent Desktop has detected that the image editor is not finished after a long time, it may be hanged.\nPress ""yes"" to continue waiting if you are still editing the notes.\nPress ""No"" if you want to stop waiting for the image editor\nPress ""Cancel"" if your image editor is hanged and you want to terminate it.."
+    IDS_CANNOT_LAUNCH       "Transparent Desktop cannot launch your image editor.\nPlease make sure that the image editor you have choosen is correctly installed."
+    IDS_FILTRE_IMAGE_EDITOR "Image editors (*.EXE)|*.EXE||"
+    IDS_TIP_WAIT_EDITOR     "Transparent Desktop is waiting the image editor to end"
+    IDS_FIRST_TIME_EDIT     "This is the first time you will edit your notes\nMake sure the background of your image is BLACK. All black parts of the image will be transparent. The other color parts will be displayed.\nSo the first thing you should do is set the background color of your image editor to black and clear the image."
+END
+
+#endif    // Anglais (E.-U.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 229, 112
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter key code"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,105,91,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,172,91,50,14
+    LTEXT           "This key code is necessary to unlock this program.\nTo obtain this key code, you must get the registered version ( please see the registrering page ).\nAfter you have entered the key code, you will get access to all the software functionnalities.",
+                    IDC_STATIC,7,7,215,25
+    LTEXT           "If you already have the registered but you did reinstall Windows, just send me a message asking for the new key code ( don't forget to send me the new lock code ).",
+                    IDC_STATIC,7,37,215,30
+    LTEXT           "Unlock code :",IDC_STATIC,7,72,42,8
+    EDITTEXT        IDC_CODE,65,69,157,14,ES_AUTOHSCROLL
+END
+
+IDD_PWD DIALOG DISCARDABLE  0, 0, 241, 45
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Password"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PWD,7,24,164,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,184,7,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,184,24,50,14
+    LTEXT           "Please enter the password for this page:",IDC_STATIC,7,
+                    7,120,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_PWD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\TransparentDesktop.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\TransparentDesktop.ico"
+IDR_WAITING             ICON    DISCARDABLE     "res\\idr_main.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\ico00001.ico"
+IDR_MAINFRAME1          ICON    DISCARDABLE     "res\\ico00002.ico"
+IDR_MAINFRAME2          ICON    DISCARDABLE     "res\\ico00003.ico"
+IDR_MAINFRAME3          ICON    DISCARDABLE     "res\\ico00004.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\Introduction.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "f"
+    BEGIN
+        POPUP "Display"
+        BEGIN
+            MENUITEM "xxx",                         ID_F_DISPLAY_XXX
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Configure...",                ID_CONFIGURE
+        MENUITEM "Edit background image...",    ID_EDITERLIM
+        MENUITEM SEPARATOR
+        MENUITEM "About...",                    ID_ABOUT
+        MENUITEM "Help...",                     ID_F_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_EXIT
+    END
+END
+
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\TransparentDesktop.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

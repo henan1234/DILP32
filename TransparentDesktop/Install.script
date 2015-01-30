@@ -1,0 +1,33 @@
+; Fichier de script pour installation de Transparent  Desktop
+;	ATTENTION, l'ordre est important
+;
+;	$Source			:	Fichier source d'installation
+;	$ProgramFilesDir:	Repertoire des fichiers d'application
+;	$Windows		:	Repertoire de Windows
+;	$StartMenu		:	Repertoire du menu startup
+;	$Startup		:	Repertoire de demarrage automatique
+;
+;	&AppInstallDir		:	Repertoire d'installation choisi par l'utilisateur
+;
+
+ProgramName	"Transparent Desktop"
+
+Installation "$ProgramFilesDir\Transparent Desktop"
+
+CreateDir	"$AppInstallDir"
+CreateDir	"$AppInstallDir\Help"
+CreateDir	"$AppInstallDir\Pages"
+
+CopyFile	"$SourceDir\TransparentDesktop.exe","$AppInstallDir\TransparentDesktop.exe"
+CopyDir		"$SourceDir\Help", "$AppInstallDir\Help"
+CopyDir		"$SourceDir\Pages", "$AppInstallDir\Pages"
+
+CreateShortcut	"$StartupDir\Transparent Desktop.lnk","$AppInstallDir\TransparentDesktop.exe","Transparent Desktop", 0
+
+DeleteFile	"$SourceDir\TransparentDesktop.exe"
+DeleteDir	"$SourceDir\Help"
+DeleteDir	"$SourceDir\Pages"
+
+Open		"$AppInstallDir\Help\WADHelp.htm"
+Open		"$StartupDir\Transparent Desktop.lnk"
+

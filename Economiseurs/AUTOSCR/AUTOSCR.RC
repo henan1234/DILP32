@@ -1,0 +1,120 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+100                     ICON    DISCARDABLE     "ICON1.ICO"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_SCRNSAVECONFIGURE DIALOG DISCARDABLE  0, 0, 185, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Configuration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,6,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,129,23,50,14
+    GROUPBOX        "Etats",-1,7,6,119,45
+    GROUPBOX        "Grille",-1,6,55,119,50
+    ICON            100,-1,147,86,18,20
+    LTEXT           "Min.",-1,18,35,30,8
+    RTEXT           "Max.",-1,85,35,30,8
+    LTEXT           "Min.",-1,18,87,30,8
+    RTEXT           "Max.",-1,85,89,30,8
+    CTEXT           "0",IDC_NB_ETAT,53,35,30,8
+    CTEXT           "0",IDC_NB_GRILLE,53,89,30,8
+    PUSHBUTTON      "Couleurs",IDC_COULEURS,129,40,50,14
+    PUSHBUTTON      "A propos...",IDC_APROPOS,129,57,50,14
+    CONTROL         "Generic1",IDC_ETATS,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,15,16,103,15
+    CONTROL         "Generic2",IDC_GRILLE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,15,68,103,15
+END
+
+IDD_APROPOS DIALOG DISCARDABLE  0, 0, 255, 91
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,96,75,50,14
+    LTEXT           "Règles :\nChaque cellule est à un état de 0 à n.Si une au moins de ses voisines est à l'état n+1, alors la cellule prend l'état n+1. ",
+                    IDC_STATIC,3,2,249,26
+    LTEXT           "Copyright (c) 1994 Lucien PILLONI",IDC_STATIC,12,47,128,
+                    13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_APROPOS             BITMAP  DISCARDABLE     "APROPOS.BMP"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

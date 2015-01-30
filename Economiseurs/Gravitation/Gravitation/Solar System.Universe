@@ -1,0 +1,122 @@
+;
+;	The Solar system
+;	Author : Lucien PILLONI
+;	Datas from Ms Encarta 96
+;	Only the inner planets are visible, you can change 'Distance multiplicator' or
+;	'Max zoom factor' to see the outer planets
+;
+
+[Universe Parameters]
+3D Physical Model=0
+Display Lines=0
+Dust scattering=75
+Change Resolution=0
+Escape Velocity %=20
+Comets creation (1/)=500000
+Colision relative speed max=1
+Starfield density ( 0 for no star )=400
+Universe creation method=3
+Max distance=0
+Delete trajectories=1
+Constant of gravity (G)=50000
+Time multiplicator=100
+Nb images by second=25
+Dust max number=200
+Dust size max=2
+Solar wind=30
+Dust life length=3
+Max zoom factor=5
+Distance multiplicator=1000000
+Radius multiplicator=0.015
+Time interval max=0
+Initial planets number=50
+Planets max number=300
+Planets min number=1
+Traveling=0.01
+Thread Priority=2
+BlackBackGround=1
+
+[Masses]
+Mass 1=0.0001
+Mass 2=0.001
+Mass 3=0.01
+Mass 4=0.1
+Mass 5=0.7
+Mass 6=1.1
+Mass 7=500
+Mass 8=1000
+
+;	For all the masses : earth = 1
+;
+
+; The sun
+[Planet0]
+Mass=332775919
+Position=0,0,0
+Speed=0,0,0
+Rotation=2.49e-4
+
+
+;Mercury
+[Planet1]
+Mass=0.06
+Orbit=0
+Distance=57900000
+Rotation=1.7e-2
+
+; Venus
+[Planet2]
+Mass=0.82
+Orbit=0
+Distance=108200000
+Rotation=-0.004
+
+;Earth
+[Planet3]
+Mass=1
+Orbit=0
+Distance=149503000
+Rotation=1
+
+;Mars
+[Planet4]
+Mass=0.11
+Orbit=0
+Distance=227900000
+Rotation=0.97
+
+; Jupiter
+[Planet5]
+Mass=317.8
+Orbit=0
+Distance=777840000
+Rotation=2.44
+
+; Saturn
+[Planet6]
+Mass=95.1
+Orbit=0
+Distance=1429400000
+Rotation=2.25
+
+; Uranus
+[Planet7]
+Mass=14.5
+Orbit=0
+Distance=2875000000
+Rotation=1.39
+
+
+;Neptune
+[Planet8]
+Mass=17.2
+Orbit=0
+Distance=450430000
+Rotation=1.5
+
+;Pluto
+[Planet9]
+Mass=0.004
+Orbit=0
+Distance=5900100000
+Rotation=0.15

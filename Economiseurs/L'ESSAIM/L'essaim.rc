@@ -1,0 +1,129 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include <scrnsave.h>
+
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_SCRNSAVECONFIGURE DIALOG DISCARDABLE  0, 0, 245, 205
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Essaim"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,60,185,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,134,186,50,14
+    ICON            IDI_ICON1,IDC_STATIC,10,2,18,20
+    ICON            IDI_ICON2,IDC_STATIC,10,25,18,20
+    LTEXT           "Essaim d'abeilles\nCopyright (c) Lucien PILLONI 1995\nSur une idée de Denis Flavel",
+                    IDC_STATIC,36,2,165,26
+    CONTROL         "Generic1",IDC_NB_ABEILLES,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,33,66,173,22
+    CONTROL         "Generic2",IDC_ALEATOIRE,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_BOTH | WS_TABSTOP,33,93,173,22
+    ICON            IDI_UNE_ABEILLE,IDC_STATIC,12,64,18,20
+    GROUPBOX        "Paramètres",IDC_STATIC,5,51,237,129
+    ICON            IDI_PLEIN_D_ABEILLES,IDC_STATIC,218,64,18,20
+    ICON            IDI_ALEATOIRE_MOINS,IDC_STATIC,12,92,18,20
+    ICON            IDI_ALEATOIRE_PLUS,IDC_STATIC,218,92,18,20
+    CONTROL         "Generic2",IDC_VITESSE,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_TABSTOP,33,122,173,22
+    ICON            IDI_LENT,IDC_STATIC,12,120,18,20
+    ICON            IDI_RAPIDE,IDC_STATIC,218,120,18,20
+    CONTROL         "Generic2",IDC_ATTRACTION,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,33,150,173,22
+    ICON            IDI_LOIN,IDC_STATIC,12,149,18,20
+    ICON            IDI_PRES,IDC_STATIC,218,149,18,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "id_app.ico"
+IDI_ICON2               ICON    DISCARDABLE     "lpi.ico"
+IDI_UNE_ABEILLE         ICON    DISCARDABLE     "icon3.ico"
+IDI_PLEIN_D_ABEILLES    ICON    DISCARDABLE     "une_abei.ico"
+IDI_ALEATOIRE_MOINS     ICON    DISCARDABLE     "ico00001.ico"
+IDI_ALEATOIRE_PLUS      ICON    DISCARDABLE     "ico00002.ico"
+IDI_LENT                ICON    DISCARDABLE     "ico00003.ico"
+IDI_RAPIDE              ICON    DISCARDABLE     "ico00004.ico"
+IDI_LOIN                ICON    DISCARDABLE     "loin.ico"
+IDI_PRES                ICON    DISCARDABLE     "pres.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include <scrnsave.h>\r\n"
+    "\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_DROITE              BITMAP  DISCARDABLE     "droite.bmp"
+IDB_GAUCHE              BITMAP  DISCARDABLE     "gauche.bmp"
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,399 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Anglais (E.-U.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INSTAL_DIALOG DIALOGEX 0, 0, 185, 92
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Instal"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,128,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,128,23,50,14
+    LTEXT           "TODO: Place dialog controls here.",IDC_STATIC,5,34,113,
+                    8
+END
+
+IDD_PROPPAGE_MEDIUM DIALOGEX 0, 0, 374, 201
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Information"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         130,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,7,6,104,
+                    188,WS_EX_CLIENTEDGE
+    LTEXT           "This program will install the Lucien PILLONI screen savers package on your machine.",
+                    IDC_INFOS,120,6,247,63
+END
+
+IDD_PROPPAGE_MEDIUM1 DIALOGEX 0, 0, 355, 202
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Installation directory"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         130,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,7,7,104,
+                    188,WS_EX_CLIENTEDGE
+    LTEXT           "Installation directory :",IDC_STATIC,124,7,63,8
+    EDITTEXT        IDC_DIRECTORY,124,20,224,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Change...",IDC_CHANGE,124,44,50,14
+    LTEXT           "Needed disk space :",IDC_STATIC,124,81,64,8
+    LTEXT           "Static",IDC_SPACE,202,82,49,8
+END
+
+IDD_PROPPAGE_MEDIUM2 DIALOGEX 0, 0, 399, 210
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Confirm installation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         130,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,7,7,104,
+                    196,WS_EX_CLIENTEDGE
+    LTEXT           "The screen savers package will be installed in the following directory. Click Next to begin installation.\n\nClic the Cancel button to abort installation.",
+                    IDC_INFOS,122,7,270,39
+    LTEXT           "Installation directory :",IDC_STATIC,122,58,76,8
+    EDITTEXT        IDC_EDIT1,122,78,153,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_PROPPAGE_MEDIUM3 DIALOGEX 0, 0, 324, 207
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Installation finished"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         130,-1,"Static",SS_BITMAP | SS_REALSIZEIMAGE | SS_SUNKEN,
+                    7,7,104,194,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATUS,122,7,195,141,ES_MULTILINE | ES_READONLY
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Application d'installation\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Instal\0"
+            VALUE "LegalCopyright", "Copyright (C) Lucien PILLONI 1997\0"
+            VALUE "OriginalFilename", "Instal.EXE\0"
+            VALUE "ProductName", "Instal Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_INSTAL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_PROPPAGE_MEDIUM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_PROPPAGE_MEDIUM1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        VERTGUIDE, 36
+        VERTGUIDE, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_PROPPAGE_MEDIUM2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 392
+        VERTGUIDE, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_PROPPAGE_MEDIUM3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 201
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OK                  "The installation has been successfully performed."
+    IDS_KO                  "Something anormal happened when installing.\nPlease check your disc is not full and the installation files has not been damaged."
+END
+
+#endif    // Anglais (E.-U.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPPAGE_MEDIUM DIALOGEX 0, 0, 374, 201
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Information"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         130,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,7,6,104,
+                    188,WS_EX_CLIENTEDGE
+    LTEXT           "Ce programme va installer les économiseurs d'écran de Lucien PILLONI sur votre machine",
+                    IDC_INFOS,120,6,247,63
+END
+
+IDD_PROPPAGE_MEDIUM1 DIALOGEX 0, 0, 355, 202
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Répertoire d'installation"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         130,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,7,7,104,
+                    188,WS_EX_CLIENTEDGE
+    LTEXT           "Répertoire d'installation",IDC_STATIC,124,7,63,8
+    EDITTEXT        IDC_DIRECTORY,124,20,224,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Change...",IDC_CHANGE,124,44,50,14
+    LTEXT           "Espace disque nécessaire :",IDC_STATIC,124,81,89,8
+    LTEXT           "Static",IDC_SPACE,217,82,49,8
+END
+
+IDD_PROPPAGE_MEDIUM2 DIALOGEX 0, 0, 367, 202
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Confirmation de l'installation"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         130,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,7,7,104,
+                    188,WS_EX_CLIENTEDGE
+    LTEXT           "L'installation va être faite dans le répertoire suivant.\nCliquez sur OK pour commencer l'installation.\nCliquez sur Annuler pour sortir de l'installation",
+                    IDC_INFOS,122,7,238,39
+    LTEXT           "Répertoire d'installation:",IDC_STATIC,122,58,76,8
+    EDITTEXT        IDC_EDIT1,122,78,153,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_PROPPAGE_MEDIUM3 DIALOGEX 0, 0, 324, 207
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Installation terminée"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         130,-1,"Static",SS_BITMAP | SS_REALSIZEIMAGE | SS_SUNKEN,
+                    7,7,104,194,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATUS,122,7,195,141,ES_MULTILINE | ES_READONLY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PROPPAGE_MEDIUM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_PROPPAGE_MEDIUM1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        VERTGUIDE, 36
+        VERTGUIDE, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_PROPPAGE_MEDIUM2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 360
+        VERTGUIDE, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_PROPPAGE_MEDIUM3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 201
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\Instal.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Instal.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\Installation.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OK                  "L'installation s'est correctement déroulée"
+    IDS_KO                  "Quelque chose d'anormal s'est passé pendant l'installation.\nVérifiez que votre disque n'est pas plein et que les fichiers d'installation n'ont pas été endommagés."
+END
+
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\Instal.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,176 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Gravitation, skin files</title>
+<meta name="KEYWORDS"
+content="win, windows, 95, 98, NT, saver, screensaver, screen saver, shareware, Gravitation, stars, planets, asteroids, universe, scrsave">
+<link REL="stylesheet" HREF="styles.css" TYPE="text/css">
+<META HTTP-EQUIV="Page-Enter" CONTENT="filter:RevealTrans(Duration=1.000, Transition=2)"> 
+
+<base target="main">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" background="fond.jpg" bgproperties="fixed">
+
+<h2><a name="Skinfiles"><font face="Arial">Skin files</font></a></h2>
+
+<p><font face="Arial">Registered and shareware users can use skin files to customize the
+screen saver look. You can use these sample files or create your own pictures. Any object
+you will use will move according the gravity laws, only the look is changed. These
+screenshots have been reduced to optimize the download of this page. The two following
+skins are included with the installation program.</font></p>
+<h3><font face="Arial">Available skin files:</font></h3>
+Gravitation comes with three skins:
+<ul>
+<li>The default one (no skin file use), planets, stars, asteroids...</li>
+<li>The Renaissance skin file</li>
+<li>The Summer skin file</li>
+<li>Additional skin files to download:
+	<ul>
+	<li><a href="christmas.zip">Christmas skin</a></li>
+	<li>Send me your own skin files !"</li>
+	</ul>
+</li>
+</ul>
+<p><font face="Arial">Renaissance skin file.</font></p>
+
+<p align="center"><a href="rennaissance.jpg"><img src="screenshot2.jpg" width="203"
+height="166" alt="Renaissance Skin"></a></p>
+
+<p><font face="Arial">Beach skin file. </font></p>
+
+<p align="center"><a href="summerskin.jpg"><img src="summerskintn.jpg"
+alt="Summer skin screenshot" width="208" height="172"></a></p>
+
+<h3><font face="Arial">To use a skin file:</font></h3>
+
+<p><font face="Arial">Download the file, extract it into the directory of you choice ( the
+description file and the bitmap files should be in the same directory ).</font> 
+
+<ul>
+  <li><font face="Arial">Open the Gravitation configuration window.</font></li>
+  <li><font face="Arial">Go to the 'Display' section.</font></li>
+  <li><font face="Arial">Check the 'Use skin file' option</font></li>
+  <li><font face="Arial">Enter the path to the skin file into the 'Skin file' option.</font></li>
+</ul>
+
+<h3><font face="Arial">How to create a skin file:</font></h3>
+
+<p><font face="Arial">The easiest way to create your own skin file is to start from the
+one provided with the installation program.</font></p>
+
+<p><font face="Arial">A 'skin file' is composed from various files:</font> 
+
+<ul>
+  <li><font face="Arial">A description text file</font></li>
+  <li><font face="Arial">Severall picture files</font></li>
+  <li><font face="Arial">A palette file</font></li>
+</ul>
+
+<p><font face="Arial">In the following, I will assume that you can use a text editor and a
+graphic editor. You must also know picture formats, color palettes...</font></p>
+
+<h4><font face="Arial">Description file:</font></h4>
+
+<p><font face="Arial">This is the text file that helps Gravitation find other files and
+some option. Following is a sampel description file:</font></p>
+
+<table border="1" bgcolor="#C0C0C0" cellspacing="1">
+  <tr>
+    <td width="317">[Skin]</td>
+    <td width="657">Must be the first line of the description file</td>
+  </tr>
+  <tr>
+    <td width="317">CrossHair color=135</td>
+    <td width="657">Palette index (0..255) to display the crosshair</td>
+  </tr>
+  <tr>
+    <td width="317">Comet image=-1</td>
+    <td width="657">Index of the image that have comet tail. Use -1 if no one of your bitmaps
+    is a comet</td>
+  </tr>
+  <tr>
+    <td width="317">Nb background images=0</td>
+    <td width="657">Number of pictures that will be displayed in the background (1..16)</td>
+  </tr>
+  <tr>
+    <td width="317">Nb Images=5</td>
+    <td width="657">Number of planet images (1..16)</td>
+  </tr>
+  <tr>
+    <td width="317">Transparency=64</td>
+    <td width="657">Palette of the transparency part of the pictures (0.255) (the palette
+    color used for the transparency is also the color of the background ).</td>
+  </tr>
+  <tr>
+    <td width="317">Palette=Renaissance\PaletteCuivre.dib</td>
+    <td width="657">Name of the palette file that contains all the 255 colors. I suggest you
+    use the one provided with the installation programm and change the palette keeping color
+    indexes to create your own.</td>
+  </tr>
+  <tr>
+    <td width="317">Explosion=Renaissance\explosion.dib</td>
+    <td width="657">Name of the picture used to display explosions when planets collide.</td>
+  </tr>
+  <tr>
+    <td width="317">Planet 0=Renaissance\Sputnik.dib</td>
+    <td width="657">Name of a picture for a planet. This picture is a horizontal collection of
+    square picture. Each square is a frame from the planet animation. You can have as many
+    frames as you want, within memory limits. The picture file must be a 256 colors windows
+    DIB file. Transparent parts of the image must be colored with the palette index specified
+    with the transparency option. </td>
+  </tr>
+  <tr>
+    <td width="317">Planet 1=Renaissance\Fusee.dib</td>
+    <td width="657">Name of the second planet picture. You can have up to 16 planet pictures.</td>
+  </tr>
+  <tr>
+    <td width="317">Background 0=</td>
+    <td width="657">Name of the first background picture. The background pictures must use be
+    Windows 256 colors DIB files and use the same color palette as the planet files. Should I
+    say, all picture from a skin file must use the same palette, I'm sure you already know
+    that.</td>
+  </tr>
+  <tr>
+    <td width="317">Background 1=</td>
+    <td width="657">Name of the second background picture. You can have up to 16 background
+    pictures</td>
+  </tr>
+  <tr>
+    <td width="317">Nb Star colors=10</td>
+    <td width="657">Number of palette colors used to display the background stars (0..20).</td>
+  </tr>
+  <tr>
+    <td width="317">Star color 0=246</td>
+    <td width="657">One of the color indexes used to display the background stars.</td>
+  </tr>
+  <tr>
+    <td width="317">Nb Comet colors=5</td>
+    <td width="657">Number of palette colors used to display the comet tails (0..20).</td>
+  </tr>
+  <tr>
+    <td width="317">comet color 0=239</td>
+    <td width="657">One of the color indexes used to display the comet tail.</td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<h4><font face="Arial">Creating the picture files:</font></h4>
+
+<p><font face="Arial">- Draw all you picture frame into separate files. Each picture must
+be square and have the same size.</font></p>
+
+<p><font face="Arial">- Create a large file containing all your frames horizontally. You
+can find in the <a href="gravitation_download.html" target="main">downloads</a> section a
+utility that will help you to paste your frame into a single band.</font></p>
+
+<p><font face="Arial">- Apply the global palette to your picture.</font></p>
+
+<p><font face="Arial">- Save the picture into a 256 colors Windows DIB file.</font></p>
+
+<p>To be continued...</p>
+</body>
+</html>

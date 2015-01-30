@@ -1,0 +1,27 @@
+// Membre.cpp: implementation of the Membre class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "escalade.h"
+#include "Membre.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+Membre::Membre()
+{
+
+}
+
+Membre::~Membre()
+{
+
+}

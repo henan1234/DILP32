@@ -1,0 +1,53 @@
+[OPTIONS]
+Compatibility=1.1
+Compiled file=Gravitation.chm
+Default Window=Help
+Default topic=numbers.htm
+Display compile progress=No
+Language=0x409 English (United States)
+
+[WINDOWS]
+Help=,,,"numbers.htm",,,,,,0x2000,,0x0,,0x40000000,,,0,,,
+
+
+[FILES]
+zoom_factor.htm
+background_starfield.htm
+change_resolution.htm
+comet_creation.htm
+comets_section.htm
+Copy of planet_mass_0.htm
+creation_method.htm
+creation_section.htm
+delete_trajectories.htm
+display_crosshair.htm
+display_section.htm
+distance_multiplicator.htm
+dust_number.htm
+dust_scattering.htm
+dust_size.htm
+escape_velocity.htm
+g.htm
+images_per_second.htm
+initial_number.htm
+max_colision_speed.htm
+maximal_number.htm
+minimal_number.htm
+numbers.htm
+physical_model.htm
+planet_mass.htm
+planet_mass_0.htm
+planet_mass_1.htm
+planet_mass_2.htm
+planet_mass_3.htm
+planet_mass_4.htm
+planet_mass_5.htm
+planet_mass_6.htm
+planet_mass_7.htm
+radius_multiplicator.htm
+solar_wind.htm
+time_multiplicator.htm
+titre.htm
+traveling_speed.htm
+universe_file.htm
+3D.htm

@@ -1,0 +1,27 @@
+// Object.cpp: implementation of the CObject class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "Collection.h"
+#include "Object.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CObject::CObject()
+{
+
+}
+
+CObject::~CObject()
+{
+
+}

@@ -1,0 +1,983 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_COMMANDE DIALOGEX 0, 0, 247, 69
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_POPUP
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,7,35,12
+    COMBOBOX        IDC_COMBO1,7,7,183,103,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LISTE_COMMANDES,7,23,183,39,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Annuler",IDCANCEL,205,23,35,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_COMMANDE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        VERTGUIDE, 190
+        VERTGUIDE, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+        HORZGUIDE, 19
+        HORZGUIDE, 23
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_COMMAND             ICON    DISCARDABLE     "res\\ico00007.ico"
+IDI_BOUTON              ICON    DISCARDABLE     "res\\ico00008.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BOUTON              BITMAP  DISCARDABLE     "RES\\bouton.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    CG_IDS_TIPOFTHEDAY      "Affiche l'astuce du jour"
+    CG_IDS_TIPOFTHEDAYMENU  "&Astuce du jour..."
+    CG_IDS_DIDYOUKNOW       "Le saviez-vous ?"
+    CG_IDS_FILE_ABSENT      "Le fichier des astuces n'est pas présent dans le répertoir courant."
+    CG_IDP_FILE_CORRUPT     "Impossible de lire le fichier des astuces"
+    CG_IDS_TIPOFTHEDAYHELP  "&Aide"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 360, 249
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "A propos de Jibe96"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,21,20
+    LTEXT           "Jibe96 version 1.0",IDC_STATIC,68,7,119,8,SS_NOPREFIX
+    LTEXT           "Copyright © 1994 Lucien PILLONI",IDC_STATIC,68,15,119,8
+    DEFPUSHBUTTON   "OK",IDOK,321,7,32,14,WS_GROUP
+    LTEXT           "Ce logiciel préserve la couche d'ozone. Fait entièrement avec des octets recyclés. Toute ressemblance avec un logiciciel tournant ou  ayant tourné sur votre machine serait fortuite et extrémement désastreuse.",
+                    IDC_STATIC,68,54,279,26
+    LTEXT           "Aucun animal n'a été blessé pour le débug de ce logiciel. Laver ce logiciel séparement les trois premières fois. L'utilisation d'un préservatif est recommandée si vous utilisez plusieurs logiciels simultanément.",
+                    IDC_STATIC,68,81,279,25
+    LTEXT           "Ce logiciel a été écrit à temps perdu en fonction de l'inspiration du moment et de l'état de la neige, alors soyez tolérant. En cas de fumée suspecte, restez calme et dirigez vous lentement vers la sortie de Windows la plus proche.",
+                    IDC_STATIC,68,28,279,25
+    LTEXT           "Bill, la prochaîne fois, investi plus dans le développement et moins dans le marketing. Qui a été payé pour trouver un nom qui sera démodé 3 mois après la sortie du produit ?",
+                    IDC_STATIC,68,128,279,20
+    LTEXT           "Windows 95 est bourré de bugs et de trucs bizarres ou de comportements mals définis. Depuis Septembre 1995, l'informatique n'est plus une science exacte.",
+                    IDC_STATIC,68,107,279,20
+    ICON            IDI_ICON1,IDC_STATIC,40,32,21,20
+    ICON            IDI_ICON2,IDC_STATIC,40,59,21,20
+    LTEXT           "Mais qu'est que ça veut dire 'Jibe' ? Aucun rapport avec le logiciel présent, c'est une manoeuvre en planche à voile qui consiste à faire demi-tour dos au vent en prenant de la carre (comme en ski ou en surf ) et en profitant de la vitesse acquise.",
+                    IDC_STATIC,68,149,279,26
+    LTEXT           "C'est beau, c'est grisant. Robby Naish en est le roi ( voyez l'écran de lancement !!!).",
+                    IDC_STATIC,68,176,266,8
+    LTEXT           "Vive la poudreuse, les vagues et le vent. A bas les essais nucléaires et les organisations écolos qui ne protestent que contre les démocraties occidentales parce que ça rapporte plus et que c'est moins risqué.",
+                    IDC_STATIC,68,185,279,24
+    LTEXT           "Tout ce qui précède ou suit n'engage que moi. En aucun cas n'est engagée la responsabilité de mon employeur, de ma mère, de mes soeurs, de ma copine, de mes potes ni de quelque divinité que ce soit.",
+                    IDC_STATIC,68,210,279,26
+    ICON            IDI_ICON1,IDC_STATIC,40,86,21,20
+    ICON            IDI_ICON2,IDC_STATIC,40,113,21,20
+    ICON            IDI_ICON1,IDC_STATIC,40,140,21,20
+    ICON            IDI_ICON2,IDC_STATIC,40,167,21,20
+    ICON            IDI_ICON1,IDC_STATIC,40,194,21,20
+    ICON            IDI_ICON2,IDC_STATIC,40,222,21,20
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,62,23,291,219
+END
+
+IDD_DIALOG_NOTE DIALOG DISCARDABLE  0, 0, 236, 124
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Note"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Couleur de fond...",IDC_COULEUR,7,103,89,14,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE
+    CONTROL         "List1",IDC_ICONES,"SysListView32",LVS_SINGLESEL | 
+                    LVS_NOLABELWRAP | LVS_AUTOARRANGE | WS_BORDER | WS_GROUP | 
+                    WS_TABSTOP,7,7,222,91
+    DEFPUSHBUTTON   "OK",IDOK,108,103,50,14,WS_GROUP
+    PUSHBUTTON      "Annuler",IDCANCEL,179,103,50,14
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 293, 218
+STYLE DS_MODALFRAME | WS_POPUP
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_DISQUES,"SysListView32",LVS_SINGLESEL | 
+                    LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,7,7,279,81
+    CONTROL         "Slider1",IDC_ALARME,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,12,169,266,21
+    GROUPBOX        "Alarme",IDC_STATIC,7,148,279,62
+    EDITTEXT        IDC_PROPS,7,91,279,55,ES_MULTILINE | ES_READONLY | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "L'alarme clignote quand la place disponible sur le disque est en dessous du pourcentage donné",
+                    IDC_STATIC,17,190,246,19
+    LTEXT           "0%",IDC_STATIC,16,161,10,8
+    RTEXT           "100%",IDC_STATIC,260,158,18,8
+    CTEXT           "50%",IDC_STATIC,138,158,14,8
+END
+
+IDD_RAM DIALOGEX 0, 0, 208, 116
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTER | 
+    DS_CENTERMOUSE | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Mémoire RAM"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,26,95,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,118,95,50,14
+    LTEXT           "Alarme :",IDC_STATIC,40,7,26,8
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,37,28,164,29
+    ICON            IDI_RAMDISK,IDC_STATIC,7,7,21,20
+    LTEXT           "L'alarme clignote quand la quantité de mémoire disponible passe en dessous du seuil d'alarme.",
+                    IDC_STATIC,7,64,194,19
+    LTEXT           "0%",IDC_STATIC,37,19,10,8
+    RTEXT           "100%",IDC_STATIC,183,19,18,8
+    CTEXT           "50%",IDC_STATIC,112,19,14,8
+END
+
+IDD_MEM DIALOGEX 0, 0, 208, 100
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTER | 
+    DS_CENTERMOUSE | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Mémoire"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,26,79,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,118,79,50,14
+    LTEXT           "Alarme :",IDC_STATIC,40,7,26,8
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,37,24,164,22
+    ICON            IDI_PUCE,IDC_STATIC,7,7,18,20
+    LTEXT           "L'alarme clignote quand la quantité de mémoire disponible passe en dessous du seuil d'alarme.",
+                    IDC_STATIC,7,52,194,19
+    LTEXT           "0%",IDC_STATIC,37,17,10,8
+    RTEXT           "100%",IDC_STATIC,183,17,18,8
+    CTEXT           "50%",IDC_STATIC,112,17,14,8
+END
+
+IDD_SWAP DIALOGEX 0, 0, 208, 71
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTER | 
+    DS_CENTERMOUSE | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Fichier d'échange"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,26,50,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,118,50,50,14
+    LTEXT           "Alarme :",IDC_STATIC,40,7,26,8
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,37,17,164,29
+    ICON            IDI_PUCE,IDC_STATIC,7,7,18,20
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 200, 55
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | DS_CENTERMOUSE | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Separateur"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_HAUTEUR,61,7,40,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,103,7,
+                    11,14
+    DEFPUSHBUTTON   "OK",IDOK,14,34,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,78,34,50,14
+    LTEXT           "Hauteur :",IDC_STATIC,7,7,30,8
+    LTEXT           "",IDC_DESSIN,135,7,58,41,SS_SUNKEN
+END
+
+IDD_PREFERENCES DIALOGEX 0, 0, 328, 103
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Préférences"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SAUVEGARDE,99,7,222,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    WS_GROUP
+    CONTROL         "Texture",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,23,54,40,10
+    CONTROL         "Dégradé",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,135,54,
+                    40,10
+    CONTROL         "Défaut",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,247,54,
+                    40,10
+    DEFPUSHBUTTON   "OK",IDOK,171,82,50,14,WS_GROUP
+    PUSHBUTTON      "Annuler",IDCANCEL,271,82,50,14
+    LTEXT           "Fichier de sauvegarde :",IDC_STATIC,7,9,75,8
+    GROUPBOX        "Fond de la barre de contrôle",IDC_STATIC,7,35,314,40
+END
+
+IDD_PROPS_RACCOURCI DIALOG DISCARDABLE  0, 0, 318, 79
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NOM,80,7,229,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LGCOMM,80,28,163,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Parcourir...",IDC_PARCOURIR,261,28,50,14
+    PUSHBUTTON      "Icône...",IDC_ICONE,7,58,50,14
+    DEFPUSHBUTTON   "OK",IDOK,195,58,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,261,58,50,14
+    LTEXT           "Nom :",IDC_STATIC,7,7,20,8
+    LTEXT           "Ligne de commande :",IDC_STATIC,7,32,69,8
+END
+
+IDD_GROUPE DIALOGEX 0, 0, 186, 47
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Groupe"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_NOM,35,7,144,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,28,26,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,102,26,50,14
+    LTEXT           "Nom :",IDC_STATIC,7,7,20,8
+END
+
+IDD_CHANGE_ICONE DIALOGEX 0, 0, 210, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Changer d'icône"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,17,196,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_ICONES,7,47,139,96,NOT LBS_NOTIFY | 
+                    LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | 
+                    LBS_MULTICOLUMN | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP | 
+                    0x2000
+    DEFPUSHBUTTON   "OK",IDOK,153,47,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,153,66,50,14,0,WS_EX_ACCEPTFILES
+    PUSHBUTTON      "&Parcourir...",IDC_PARCOURIR,153,129,50,14
+    LTEXT           "Nom de fichier :",IDC_STATIC,7,7,50,8
+    LTEXT           "Icône courante :",IDC_STATIC,7,34,53,8
+END
+
+IDD_SEUIL_ALARME DIALOGEX 0, 0, 191, 46
+STYLE DS_MODALFRAME | DS_NOIDLEMSG | DS_3DLOOK | WS_POPUP
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Seuil d'alarme :",IDC_STATIC,5,5,48,8
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,5,14,181,18
+    LTEXT           "0%",IDC_STATIC,5,33,10,8
+    RTEXT           "100%",IDC_STATIC,168,33,18,8
+    LTEXT           "50%",IDC_STATIC,88,33,14,8
+    LTEXT           "0%",IDC_PCT,59,5,43,8
+END
+
+IDD_SURVEILLE DIALOGEX 0, 0, 307, 124
+STYLE WS_POPUP | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_EVENEMENTS,0,0,307,124,NOT LBS_NOTIFY | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_OPTIONS_SURVEILLE DIALOGEX 0, 0, 191, 95
+STYLE DS_MODALFRAME | DS_CENTERMOUSE | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Options de surveillance"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,134,7,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,134,24,50,14
+    CONTROL         "Changement de fichiers",IDC_FICHIERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,7,90,10
+    CONTROL         "Changement de répertoire",IDC_REPERTOIRES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,21,97,10
+    CONTROL         "Changement d'attributs",IDC_ATTRIBUTS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,35,88,10
+    CONTROL         "Changement de taille",IDC_TAILLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,49,82,10
+    CONTROL         "Date de modification",IDC_DATE_MODIF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,63,81,10
+    CONTROL         "Inclure les sous répertoires",IDC_SOUSREP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,78,99,10
+END
+
+IDD_TIP DIALOG DISCARDABLE  0, 0, 231, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Astuce du jour"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",-1,"Static",SS_BLACKFRAME,12,11,207,123
+    LTEXT           "Some String",IDC_TIPSTRING,28,63,177,60
+    CONTROL         "&Montrer l'astuce au prochain lancement",IDC_STARTUP,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,13,136,
+                    177,10
+    PUSHBUTTON      "&Prochaine",IDC_NEXTTIP,109,149,50,14,WS_GROUP
+    DEFPUSHBUTTON   "&Fermer",IDOK,168,149,50,14,WS_GROUP
+    CONTROL         "",IDC_BULB,"Static",SS_BITMAP,20,17,190,111
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 353
+        VERTGUIDE, 68
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_DIALOG_NOTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 286
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_RAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_MEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_SWAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PREFERENCES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 321
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_PROPS_RACCOURCI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 311
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_GROUPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_CHANGE_ICONE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_SEUIL_ALARME, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 186
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 41
+    END
+
+    IDD_OPTIONS_SURVEILLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_TIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Jibe96.ico"
+IDI_CDROM               ICON    DISCARDABLE     "res\\Cdrom.ico"
+IDI_FLOPPYDISK          ICON    DISCARDABLE     "res\\Floppy.ico"
+IDI_HARDDISK            ICON    DISCARDABLE     "res\\Disque_d.ico"
+IDI_NETWORKDISK         ICON    DISCARDABLE     "res\\Disque_r.ico"
+IDI_PUCE                ICON    DISCARDABLE     "res\\ico00003.ico"
+IDI_RAMDISK             ICON    DISCARDABLE     "res\\Ramdisk.ico"
+//IDR_JIBE96TYPE          ICON    DISCARDABLE     "res\\Jibe96Doc.ico"
+NOTE0                   ICON    DISCARDABLE     "res\\Icon1.ico"
+NOTE1                   ICON    DISCARDABLE     "res\\Note2.ico"
+NOTE10                  ICON    DISCARDABLE     "res\\Note12.ico"
+NOTE11                  ICON    DISCARDABLE     "res\\Note11.ico"
+NOTE12                  ICON    DISCARDABLE     "res\\Note10.ico"
+NOTE13                  ICON    DISCARDABLE     "res\\note13.ico"
+NOTE14                  ICON    DISCARDABLE     "res\\ico00004.ico"
+NOTE15                  ICON    DISCARDABLE     "res\\note15.ico"
+NOTE2                   ICON    DISCARDABLE     "res\\Note1.ico"
+NOTE3                   ICON    DISCARDABLE     "res\\Ico00001.ico"
+NOTE4                   ICON    DISCARDABLE     "res\\Note8.ico"
+NOTE5                   ICON    DISCARDABLE     "res\\Note4.ico"
+NOTE6                   ICON    DISCARDABLE     "res\\Icon2.ico"
+NOTE7                   ICON    DISCARDABLE     "res\\Note6.ico"
+NOTE8                   ICON    DISCARDABLE     "res\\Note9.ico"
+NOTE9                   ICON    DISCARDABLE     "res\\Ico00002.ico"
+APPLICATION             ICON    DISCARDABLE     "res\\idr_main.ico"
+NOTE16                  ICON    DISCARDABLE     "res\\note16.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\ico00005.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\ico00006.ico"
+IDI_SURVEILLE_REP       ICON    DISCARDABLE     "res\\icon3.ico"
+IDI_SURVEILLE_REP1      ICON    DISCARDABLE     "res\\surveill.ico"
+NOTE17                  ICON    DISCARDABLE     "res\\note17.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_HORLOGE             BITMAP  DISCARDABLE     "res\\Horlmin.bmp"
+IDB_FOND                BITMAP  DISCARDABLE     "res\\FOND.bmp"
+IDB_DATE                BITMAP  DISCARDABLE     "res\\DATE.bmp"
+IDB_DISQUE              BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_RAM                 BITMAP  DISCARDABLE     "res\\RAM.bmp"
+IDB_SPLASH              BITMAP  DISCARDABLE     "Splash.bmp"
+IDB_MEM                 BITMAP  DISCARDABLE     "res\\MEM.bmp"
+IDB_SWAP                BITMAP  DISCARDABLE     "res\\swap.bmp"
+IDB_SWAP16              BITMAP  DISCARDABLE     "res\\SWAP16.bmp"
+IDB_DATE16              BITMAP  DISCARDABLE     "res\\DATE16.bmp"
+IDB_FOND16              BITMAP  DISCARDABLE     "res\\FOND16.bmp"
+IDB_HORLOGE16           BITMAP  DISCARDABLE     "res\\HORLMN16.bmp"
+IDB_MEM16               BITMAP  DISCARDABLE     "res\\MEM16.bmp"
+IDB_RAM16               BITMAP  DISCARDABLE     "res\\RAM16.bmp"
+IDB_DISQUE16            BITMAP  DISCARDABLE     "res\\BITMAP16.bmp"
+IDB_SPLASH16            BITMAP  DISCARDABLE     "splash16.bmp"
+IDR_EDIT                BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_FANTOME             BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_TITRE16             BITMAP  DISCARDABLE     "res\\TITRE16.bmp"
+IDB_TITRE               BITMAP  DISCARDABLE     "res\\TITRE.bmp"
+IDB_ASSOMBRIR           BITMAP  DISCARDABLE     "res\\assombri.bmp"
+IDB_LIGHTBULB           BITMAP  DISCARDABLE     "res\\litebulb.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\Jibe96.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.fra\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.fra\\afxolecl.rc""        // OLE container resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Fichier"
+    BEGIN
+        MENUITEM "&Nouveau\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "&Ouvrir...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM "&Enregistrer\tCtrl+S",        ID_FILE_SAVE
+        MENUITEM "En&registrer sous...",        ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Quitter",                    ID_APP_EXIT
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+END
+
+IDR_MENU_DROITE MENU DISCARDABLE 
+BEGIN
+    POPUP "fg"
+    BEGIN
+        MENUITEM "Séparateur",                  ID_SEPARATEUR
+        MENUITEM SEPARATOR
+        MENUITEM "Groupe d'icônes",             ID_GROUPE
+        MENUITEM "&Bouton",                     IDM_BOUTON
+        MENUITEM "Ligne de commande",           IDM_COMMANDE
+        MENUITEM "Surveillance d'un répertoire", ID_SURVEILLE_REP
+        MENUITEM SEPARATOR
+        MENUITEM "&Heure",                      ID_HEURE
+        MENUITEM "&Note",                       ID_FG_NOUVELLEICNE_NOTE
+        MENUITEM "&Date",                       ID_FG_DATE
+        MENUITEM SEPARATOR
+        MENUITEM "&Place disque",               ID_PLACEDISQUE
+        MENUITEM "&Place mémoire",              ID_FG_NOUVELLEICNE_PLACEMMOIRE
+
+        MENUITEM "&Place RAM",                  ID_FG_NOUVELLEICNE_PLACERAM
+        MENUITEM "&Fichier d'échange",          ID_FG_FICHIERDCHANGE
+        MENUITEM SEPARATOR
+        MENUITEM "A propos de Jibe 96...",      ID_APROPOS
+        MENUITEM "Préférences...",              ID_FG_PRFRENCES
+        MENUITEM "&Quitter",                    ID_FILE_CLOSE
+    END
+END
+
+IDR_MENU_NOTE MENU DISCARDABLE 
+BEGIN
+    POPUP "note"
+    BEGIN
+        MENUITEM "Icône...",                    ID_NOTE_ICONE
+        MENUITEM "Couleur...",                  ID_NOTE_COULEUR
+        POPUP "Affichage"
+        BEGIN
+            MENUITEM "Minimum",                     ID_NOTE_MINIMUM
+            MENUITEM "Moyen",                       ID_NOTE_MOYEN
+            MENUITEM "Maximum",                     ID_NOTE_MAXIMUM
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Mettre plus haut...",         ID_PLUSHAUT
+        MENUITEM "Mettre plus bas",             ID_PLUSBAS
+        MENUITEM SEPARATOR
+        MENUITEM "Supprimer",                   ID_SUPPRIMER
+    END
+END
+
+IDR_MENU_HORLOGE MENU DISCARDABLE 
+BEGIN
+    POPUP "Horloge"
+    BEGIN
+        MENUITEM "Régler l'heure...",           ID_HORLOGE_CHANGERLHEURE
+        MENUITEM SEPARATOR
+        MENUITEM "Mettre plus haut...",         ID_PLUSHAUT
+        MENUITEM "Mettre plus bas",             ID_PLUSBAS
+        MENUITEM SEPARATOR
+        MENUITEM "Supprimer",                   ID_SUPPRIMER
+    END
+END
+
+IDR_MENU_DISQUE MENU DISCARDABLE 
+BEGIN
+    POPUP "disque"
+    BEGIN
+        MENUITEM "&Explorer...",                ID_DISQUE_EXPLORER
+        MENUITEM SEPARATOR
+        MENUITEM "Mettre plus &haut...",        ID_PLUSHAUT
+        MENUITEM "Mettre plus &bas",            ID_PLUSBAS
+        MENUITEM SEPARATOR
+        MENUITEM "&Supprimer",                  ID_SUPPRIMER
+    END
+END
+
+IDR_CNTR_INPLACE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Fichier"
+    BEGIN
+        MENUITEM "&Nouveau\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "&Ouvrir...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM "&Enregistrer\tCtrl+S",        ID_FILE_SAVE
+        MENUITEM "En&registrer sous...",        ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Quitter",                    ID_APP_EXIT
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+END
+
+IDR_MENU_SEPARATEUR MENU DISCARDABLE 
+BEGIN
+    POPUP "Separateur"
+    BEGIN
+        MENUITEM "Taille...",                   ID_PROPRIETES
+        MENUITEM SEPARATOR
+        MENUITEM "Mettre plus haut...",         ID_PLUSHAUT
+        MENUITEM "Mettre plus bas",             ID_PLUSBAS
+        MENUITEM SEPARATOR
+        MENUITEM "Supprimer",                   ID_SUPPRIMER
+    END
+END
+
+IDR_MENU_GROUPE MENU DISCARDABLE 
+BEGIN
+    POPUP "disque"
+    BEGIN
+        MENUITEM "Nom...",                      ID_PROPRIETES
+        MENUITEM "&Couleur...",                 ID_DISQUE_COULEUR
+        MENUITEM SEPARATOR
+        MENUITEM "Mettre plus haut...",         ID_PLUSHAUT
+        MENUITEM "Mettre plus bas",             ID_PLUSBAS
+        MENUITEM SEPARATOR
+        MENUITEM "Supprimer",                   ID_SUPPRIMER
+    END
+END
+
+IDR_RACCOURCI MENU DISCARDABLE 
+BEGIN
+    POPUP "fff"
+    BEGIN
+        MENUITEM "Propriétés...",               ID_PROPRIETES
+        MENUITEM "Supprimer\tSuppr",            ID_SUPPRIMER
+    END
+END
+
+IDR_MENU_DATE MENU DISCARDABLE 
+BEGIN
+    POPUP "Date"
+    BEGIN
+        MENUITEM "Régler la date",              ID_HORLOGE_CHANGERLHEURE
+        MENUITEM SEPARATOR
+        MENUITEM "Mettre plus haut...",         ID_PLUSHAUT
+        MENUITEM "Mettre plus bas",             ID_PLUSBAS
+        MENUITEM SEPARATOR
+        MENUITEM "Supprimer",                   ID_SUPPRIMER
+    END
+END
+
+IDR_MENU_REP MENU DISCARDABLE 
+BEGIN
+    POPUP "Repertoire"
+    BEGIN
+        MENUITEM "Répertoire à surveiller...",  ID_SURVEILLE_REP
+        MENUITEM "Options de surveillance...",  ID_REP_OPTIONS
+        MENUITEM "Arrêter l'alarme",            ID_ARRETE_ALARME
+        MENUITEM "Vider la liste de messages",  ID_VIDE_MESSAGES
+        MENUITEM SEPARATOR
+        MENUITEM "Mettre plus haut...",         ID_PLUSHAUT
+        MENUITEM "Mettre plus bas",             ID_PLUSBAS
+        MENUITEM SEPARATOR
+        MENUITEM "Supprimer",                   ID_SUPPRIMER
+    END
+END
+
+IDR_MENU_BOUTON MENU DISCARDABLE 
+BEGIN
+    POPUP "bouton"
+    BEGIN
+        MENUITEM "&Proprietes...",              ID_PROPRIETES
+        MENUITEM "Executer",                    ID_EXECUTER
+        POPUP "Affichage"
+        BEGIN
+            MENUITEM "Minimum",                     ID_NOTE_MINIMUM
+            MENUITEM "Moyen",                       ID_NOTE_MOYEN
+            MENUITEM "Maximum",                     ID_NOTE_MAXIMUM
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Mettre plus haut...",         ID_PLUSHAUT
+        MENUITEM "Mettre plus bas",             ID_PLUSBAS
+        MENUITEM SEPARATOR
+        MENUITEM "Supprimer",                   ID_SUPPRIMER
+    END
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Application MFC JIBE96\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "JIBE96\0"
+            VALUE "LegalCopyright", "Copyright © Lucien PILLONI 1994, 1995, 1996\0"
+            VALUE "OriginalFilename", "JIBE96.EXE\0"
+            VALUE "ProductName", "Application JIBE96\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR              CURSOR  DISCARDABLE     "res\\jibe.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_EDIT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    SEPARATOR
+    BUTTON      IDCANCEL
+    BUTTON      IDOK
+    SEPARATOR
+    BUTTON      ID_VERTICAL
+    BUTTON      ID_HORIZONTAL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FORMAT_VIRTUELLE_LIBRE "Mémoire virtuelle libre à %s %%."
+    IDS_NOM_GROUPE_DEFAUT   "Groupe %d"
+    IDS_RAM_LIBRE           "%s %s libres sur %s %s de mémoire physique"
+    IDS_UNITE_MO            "Mo"
+    IDS_UNITE_KO            "Ko"
+    IDS_SWAP_LIBRE          "%s %s libres sur %s %s de fichier d'échange"
+    IDS_SAVE_JIBE           "Voulez-vous enregistrer les modifications apportées à la barre de Jibe ?"
+    IDS_FILTRE_ICONES       "Fichiers icônes|*.ICO; *.EXE; *.DLL|Applications|*.EXE|Bibliothèques|*.DLL|Icônes|*.ICO|Tous les fichiers|*.*||"
+    IDS_FILTRE_RACCOURCI    "Programmes|*.EXE|Fichiers textes|*.TXT|Tous les fichiers|*.*||"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Jibe96\n\nJibe96\nJibe96 Files (*.jib)\n.JIB\nJibe96.Document\nJibe96 Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Jibe96"
+    AFX_IDS_IDLEMESSAGE     "Prêt"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TITRE_JIBE          "Jibe !!!"
+    IDS_SUPPRIMER           "Voulez-vous vraiment supprimer ?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CREER_ICONES        "Jibe a détecté que votre barre de contrôle est vide.\nVoulez-vous créer automatiquement les objets les plus utiles ?\n(Vous pourrez les supprimer ou les modifier par la suite )."
+    IDS_ICONES_CREEES       "Les objets ont été crée automatiquement. Utilisez le bouton droite de la souris pour accéder au menu contextuel."
+    IDS_CONFIRME_NOTE       "Voulez-vous enregistrer les modifications en cours sur la note ?"
+    IDS_EVENEMENT           "%s, %s : %s"
+    IDS_NOUVEAU_FICHIER     "Nouveau fichier : %s"
+    IDS_CHANGE_ATTR         "%s a changé d'attributs"
+    IDS_CHANGE_SIZE         "%s à changé de taille"
+    IDS_CHANGE_TIME         "%s a changé de date de modification"
+    IDS_CHANGE_CTIME        "%s a changé de date de création"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CHANGE_ATIME        "%s a changé de date de dernier accès"
+    IDS_FICHIER_DISPARU     "%s a disparu"
+    IDS_CASE_PRESERVED      "Majuscules et minuscules conservées"
+    IDS_CASE_SENSITIVE      "Majuscules et minuscules différenciées"
+    IDS_UNICODE_ON_DISK     "Caractères UNICODE stockés sur le disque."
+    IDS_PERSISTENT_ACLS     "ACLS conservé"
+    IDS_FILE_COMPRESSION    "Support de la compression de fichiers."
+    IDS_VOL_COMPRESSED      "Ce volume est compressé."
+    IDS_FORMAT_VOLUME       "Nom du volume : %s. No de série : %lu.\r\nTaille max des composants : %ld\r\n%sNom du système de fichiers : %s."
+    IDS_TIP_DISQUE          "Disque %s : %s libres sur %s"
+    IDS_SUPPRIMER_RACCOURCI "Voulez-vous vraiment supprimer %s ?\n(Vous supprimez le lien de la liste, pas le fichier correspondant)"
+    IDS_AIDE                "Aide\r\nCliquez sur le fond de Jibe avec le bouton droit pour afficher le menu.\r\nCliquez avec le bouton gauche sur le fond pour déplacer la barre à droite ou a gauche de l'écran\r\nCliquez sur un objet de Jibe avec le bouton droit ou le bouton gauche.\r\nVous pouvez déplacer les objets en cliquant sur eux avec le bouton droit."
+    IDS_TIP_GROUPE          "Lachez des fichiers sur ce groupe."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COPY            "Copier"
+    ID_EDIT_CUT             "Couper"
+    ID_EDIT_PASTE           "Coller"
+    ID_EDIT_UNDO            "Annuler"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDOK                    "OK"
+    IDCANCEL                "Annuler édition"
+    IDS_SUPPRIME_NOTE       "Voulez-vous vraiment supprimer cette note ?\nLe texte sera perdu."
+    IDS_SUPPRIME_GROUPE     "Voulez-vous vraiment supprimer le groupe '%s' ?\nTous les raccourcis qu'il contient seront perdus, les fichiers concernés ne sont pas supprimés."
+    IDS_CONFIRME_GROUPE_REPERTOIRE 
+                            "'%s' est un répertoire.\nVoulez-vous ajouter un raccourci pour chacun des fichiers qu'il contient au lieu d'ajouter un raccouci vers le répertoire ?"
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#endif
+#include "res\Jibe96.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.fra\afxres.rc"          // Standard components
+#include "l.fra\afxolecl.rc"        // OLE container resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,185 @@
+
+[Universe Parameters]
+3D Physical Model=1
+BlackBackGround=1
+Change Resolution=0
+Comets creation (1/)=1000
+Colision relative speed max=500
+Constant of gravity (G)=900
+Delete trajectories=1
+Display Lines=0
+Dust life length=2
+Dust max number=400
+Dust size max=2
+; You may change the distance multiplicator for different screen resolutions
+Distance multiplicator=10
+Dust scattering=25
+Escape Velocity %=20
+; Max Zoom = 0 for now camera zoom
+Max zoom factor=0
+Max distance=1
+Nb images by second=27
+Planets max number=500
+Planets min number=3
+Radius multiplicator=0.25
+Starfield density ( 0 for no star )=2000
+Solar wind=3 
+Time interval max=0
+Time multiplicator=0.05
+Traveling=0.005
+Thread Priority=3
+
+
+[Masses]
+Mass 1=0.15
+Mass 2=0.2
+Mass 3=0.5
+Mass 4=1
+Mass 5=3
+Mass 6=9
+Mass 7=30
+Mass 8=200
+
+; Etoile centrale
+[Planet0]
+Mass=200
+Position=0,0,0
+Speed=0,0,0
+Rotation=0.5
+
+; Une terre
+[Planet1]
+Mass=4
+Orbit=0
+Distance=1200
+Rotation=1
+
+; Un jupiter
+[Planet2]
+Mass=20
+Orbit=0
+Distance=4500
+Rotation=-1
+
+[Planet3]
+Mass=1
+Orbit=0
+Distance=800
+Rotation=2
+
+; Un petit mars
+[Planet4]
+Mass=2.5
+Orbit=0
+Distance=2500
+Rotation=-2
+
+[Planet5]
+Mass=1
+Orbit=2
+Distance=400
+Rotation=0.5
+
+[Planet6]
+Mass=0.5
+Orbit=2
+Distance=200
+Rotation=1.5
+
+[Planet7]
+Mass=0.5
+Orbit=2
+Distance=500
+Rotation=1.5
+
+[Planet8]
+Mass=0.05
+Orbit=2
+Distance=800
+Rotation=1.5
+
+[Planet9]
+Mass=0.5
+Position=2000,0,1
+Speed=-1,4,1
+Rotation=1.2
+
+[Planet10]
+Mass=0.2
+Position=-3000,0,10
+Speed=3,4,0.1
+Rotation=1.5
+
+[Planet11]
+Mass=0.1
+Orbit=0
+Distance=3000
+Rotation=0.1
+
+
+[Planet12]
+Mass=0.1
+Orbit=0
+Distance=3000
+Rotation=0.1
+
+[Planet13]
+Mass=0.1
+Orbit=0
+Distance=3000
+Rotation=0.1
+
+[Planet14]
+Mass=0.1
+Orbit=0
+Distance=3000
+Rotation=0.1
+
+[Planet15]
+Mass=0.1
+Orbit=0
+Distance=3000
+Rotation=0.1
+
+[Planet16]
+Mass=0.1
+Orbit=0
+Distance=3000
+Rotation=0.1
+
+[Planet17]
+Mass=0.1
+Orbit=0
+Distance=3000
+Rotation=0.1
+
+[Planet18]
+Mass=0.1
+Orbit=0
+Distance=3000
+Rotation=0.1
+
+[Planet19]
+Mass=0.1
+Orbit=0
+Distance=3000
+Rotation=0.1
+
+[Planet20]
+Mass=0.1
+Orbit=0
+Distance=3000
+Rotation=0.1
+
+[Planet21]
+Mass=0.1
+Orbit=0
+Distance=3000
+Rotation=0.1
+
+[Planet22]
+Mass=0.1
+Orbit=0
+Distance=3000
+Rotation=0.1
+

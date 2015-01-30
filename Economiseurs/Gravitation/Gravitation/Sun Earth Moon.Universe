@@ -1,0 +1,68 @@
+;	Title : Sun, Eart and Moon
+;	
+
+
+[Universe Parameters]
+3D Physical Model=0
+BlackBackGround=1
+Change Resolution=0
+Comets creation (1/)=50000
+Colision relative speed max=5
+Constant of gravity (G)=80
+Delete trajectories=0
+Display Lines=0
+Dust life length=3
+Dust max number=0
+Dust size max=2
+; You may change the distance multiplicator for different screen resolutions
+Distance multiplicator=40000
+Dust scattering=75
+Escape Velocity %=20
+Initial planets number=50
+; Max Zoom = 0 for now camera zoom
+Max zoom factor=0
+Max distance=0
+Nb images by second=25
+Planets max number=3
+Planets min number=3
+Radius multiplicator=0.0015
+Starfield density ( 0 for no star )=2000
+Solar wind=2
+Time interval max=0
+Time multiplicator=20000
+Traveling=0.01
+Thread Priority=1
+Universe creation method=5
+
+[Masses]
+Mass 1=0.0001
+Mass 2=0.001
+Mass 3=0.002
+Mass 4=0.5
+Mass 5=1
+Mass 6=20
+Mass 7=30
+Mass 8=332
+
+; === Sun ====
+[Planet0]
+; Earth = 1
+Mass=332
+Position=0,0,0
+Speed=0,0,0
+Rotation=0.037
+
+; === Earth ====
+[Planet1]
+; Earth=1
+Mass=1
+Orbit=0
+Distance=14960000
+Rotation=1
+
+; === Moon ===
+[Planet2]
+Mass= 0.01231
+Orbit=1
+Distance=384400
+Rotation=0.037

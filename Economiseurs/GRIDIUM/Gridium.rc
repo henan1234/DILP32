@@ -1,0 +1,122 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include <scrnsave.h>
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_SCRNSAVECONFIGURE DIALOG DISCARDABLE  0, 0, 354, 231
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Gridium"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_CADRE,"Static",SS_BLACKFRAME,27,118,129,103
+    CONTROL         "Generic1",IDC_PLUSMOINS,"msctls_updown32",UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,156,118,20,103
+    DEFPUSHBUTTON   "OK",IDOK,301,26,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,301,46,50,14
+    ICON            IDI_ICON1,IDC_STATIC,33,12,18,20
+    LTEXT           "Copyright (c) Lucien PILLONI 1995",IDC_STATIC,73,11,111,
+                    10
+    LTEXT           "Ceci est un logiciel SHAREWARE. Enregistrement pour 75 Fr :\nLucien PILLONI\n110 rue du 8 mai 1945\n38920 Crolles",
+                    IDC_STATIC,73,21,203,33
+    LTEXT           "ATTENTION !\nLe gridium est une matière hautement radioactive. Chaque neutron qui heurte un atome brise celui-ci. L'atome brisé libère à son tour deux neutrons qui irons peut-être heurter d'autres noyaux.",
+                    IDC_STATIC,27,58,270,34
+    CONTROL         "Generic1",IDC_QUANTITE,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,255,117,21,104
+    LTEXT           "Saurez-vous entretenir la réaction en chaîne sans risquer l'explosion ?",
+                    IDC_STATIC,28,92,220,8
+    ICON            IDI_ICON2,IDC_STATIC,33,33,18,20
+    ICON            IDI_ICON3,IDC_STATIC,1,207,18,20
+    ICON            IDI_ICON3,IDC_STATIC,331,207,18,20
+    ICON            IDI_ICON3,IDC_STATIC,1,1,18,20
+    ICON            IDI_ICON3,IDC_STATIC,331,1,18,20
+    GROUPBOX        "",IDC_STATIC,28,2,269,54
+    GROUPBOX        "Quantité de matière",IDC_STATIC,184,108,112,117
+    GROUPBOX        "Densité des atomes",IDC_STATIC,24,107,158,117
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include <scrnsave.h>\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "econo.ico"
+IDI_ICON2               ICON    DISCARDABLE     "icon2.ico"
+IDI_ICON3               ICON    DISCARDABLE     "icon3.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ATOME               BITMAP  DISCARDABLE     "ATOME.bmp"
+IDB_ATOME_BRISE         BITMAP  DISCARDABLE     "atome_br.bmp"
+IDB_NEUTRON             BITMAP  DISCARDABLE     "neutron.bmp"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

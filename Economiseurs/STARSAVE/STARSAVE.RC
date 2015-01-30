@@ -1,0 +1,117 @@
+//Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "scrnsave.h"
+#include "starsave.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+ID_APP                  ICON    DISCARDABLE     "starsave.ico"
+ISL                     ICON    DISCARDABLE     "ISL.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+PLANETE1                BITMAP  MOVEABLE PURE   "PLANETE1.BMP"
+PLANETE2                BITMAP  MOVEABLE PURE   "PLANETE2.BMP"
+PLANETE3                BITMAP  MOVEABLE PURE   "PLANETE3.BMP"
+PLANETE4                BITMAP  MOVEABLE PURE   "PLANETE4.BMP"
+PLANETE5                BITMAP  MOVEABLE PURE   "PLANETE5.BMP"
+PLANETE6                BITMAP  MOVEABLE PURE   "PLANETE6.BMP"
+PLANETE7                BITMAP  MOVEABLE PURE   "PLANETE7.BMP"
+PLANETE8                BITMAP  MOVEABLE PURE   "PLANETE8.BMP"
+PLANETE9                BITMAP  MOVEABLE PURE   "PLANETE9.BMP"
+PLANETEA                BITMAP  MOVEABLE PURE   "PLANETEA.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_SCRNSAVECONFIGURE DIALOG DISCARDABLE  68, 65, 174, 104
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Etoiles"
+FONT 8, "Helv"
+BEGIN
+    CTEXT           "Etoiles\251\nL.Pilloni et I.S.L 1990 1993",-1,82,2,89,
+                    26
+    PUSHBUTTON      "&Ok",IDOK,39,84,40,14
+    PUSHBUTTON      "&Annuler",IDCANCEL,95,84,40,14
+    GROUPBOX        "Nombre d'\351toiles",-1,6,27,162,51
+    SCROLLBAR       IDB_SCROLL,11,42,150,17
+    CTEXT           "",IDB_TEXTE,11,63,150,8
+    ICON            "ETOILES",-1,6,4,18,20
+    ICON            "ISL",-1,42,4,18,20
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""scrnsave.h""\r\n"
+    "#include ""starsave.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    idsAppName              "ScreenSaver.Bouncer"
+END
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

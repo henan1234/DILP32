@@ -1,0 +1,12 @@
+#define IDM_CONFIGURER	0x2220
+
+#define LGAPPNAME   50
+#define ABOUTBOX    1
+
+#define DEBUT_CHAINES		100
+#define IDS_CONFIGURATION   DEBUT_CHAINES  + 1
+#define IDS_APROPOS			DEBUT_CHAINES  + 2
+
+#define IDB_SCROLL 	1000
+#define IDB_TEXTE	1001
+

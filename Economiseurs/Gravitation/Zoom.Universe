@@ -1,0 +1,54 @@
+;	Title : Zoom
+;	
+;	Two stars orbiting around each other
+;	Each star has its own satellits
+;
+;
+
+[Universe Parameters]
+3D Physical Model=1
+Display Lines=1
+Change Resolution=0
+Escape Velocity %=20
+Comets creation (1/)=50000
+Colision relative speed max=1
+Starfield density ( 0 for no star )=400
+Delete trajectories=1
+Constant of gravity (G)=800
+Time multiplicator=0.1
+Nb images by second=25
+; Max Zoom = 0 for now camera zoom
+Max zoom factor=500
+Distance multiplicator=1
+Radius multiplicator=0.15
+Initial planets number=50
+Planets max number=300
+Planets min number=2
+Traveling=0.10
+Thread Priority=2
+BlackBackGround=1
+
+[Masses]
+Mass 1=0.1
+Mass 2=0.2
+Mass 3=4
+Mass 4=8
+Mass 5=16
+Mass 6=40
+Mass 7=64
+Mass 8=256
+
+[Planet0]
+Mass=500
+Position=-2000,0,0
+Speed=0,-0.1,0
+Rotation=1
+
+[Planet1]
+Mass=30
+Position=2000,0,0
+Speed=10,-4,1.5
+Rotation=1
+
+
+

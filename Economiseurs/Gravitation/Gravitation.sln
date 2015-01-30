@@ -1,0 +1,12 @@
+Microsoft Visual Studio Solution File, Format Version 1.00
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Gravitation", "Gravitation.dsp", "{0FB4BB70-27AC-11D3-A5A9-00A04B04180E}"
+EndProject
+Global
+	GlobalSection(LocalDeployment) = postSolution
+		StartupProject = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+	GlobalSection(BuildOrder) = postSolution
+	EndGlobalSection
+	GlobalSection(DeploymentRoot) = postSolution
+	EndGlobalSection
+EndGlobal

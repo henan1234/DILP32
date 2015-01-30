@@ -1,0 +1,312 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\DupplicateFiles.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\DupplicateFiles.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About DupplicateFiles"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "DupplicateFiles Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 1998",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+END
+
+IDD_DUPPLICATEFILES_DIALOG DIALOGEX 0, 0, 426, 193
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Duplicated Files"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,7,7,343,179
+    PUSHBUTTON      "^ &Prev. dup.",IDC_PREV,355,7,64,14
+    PUSHBUTTON      "v &Next dup.",IDC_NEXT,355,23,64,14
+    PUSHBUTTON      "&Properties",IDC_PROPS,355,50,64,14
+    PUSHBUTTON      "&Open file...",IDC_OPEN,355,68,64,14
+    PUSHBUTTON      "&Show only dup.",IDC_SHOW_DUPP,355,86,64,14
+    PUSHBUTTON      "Delete &file...",IDC_DELETEFILE,355,116,64,14
+    PUSHBUTTON      "Delete &dups...",IDC_DELETE,355,132,64,14
+    PUSHBUTTON      "Delete all &dups...",IDC_DELETE_ALL,355,148,64,14
+    PUSHBUTTON      "Delete multiple...",IDC_DELETE_MULTIPLE,355,172,64,14,
+                    NOT WS_VISIBLE
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 294, 95
+STYLE DS_MODALFRAME | DS_NOIDLEMSG | DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Scanning for duplicated files..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,109,74,50,14
+    CONTROL         "Comparing files.\rPlease wait this can take a very long time",
+                    IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,45,7,
+                    234,18
+    LTEXT           "Currenty processing:",IDC_STATIC,45,27,65,8
+    CONTROL         "Static",IDC_FILE,"Static",SS_SIMPLE | SS_NOPREFIX | 
+                    WS_GROUP,45,37,234,11
+    LTEXT           "Duplicated files found: 0",IDC_FOUND,45,60,234,8
+    ICON            IDR_MAINFRAME,IDC_STATIC,6,7,20,20
+    LTEXT           "Files processed : 0",IDC_PROCESSED,45,50,234,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME | SS_SUNKEN,35,25,
+                    252,48
+END
+
+IDD_MULTIPLE DIALOG DISCARDABLE  0, 0, 357, 133
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Delete multiple files..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Delete &all duplicated files",IDC_RADIO1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,21,38,94,10
+    CONTROL         "Delete duplicated files in subdirectories:",IDC_RADIO2,
+                    "Button",BS_AUTORADIOBUTTON,21,53,140,10
+    CONTROL         "Delete duplicated files who's name contain:",IDC_RADIO3,
+                    "Button",BS_AUTORADIOBUTTON,21,68,152,10
+    EDITTEXT        IDC_DIR,187,50,144,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSEDIR,331,50,12,14
+    EDITTEXT        IDC_MASK,187,69,151,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,227,112,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,300,112,50,14
+    LTEXT           "Use this command to delete multiple duplicated files from the main tree view",
+                    IDC_STATIC,7,7,343,14
+    GROUPBOX        "Choose duplicated files to delete:",IDC_STATIC,7,22,343,
+                    68
+    EDITTEXT        IDC_TIP,7,93,204,33,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DupplicateFiles MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "DupplicateFiles\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DupplicateFiles.EXE\0"
+            VALUE "ProductName", "DupplicateFiles Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DUPPLICATEFILES_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 419
+        VERTGUIDE, 343
+        VERTGUIDE, 355
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 287
+        VERTGUIDE, 45
+        VERTGUIDE, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_MULTIPLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 350
+        VERTGUIDE, 21
+        VERTGUIDE, 187
+        VERTGUIDE, 331
+        VERTGUIDE, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About DuplicatedFiles..."
+    IDS_CONFIRM_DELETE      "This command deletes all files that have the same content as ""%s"", keeping this file.\nThe files will be moves to the Recycle Bin, so you will be able to restore them.\nDo you want to continue ?"
+    IDS_TITRE_DELETE        "Duplicated files deletion"
+    IDS_CONFIRM_ALL         "This command will remove all the duplicated files leaving only one file of each group of duplicated files.\nThe deleted files will be moved to the Recycle Bin, so you will be able to restore them.\nDo you want to continue ?"
+    IDS_PROCESSED           "Files processed : %d"
+    IDS_FOUND               "Duplicated files found : %d"
+    IDS_CHOOSE_DIR          "Choose a directory"
+    IDS_TIP_ALL             "Use this command to delete ALL duplicated files that have been detected by the program.\r\nOnly the first encountered occurence of each file will be left.\r\nEach other occurence will be moved to the Recycle bin."
+    IDS_TIP_DIR             "Use this command to remove all duplicated files contained in one directory and its subdirectories.\r\nAll deleted files will be moved to the Recycle Bin."
+    IDS_TIP_CONTAINING      "Use this to command to delete all duplicated files that path name contains the specified substring."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PREV                BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_NEXT                BITMAP  DISCARDABLE     "res\\prev1.bmp"
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\DupplicateFiles.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

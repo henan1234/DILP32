@@ -1,0 +1,16 @@
+May be you want to add my shareware screen saver on you site:
+
+Gravitation is a screen saver that uses real gravity equations to move stars and planets on your screen.
+Initial star systems can be randomly created or can be created from a configuration file.
+Ray traced planets make it look very nice.
+The program let you customize your universe with lots of parameters.
+
+The 5.0 version brings you:
+-new optimization
+-enhanced graphics
+-skin files let shareware and registered users customize the overall look. Two sample skin files are included.
+
+Download:    http://members.tripod.com/~lpi/gravitation.zip  (1.3 Mb )
+Homepage: http://members.tripod.com/~lpi/index.html
+
+Lucien PILLONI

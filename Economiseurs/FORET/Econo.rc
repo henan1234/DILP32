@@ -1,0 +1,142 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include <afxres.h>
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include <scrnsave.h>
+#include "..\specif.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ID_APP                  ICON    DISCARDABLE     "ECONO.ICO"
+IDI_ISL                 ICON    DISCARDABLE     "ISL.ICO"
+IDI_LPI                 ICON    DISCARDABLE     "LPI.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_SCRNSAVECONFIGURE DIALOG DISCARDABLE  34, 32, 336, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Forêt"
+FONT 8, "Helv"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,169,94,38,16,WS_GROUP
+    PUSHBUTTON      "Annuler",IDCANCEL,236,94,38,16
+    CONTROL         "&Haute priorité",IDC_PRIORITE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,153,24,60,10
+    CONTROL         "Poussée rapide des arbres",IDC_RAPIDE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,153,34,100,10
+    GROUPBOX        "Configuration",IDC_STATIC,147,8,183,62
+    CONTROL         "Paysage",IDC_PAYSAGE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,153,44,108,10
+    LTEXT           "Nombre d'arbres avant d'effacer :",IDC_STATIC,152,56,
+                    111,8
+    EDITTEXT        IDC_NBARBRES,266,52,41,13,ES_AUTOHSCROLL
+    RTEXT           "Economiseur d'écran Forêt\n© Lucien PILLONI 1994",
+                    IDC_STATIC,49,20,91,20
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,6,10,139,104
+    RTEXT           "Lucien PILLONI\n110 rue du 8 mai 1945\n38920 Crolles",
+                    IDC_STATIC,50,56,90,46
+    ICON            IDI_LPI,IDC_STATIC,16,20,18,20
+    ICON            IDI_ISL,IDC_STATIC,16,45,18,20
+    ICON            ID_APP,IDC_STATIC,16,70,18,20
+    CONTROL         "Generic1",IDC_PLUSMOINS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | WS_TABSTOP,306,52,10,14
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include <afxres.h>\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include <scrnsave.h>\r\n"
+    "#include ""..\\specif.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    idsIsPassword           "PWProtected"
+    idsIniFile              "control.ini"
+    idsScreenSaver          "ScreenSaver"
+    idsPassword             "Password"
+    idsDifferentPW          "La confirmation du mot de passe ne correspond pas, recommencez."
+    idsChangePW             "Changer le mot de passe"
+    idsBadOldPW             "L'ancien mot de passe est incorrect.\n\nVérifiez et recommencez."
+    idsAppName              "ScreenSaver.Pluie"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    idsNoHelpMemory         "Not enough memory to start Help.\n\nQuit one or more applications to increase available memory, and then try again."
+    idsHelpFile             "control.hlp"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

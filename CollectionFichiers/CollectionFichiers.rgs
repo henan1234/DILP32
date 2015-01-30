@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{7546EECE-9227-48BA-B96C-B81E3118F06B} = s 'CollectionFichiers'
+		'CollectionFichiers.EXE'
+		{
+			val AppID = s {7546EECE-9227-48BA-B96C-B81E3118F06B}
+		}
+	}
+}

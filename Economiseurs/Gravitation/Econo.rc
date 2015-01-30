@@ -1,0 +1,701 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include <afxres.h>
+#include <scrnsave.h>
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_SCRNSAVECONFIGURE DIALOG DISCARDABLE  34, 32, 71, 7
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION
+CAPTION "Fenetre par defaut pour la configuration du screen saver"
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    DLG_SCRNSAVECONFIGURE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 68
+        VERTGUIDE, 68
+        BOTTOMMARGIN, 3
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ID_APP                  ICON    DISCARDABLE     "id_app.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 5,0,0,1
+ PRODUCTVERSION 5,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Lucien PILLONI\0"
+            VALUE "FileDescription", "Gravitation, screen saver\0"
+            VALUE "FileVersion", "5.0\0"
+            VALUE "InternalName", "Gravitation\0"
+            VALUE "LegalCopyright", "Copyright © Lucien PILLONI 1995..1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Gravitation.scr\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Gravitation\0"
+            VALUE "ProductVersion", "5.0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PAGE1 DIALOGEX 0, 0, 435, 214
+STYLE DS_MODALFRAME | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Informations"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Visit Gravitation Web Site...",IDC_INTERNET,6,196,146,
+                    11
+    PUSHBUTTON      "Save parameters...",IDC_SAUVER,168,196,74,11,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE
+    PUSHBUTTON      "Load parameters...",IDC_CHARGER,253,196,74,11,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE
+    PUSHBUTTON      "Default parameters...",IDC_DEFAUT,341,196,74,11,
+                    BS_CENTER | BS_VCENTER | BS_MULTILINE
+    CTEXT           "Static",IDC_COMPILATION_DATE,388,7,36,8,SS_SUNKEN,
+                    WS_EX_TRANSPARENT
+END
+
+IDD_PROPPAGE_REGISTERING DIALOG DISCARDABLE  0, 0, 329, 167
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Registering"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "This is a shareware program. You can freely test it and distribute it. If you decide to use it, you must obtain the registered version.",
+                    IDC_STATIC,7,7,315,17
+    LTEXT           "The registered version gives you all the program functionnalities and you will get all the new versions freely for one year, and limited support.",
+                    IDC_STATIC,7,26,315,16
+    LTEXT           "To get the registered version, send 15$ ( i will prefer 75F ) to :\nLucien PILLONI\n4 rue du Petit Jean\n38610 Gieres\nFRANCE\ne-mail : lpi@geocities.com",
+                    IDC_STATIC,7,44,315,50,SS_SUNKEN
+    LTEXT           "DON'T FORGET to send me the following code number, i will send to you a key number that will unlock your program. Give me your e-mail adress, I will send your key number by mail, it will be quicker.",
+                    IDC_STATIC,7,101,315,25
+    LTEXT           "Your code number is :",IDC_STATIC,7,129,66,8
+    PUSHBUTTON      "Enter the key code...",IDC_ENTERCODE,179,126,73,14
+    LTEXT           "If you have lost your key number or the lock key has changed since you obtained the registered version, don't worry. Just send the new key number.",
+                    IDC_STATIC,7,142,315,18
+    EDITTEXT        IDC_KEY_CODE,76,126,97,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_PRIORITE DIALOGEX 0, 0, 435, 183
+STYLE DS_MODALFRAME | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Priority"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "This page lets you set the priority level for the screen saver.",
+                    IDC_STATIC,7,7,187,8
+    LTEXT           "If you have background applications running while the screen saver is active, you can choose to allocate more processor time for them. By default, Gravitation uses all your free CPU time when it is running and none when it is not active.",
+                    IDC_STATIC,7,21,413,22
+    LTEXT           "The screen saver will run less smoothly, but your background applications will run faster. Please note that Windows NT has more differences between priority levels than Windows 95 or Windows 98.",
+                    IDC_STATIC,7,44,413,20
+    LTEXT           "More priority for the screen saver",IDC_STATIC,7,95,104,
+                    8
+    LTEXT           "More priority for the background applications",
+                    IDC_STATIC,280,94,140,8
+    CONTROL         "Slider1",IDC_PRIORITE,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,7,109,413,29,WS_EX_CLIENTEDGE
+    LTEXT           "On Windows NT, you can stop the other applications if you give too much priority to Gravitation.\r\nPlease change this setting with caution and only if it is necessary.",
+                    IDC_STATIC,7,65,413,19
+END
+
+IDD_PARAMETRES DIALOGEX 0, 0, 435, 214
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Parameters"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SHAREWARE,"Static",SS_BLACKRECT,180,18,240,37
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | 
+                    TVS_TRACKSELECT | TVS_INFOTIP | TVS_FULLROWSELECT | 
+                    TVS_NONEVENHEIGHT | WS_BORDER | WS_TABSTOP,7,7,159,200
+    GROUPBOX        "Selected parameter",IDC_STATIC,170,7,260,200
+    EDITTEXT        IDC_TIP,180,60,245,141,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | WS_VSCROLL,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    CONTROL         "Slider1",IDC_INT_NUMBER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,180,23,240,15
+    CTEXT           "0",IDC_INT_CURRENT_VALUE,180,38,240,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CONTROL         "C",IDC_BOOLCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    180,25,240,10
+    EDITTEXT        IDC_FLOTTANT_EDIT,180,23,92,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_FLOTTANT_UNITE,295,26,125,8
+    COMBOBOX        IDC_CHOIX,180,24,240,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_FICHIER_EDIT,180,23,156,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Browse...",IDC_FICHIER_BROWSE,336,23,84,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 424
+        VERTGUIDE, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_PROPPAGE_REGISTERING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_PRIORITE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 420
+        VERTGUIDE, 70
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_PARAMETRES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 430
+        VERTGUIDE, 18
+        VERTGUIDE, 166
+        VERTGUIDE, 170
+        VERTGUIDE, 180
+        VERTGUIDE, 272
+        VERTGUIDE, 295
+        VERTGUIDE, 336
+        VERTGUIDE, 420
+        VERTGUIDE, 425
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+        HORZGUIDE, 30
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Neutral (Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DEBLOCAGE DIALOG DISCARDABLE  0, 0, 229, 112
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter key code"
+BEGIN
+    EDITTEXT        IDC_CODE,65,69,157,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,105,91,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,172,91,50,14
+    LTEXT           "This key code is necessary to unlock this program.\nTo obtain this key code, you must get the registered version ( please see the registrering page ).\nAfter you have entered the key code, you will get access to all the software functionnalities.",
+                    IDC_STATIC,7,7,215,25
+    LTEXT           "If you already have the registered but you did reinstall Windows, just send me a message asking for the new key code ( don't forget to send me the new lock code ).",
+                    IDC_STATIC,7,37,215,30
+    LTEXT           "Unlock code :",IDC_STATIC,7,72,42,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DEBLOCAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_COMETE              ICON    DISCARDABLE     "icon2.ico"
+IDI_IMPORTANT           ICON    DISCARDABLE     "ico00001.ico"
+IDI_AFFICHAGE           ICON    DISCARDABLE     "ico00002.ico"
+IDI_NOMBRES             ICON    DISCARDABLE     "comete1.ico"
+IDI_CREATION            ICON    DISCARDABLE     "ico00003.ico"
+IDI_MASSES              ICON    DISCARDABLE     "creation.ico"
+IDI_PHYSIQUE            ICON    DISCARDABLE     "masses1.ico"
+IDI_PRIORITE            ICON    DISCARDABLE     "nombres1.ico"
+IDI_CINEMA              ICON    DISCARDABLE     "icon1.ico"
+IDI_ETOILES             ICON    DISCARDABLE     "etoiles.ico"
+IDI_REPERE              ICON    DISCARDABLE     "etoiles1.ico"
+IDI_DELETE              ICON    DISCARDABLE     "ico00004.ico"
+IDI_LIBERATION          ICON    DISCARDABLE     "ico00005.ico"
+IDI_3D                  ICON    DISCARDABLE     "physique.ico"
+IDI_G                   ICON    DISCARDABLE     "ico00006.ico"
+IDI_MIN                 ICON    DISCARDABLE     "min.ico"
+IDI_MAX                 ICON    DISCARDABLE     "min1.ico"
+IDI_INIT                ICON    DISCARDABLE     "max1.ico"
+IDI_TEMPS               ICON    DISCARDABLE     "ico00007.ico"
+IDI_DISTANCE            ICON    DISCARDABLE     "ico00008.ico"
+IDI_RAYON               ICON    DISCARDABLE     "distance.ico"
+IDI_DELTAVMAX           ICON    DISCARDABLE     "rayon1.ico"
+IDI_TRAVELING           ICON    DISCARDABLE     "repere2.ico"
+IDI_FICHIER             ICON    DISCARDABLE     "fichier.ico"
+IDI_MASSE_0             ICON    DISCARDABLE     "g1.ico"
+IDI_MASSE_1             ICON    DISCARDABLE     "masse_1.ico"
+IDI_MASSE_2             ICON    DISCARDABLE     "masse_2.ico"
+IDI_MASSE_3             ICON    DISCARDABLE     "masse_3.ico"
+IDI_MASSE_4             ICON    DISCARDABLE     "masse_4.ico"
+IDI_MASSE_5             ICON    DISCARDABLE     "masse_5.ico"
+IDI_MASSE_6             ICON    DISCARDABLE     "masse_6.ico"
+IDI_MASSE_7             ICON    DISCARDABLE     "masse_7.ico"
+IDI_PARAMETRES          ICON    DISCARDABLE     "cinema1.ico"
+IDI_CAMERA              ICON    DISCARDABLE     "travelin.ico"
+IDI_ZOOM                ICON    DISCARDABLE     "ico00009.ico"
+IDI_ETOILE              ICON    DISCARDABLE     "ico00010.ico"
+IDI_SKINFILE            ICON    DISCARDABLE     "ico00011.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DIB
+//
+
+IDR_EXPLOSION           DIB     DISCARDABLE     "NouvellesImages\\explosion256.dib"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    1000                    "PWProtected"
+    1001                    "control.ini"
+    1002                    "ScreenSaver"
+    1003                    "Password"
+    1007                    "ScreenSaver.Gravitation"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_NB_MAX_CORPS        "Planets max number"
+    IDS_NB_MIN_CORPS        "Planets min number"
+    IDS_PHYSIQUE            "Physics"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDP_PARSE_INT_RANGE "Please enter a number between %1 and %2"
+    AFX_IDP_PARSE_REAL_RANGE "Please enter a number between %1 and %2"
+    IDS_TROP_TARD           "This shareware program is for test only. You had time enough to test it. It is now time for you to obtain the registered version. Please check the configuration box."
+    IDS_MESSAGE_SHAREWARE   "This is a SHAREWARE program.\nYou can use it for testing purpose, if you decide to use it, you must obtain the registered version.\nCheck the configuration dialog box for information about how to obtain the registered version."
+    IDS_TITRE               "Registered"
+    IDS_TITRE_SETTINGS      "Gravitation settings"
+    IDS_MAIN_SECTION        "Gravitation"
+    IDS_3D                  "3D Physical Model"
+    IDS_AFFICHER_REPERE     "Display Crosshair"
+    IDS_BRUIT_POUSSIERES    "Dust scattering"
+    IDS_CHANGE_RESOLUTION   "Change Resolution"
+    IDS_COEFF_LIBERATION    "Escape Velocity %"
+    IDS_COEFF_TRAVELING     "Traveling"
+    IDS_CREATION_COMETE     "Comets creation (1/)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_UNLOCKED            "Congratulation !\nYour software is now unlocked. You will now have access to all this software functionnalities.\nThe Registration page will be removed the next time you launch this program."
+    IDS_NOT_UNLOCKED        "Sorry, you must obtain the registration key.\nThis is a SHAREWARE program.\nPlease see the ""Registering"" page."
+    IDS_FILTRE_FICHIER      "Gravitation files|*.Gravitation||"
+    IDS_UNIVERSE_FILTRE     "Universe files (*.Universe)|*.Universe|All files (*.*)|*.*||"
+    IDS_UNIVERSE_EXTENSION  ".Universe"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DELTAVMAX           "Colision relative speed max"
+    IDS_DENSITE_ETOILES     "Starfield density ( 0 for no star )"
+    IDS_DEPART              "Universe creation method"
+    IDS_DISTANCE_MAX        "Max distance"
+    IDS_G                   "Constant of gravity (G)"
+    IDS_INTERVALLE_TEMPS    "Time multiplicator"
+    IDS_NBIMAGES_SECONDES   "Nb images per second"
+    IDS_NB_MAX_POUSSIERES   "Dust max number"
+    IDS_TAILLE_POUSSIERES   "Dust size max"
+    IDS_VENT_SOLAIRE        "Solar wind"
+    IDS_VIE_POUSSIERES      "Dust life length"
+    IDS_ZOOM_MAX            "Max zoom factor"
+    IDS_COEFF_DISTANCE      "Distance multiplicator"
+    IDS_COEFF_RAYON         "Radius multiplicator"
+    IDS_DELTA_T_MAX         "Time interval max"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NB_INIT_CORPS       "Initial planets number"
+    IDS_MASSES_SECTION      "Masses"
+    IDS_MASSE_FORMAT        "Mass %d"
+    IDS_PRIORITE_THREAD     "Thread Priority"
+    IDS_NOIRCIR_ECRAN       "BlackBackGround"
+    IDS_FORMATPLANET        "Planet%d"
+    IDS_MASSE               "Mass"
+    IDS_POSITION            "Position"
+    IDS_VITESSE             "Speed"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ORBITE              "Orbit"
+    IDS_DISTANCE            "Distance"
+    IDS_ROTATION            "Rotation"
+    IDS_BRUITPOUSSIERE      "Dust scattering"
+    IDS_MODELE_PHYSIQUE     "Physical model"
+    IDS_MASSES              "Masses"
+    IDS_COMETES             "Comets"
+    IDS_AFFICHAGE           "Display"
+    IDS_NUMBERS             "Numbers"
+    IDS_MIN_NUMBER          "Planets minimal number before reinit = %d"
+    IDS_MAX_NUMBER          "Planets maximum number = %d"
+    IDS_INIT_NUMBER         "Planets initial number = %d"
+    IDS_IMAGE_SECONDE       "Number of images per second = %d"
+    IDS_DENSITEETOILES      "Background starfield density = %d"
+    IDS_CHECK_DISPLAY_CROSSHAIR "Display crosshair"
+    IDS_EFFACE_TRAJECTOIRES "Delete trajectories : %s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    5000                    "Set the minimal number of planets.\r\n\r\nWhen the current planets number is below this number, the program reinits the star system.\r\nPlanets can be outside the screen ( they will soon come back ! ). Comets could be randomly generated in outer space. So the program can display less planets than this number for a while."
+    5001                    "Set the maximal planets number.\r\n\r\nEven after explosions, the program will not handle more than this number of planets.\r\n\r\nWARNING : the computation time grows with the SQUARE of the planets numbers.\r\nFor a smooth animation, do not exceed 300 planets on a Pentium 200."
+    5002                    "Planets initial number:\r\n\r\nWhen the program generates a new star system, it creates this number of planets.\r\nThis number must be between min number of planets and max number of planets.\r\nTip: don't try too much initial planet if you configure an random initial star system, initial orbits would be too complicated to compute."
+    5003                    "3 dimension physical model:\r\n\r\nThis option lets you choose 2D or 3D physical model. With the 2D physical model, all the planets will be on the same plane. This is the fastest option. With 3D model, the planets will move in a real 3D space."
+    5004                    "G\r\n\r\nThis is the name of the 'constant of Gravity' which defines the strength of the gravitational attraction.\r\nWith higher G, planets have to orbit faster."
+    5005                    "Number of images per second:\r\n\r\nSet how many times each second computation is stopped to display the planets.\r\n25 images by second is a good value to get cinema like smooth animation.\r\nIf you choose too much pictures per second, planets motion computing will be interruped too often, becoming less accurate."
+    5006                    "Starfield density:\r\n\r\nSet the amont of color points displayed in the background.\r\nThe smaller the density, the more stars.\r\nSpecial value : if density equals 0 (zero), no star will be displayed in the background."
+    5007                    "Display crosshair:\r\n\r\nThis options lets the program display a crosshair on the heaviest planet or star.\r\nThis can be usefull  to know what is the 'center' of the star system.\r\nWARNING:  this options can cause your computer to hang if set. This is a known bug I could not fix yet. Disable this option if it hangs your computer."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_AFFICHE_REPERE      "Display crosshair : %s"
+    IDS_OUI                 "Yes"
+    IDS_NON                 "No"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    5008                    "Delete trajectories:\r\n\r\nCheck this option to delete the planets trajectories, this is the normal behaviour.\r\nYou can uncheck the option to keep all the planet positions, it can make some beautiful abstract drawing. Usefull too to analyse the shape of the orbits."
+    5009                    "Change the screen resolution:\r\n\r\nCheck this option to let the program tries to set the best screen resolution.\r\nUncheck this option if it causes the screen saver to immediately exit when changing resolution ( this can happen with some video cards )."
+    5010                    "Escape velocity percentage:\r\n\r\nThe escape velocity is the minimal velocity for a body to escape from a planet or star gravitation field. If the body moves away faster than this velocity, it will never come back to the planet.\r\nIf the velocity is less than the escape velocity, the body will fall back to the planet ( or turn in orbit ). But if the velocity is very close to the escape velocity, it can take a very long time for the body to come back.\r\nWith this option you can choose the percentage of the escape velocity from above which the body will be assumed as lost in space and not handled anymore by the program when it goes out of the screen."
+    5011                    "Time multiplicator:\r\n\r\nSet the time scale of the animation. Increase this number to see the planets move faster."
+    5012                    "Distance multiplier:\r\n\r\nBecause you cannot put an entire stars system on your screen, the real distance between planets are not the same as displayed:\r\nReal distance=Distance_on_your_screen X Distance_Multiplicator"
+    5013                    "Radius multiplier:\r\n\r\nUsed to determinate planets colision.\r\nThe displayed radius of the planet is multiplied by this value to check planet coliding.\r\nThis is useful because planet bitmaps are very big compared to what they would like in the real universe. This option allows you to 'zoom' on the planet pictures without zomming the distances."
+    5014                    "Max colision speed:\r\n\r\nWhen two planets that are almost the same size colide, they can explode or melt to make a new greater planet. If their relative speed is greater than this value, they will explode, else they will create a new planet.\r\nIf you increase G or the masses, the planets will move faster, so you will have to increase this value."
+    5015                    "Traveling speed:\r\n\r\nThis option lets you tune how fast the Gravitation camera will follow the biggest star on your system to  place it in the middle of the screen."
+    5016                    "Max zoom factor:\r\n\r\nThis option let you choose the zooming factor of the camera. Set it to zero for no zoom."
+    5017                    "Creation method.\r\n\r\nThis option lets you choose how the initial starfield will be created. If you choose to create from a UNIVERSE file, all the parameter values will be replaced by the one contained in the file.\r\n you must choose a .UNIVERSE file in the 'File' option."
+    5018                    "File:\r\n\r\nThis option lets you choose the file that will be used to create initial star system. You must choose the ""Use UNIVERSE file"" creation method or this filename will be ignored.\r\nUniverse files let you place the planets exactly where you want. Please visit the Gravitation web site for more information on Universe file. Gravitation web site address can be found on the first page of this window.\r\nParameters provided in the file will override parameters given in this window."
+    5019                    "Mass:\r\n\r\nThis option lets you choose the mass of this type of planet. Each planet whose mass is smaller or equal to this mass will be displayed with this picture.\r\nThe masses must be entered in ascending order."
+    5020                    "Mass:\r\n\r\nThis option lets you choose the mass of this type of planet. Each planet whose mass is smaller or equal to this mass will be displayed with this picture.\r\nThe masses must be entered in ascending order."
+    5021                    "Mass:\r\n\r\nThis option lets you choose the mass of this type of planet. Each planet whose mass is smaller or equal to this mass will be displayed with this picture.\r\nThe masses must be entered in ascending order."
+    5022                    "Mass:\r\n\r\nThis option lets you choose the mass of this type of planet. Each planet whose mass is smaller or equal to this mass will be displayed with this picture.\r\nThe masses must be entered in ascending order."
+    5023                    "Mass:\r\n\r\nThis option lets you choose the mass of this type of planet. Each planet whose mass is smaller or equal to this mass will be displayed with this picture.\r\nThe masses must be entered in ascending order."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CHECK_EFFACE_TRAJECTOIRES "Delete trajectories"
+    IDS_CHANGER_RESOLUTION  "Change screen resolution : %s"
+    IDS_CHECK_CHANGE_RESOLUTION "Change screen resolution"
+    IDS_VITESSE_LIBERATION  "Escape velocity percentage : %d%%"
+    IDS_PHYS                "Physical model"
+    IDS_3D2D                "3D physical model : %s"
+    IDS_CHECK_3D2D          "3D physical model"
+    IDS_G_CST               "G : %g"
+    IDS_COEFF_TEMPS         "Time multiplicator = %g"
+    IDS_ERREUR_G            "G must not be null or else you will not have any attraction.\nPlease type a non null floating number..\n"
+    IDS_ERREUR_TEMPS        "Time cannot be nul !\nPlease type a non null floating number."
+    IDS_COEF_DISTANCE       "Distance multiplicator = %g"
+    IDS_COEF_RAYON          "Radius multiplicator = %g"
+    IDS_VITESSE_COLISION    "Maximum colision speed = %g"
+    IDS_ERREUR_DISTANCE     "You cannot have a null distance multiplicator."
+    IDS_ERREUR_RAYON        "You cannot have a null or a too big radius multiplicator.\nGood values are around 1.0"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRAVELING           "Traveling speed : %g"
+    IDS_ZOOM                "Max. zoom factor = %g"
+    IDS_CREATION_CHOIX      "Random, no speed|Random, Orbiting center of masses|Random, approximatively orbiting center of masses|Random star system|Random star system, random direction|Use a UNIVERSE FILE|"
+    IDS_CREATION            "Planets generation : %s"
+    IDS_CREATION_METHOD     "Starfield creation method."
+    IDS_FICHIER             "Use the file : %s"
+    IDS_SECTION_MASSES      "Planets masses"
+    IDS_MASSE_ITEM          "Mass = %g"
+    IDS_ERREUR_MASSE        "Error\nYou must enter the planet masses in ascending order."
+    IDS_SECTION_COMETES     "Comets special parameters."
+    IDS_VENTSOLAIRE         "Solar wind strength = %g"
+    IDS_MAX_POUSSIERE       "Max dust number = %d"
+    IDS_TAILLE_POUSSIERE    "Dust max display size = %d pixels."
+    IDS_DISPERSION_POUSSIERE "Comet dust mean scattering = %d%%"
+    IDS_CREATIONCOMETE      "Comet creation frequency : %d"
+    IDS_SHAREWARE_WND       "This is a shareware program.\nThe registered version lets you modify all the parameters. Please read the ""Registering"" page for information about acquiring the registered version."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    5024                    "Mass:\r\n\r\nThis option lets you choose the mass of this type of planet. Each planet whose mass is smaller or equal to this mass will be displayed with this picture.\r\nThe masses must be entered in ascending order."
+    5025                    "Mass:\r\n\r\nThis option lets you choose the mass of this type of planet. Each planet whose mass is smaller or equal to this mass will be displayed with this picture.\r\nThe masses must be entered in ascending order."
+    5026                    "Mass:\r\n\r\nThis option lets you choose the mass of this type of planet. Each planet whose mass is smaller or equal to this mass will be displayed with this picture.\r\nThe masses must be entered in ascending order."
+    5027                    "Solar wind:\r\n\r\nLets you choose the strength of the particules wind blowing from the stars. This wind pushes away the dust from the comets creating their tail."
+    5028                    "Dust max number:\r\n\r\nLets you choose the maximum number of dust pieces that will be displayed by the program."
+    5029                    "Dust size:\r\n\r\nThis option let you choose the biggest dust particles size that will be displayed by the program."
+    5030                    "Comets mean scattering:\r\n\r\nThis option let you choose how much the dust is scattered from the comets. 0% means no dust scattering, only solar wind effect.\r\nThis value is an average value, each comet will have its own scattering value."
+    5031                    "Comet creation frequency:\r\n\r\nThe program can randomly create comets coming from outer space.\r\nThe smaller this number, this more often the program will create new comets."
+    5032                    "Numbers:\r\n\r\nThis section lets you choose various number options of the program."
+    5033                    "Starfield creation\r\n\r\nThis section lets you choose how the stars and planets will initialy be created."
+    5034                    "Physical model\r\n\r\nThis section lets you adjust the parameters used in the physical model equations used by Gravitation to compute the planet motions. Please carefully adjust these parameters, you should try to only modify one parameter and test it before modifying the others."
+    5035                    "Planet masses:\r\n\r\nThis section let you choose the planet masses.\r\nYou can enter a mass for each planet type. This mass will be the MAXIMUM mass for this type of planet. This defines the bitmap used to display the planet."
+    5036                    "This section let you choose various options specially for comets."
+    5037                    "This section let you choose miscelaneous display options."
+    5038                    "Copyright © Lucien PILLONI 1995, 1999\r\n\r\nThis screen saver simulates the gravity forces among stars and planets. It provides  lots of parameters to configure. It can be hard to fine tune, but it's lot of fun.\r\nYour screen must display at least 256 colors, 65536 colors would be better.\r\n\r\nFor more information or latest version, please visit Gravitation's Web site http://members.tripod.com/~lpi/index.html.\r\nShareware users, please read the ""Registering"" tab on this window.\r\nWarning, I deny any responsibility in any damage or loss of data that may be caused by the use of this software. By installing and using this software, you accept this clause of non responsibility. It you do not accept, please uninstall this software."
+    IDS_DUST_LIFE_LENGTH    "Comet dust life length\r\n\r\nThis option lets you choose how many seconds the comet dust will stay on the screen. Choose more seconds for longer comet tails."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TITRE_ARBRE         "Gravitation"
+    IDS_SECTION_IMAGES      "Images"
+    IDS_FORMAT_IMAGE_FILE   "Image %d"
+    IDS_NB_IMAGES           "Nb Images"
+    IDS_INDICE_COMETE       "Comet"
+    IDS_DUST_LIFE           "Comet dust life length = %d"
+    IDS_NB_TRANSPARENCE     "Transparency"
+    IDS_NB_DECORS           "Nb Background"
+    IDS_NOM_PALETTE         "Palette"
+    IDS_AFFICHE_INFOS       "Display information: %s"
+    IDS_CHECK_AFFICHE_INFOS "Display informations"
+    IDS_CAMERA              "Camera control"
+    IDS_PLUSDETOILE         "Reinit system if no more star: %s"
+    IDS_CHECK_PLUSDETOILE   "Reinit star system if no more star"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    5040                    "Camera section:\r\n\r\nThis section lets you configure the camera options"
+    5041                    "Display informations:\r\n\r\nCheck this option if you want Gravitation to display numerical information. Each planet mass and velocity will be displayed. Main parameters will also be displayed.\r\nThis option is very usefull very you are customizing your parameters."
+    5042                    "Reinit if no more star:\r\n\r\nIf this option is checked, the whole star system will be reinitialized if no more star is detected if the system."
+    5043                    "Use the planet pictures from a configuration file."
+    5044                    "Skin file\r\n\r\nChoose a configuration file for the planet pictures.\r\nYou must choose 'use skin file' to use this option."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USE_SKIN_FILE       "Use a skin file: %s"
+    IDS_SKIN_FILE           "Skin file: %s"
+    IDS_CHECK_USE_SKIN_FILE "Use a skin file"
+    IDS_SKIN_EXTENSION      ".GravSkin"
+    IDS_SKIN_FILTRE         "Gravitation skin files (*.GravSkin)|*.GravSkin|All files (*.*)|*.*||"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_LULU                ICON    DISCARDABLE     "lulu.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DIB
+//
+
+IDR_ESPACE_FOND         DIB     DISCARDABLE     "Images de fond\\espacefond.dib"
+IDR_PLANETS0            DIB     DISCARDABLE     "Image8.dib"
+IDR_PLANETS1            DIB     DISCARDABLE     "Image7.dib"
+IDR_PLANETS2            DIB     DISCARDABLE     "Image6.dib"
+IDR_PLANETS3            DIB     DISCARDABLE     "Image5.dib"
+IDR_PLANETS4            DIB     DISCARDABLE     "Image4.dib"
+IDR_PLANETS5            DIB     DISCARDABLE     "Image3.dib"
+IDR_PLANETS6            DIB     DISCARDABLE     "Image2.dib"
+IDR_PLANETS7            DIB     DISCARDABLE     "Image1.dib"
+IDR_PALETTE             DIB     DISCARDABLE     "Palette.dib"
+IDR_DIB0                DIB     DISCARDABLE     "decor6.dib"
+IDR_DIB1                DIB     DISCARDABLE     "decor2.dib"
+IDR_DIB2                DIB     DISCARDABLE     "decor3.dib"
+IDR_DIB3                DIB     DISCARDABLE     "decor4.dib"
+IDR_DIB4                DIB     DISCARDABLE     "decor5.dib"
+IDR_DIB5                DIB     DISCARDABLE     "decor1.dib"
+IDR_DIB6                DIB     DISCARDABLE     "decor7.dib"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include <afxres.h>\r\n"
+    "#include <scrnsave.h>\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_JAUGE               BITMAP  DISCARDABLE     "jauge.bmp"
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

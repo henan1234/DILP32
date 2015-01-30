@@ -1,0 +1,19 @@
+
+	// CollectionFichiers.idl : IDL source for CollectionFichiers.exe
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (CollectionFichiers.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+[
+	uuid(E4E80F7C-F3EA-4F35-89E6-941BC39F3A8F),
+	version(1.0),
+	helpstring("CollectionFichiers 1.0 Type Library")
+]
+library CollectionFichiersLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+};
+
+	

@@ -1,0 +1,13 @@
+NAME        PLUIE
+
+DESCRIPTION 'SCRNSAVE :Pluie'
+
+CODE        MOVEABLE DISCARDABLE PRELOAD
+DATA        MOVEABLE MULTIPLE PRELOAD
+
+HEAPSIZE    4000
+
+EXPORTS
+            ScreenSaverProc                 @1
+            ScreenSaverConfigureDialog		@2
+           

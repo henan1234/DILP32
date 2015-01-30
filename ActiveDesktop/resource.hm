@@ -1,0 +1,5 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by ActiveDesktop.rc
+//
+#define HIDC_CHANGE_IMAGE               0x806603e8    // IDD_ACTIVEDESKTOP_DIALOG [Anglais (E.-U.)]
+#define HIDC_FICHIER                    0x806603e9    // IDD_ACTIVEDESKTOP_DIALOG [Anglais (E.-U.)]

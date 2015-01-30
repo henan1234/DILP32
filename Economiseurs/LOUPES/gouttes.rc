@@ -1,0 +1,227 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include <scrnsave.h>
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Anglais (E.-U.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_SCRNSAVECONFIGURE DIALOGEX 0, 0, 241, 114
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTER | 
+    DS_CENTERMOUSE | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+CAPTION "Loupes"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,184,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,184,24,50,14
+    ICON            ID_APP,-1,6,4,20,20
+    CONTROL         "Generic1",IDC_NB_LOUPES,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_BOTH | WS_GROUP | WS_TABSTOP,13,82,
+                    163,24
+    GROUPBOX        "Lens",-1,9,60,170,50
+    LTEXT           "Rare",-1,13,71,16,8
+    RTEXT           "Many",-1,153,71,18,8
+    LTEXT           "Loupes\nCopyright (c) Lucien PILLONI 1997",-1,31,4,151,
+                    21
+    CONTROL         "&Turn screen to black ( useful if you have little memory)",
+                    IDC_NOIR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,49,197,
+                    10
+    LTEXT           "Install WinG for BETTER performance.",-1,9,28,169,18,
+                    SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    DLG_SCRNSAVECONFIGURE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 234
+        VERTGUIDE, 9
+        BOTTOMMARGIN, 110
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Anglais (E.-U.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include <scrnsave.h>\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_SCRNSAVECONFIGURE DIALOGEX 0, 0, 241, 114
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTER | 
+    DS_CENTERMOUSE | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+CAPTION "Loupes"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,184,7,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,184,24,50,14
+    ICON            ID_APP,IDC_STATIC,6,4,20,20
+    CONTROL         "Generic1",IDC_NB_LOUPES,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_BOTH | WS_GROUP | WS_TABSTOP,13,82,
+                    163,24
+    GROUPBOX        "Loupes",IDC_STATIC,9,60,170,50
+    LTEXT           "Rares",IDC_STATIC,13,71,30,8
+    RTEXT           "Nombreuses",IDC_STATIC,133,71,40,8
+    LTEXT           "Loupes\nCopyright (c) Lucien PILLONI 1997",IDC_STATIC,
+                    31,4,151,21
+    CONTROL         "&Noircir l'écran ( utile si vous avez peu de memoire )",
+                    IDC_NOIR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,49,175,
+                    10
+    LTEXT           "Pour profiter pleinement de ce logiciel, installez WinG, vous obtiendrez de meilleurs performances.",
+                    IDC_STATIC,9,28,169,18,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ID_APP                  ICON    DISCARDABLE     "id_app.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    DLG_SCRNSAVECONFIGURE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 234
+        VERTGUIDE, 9
+        BOTTOMMARGIN, 110
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04b0"
+        BEGIN
+            VALUE "Comments", "Ceci est une version Shareware, consultez la boîte de dialogue de configuration\0"
+            VALUE "CompanyName", "PILLONI Lucien\0"
+            VALUE "FileDescription", "Loupes\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Loupes\0"
+            VALUE "LegalCopyright", "Copyright © Lucien PILLONI 1995\0"
+            VALUE "OriginalFilename", "Loupes.scr\0"
+            VALUE "ProductName", "Economiseur d'écran Loupes\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

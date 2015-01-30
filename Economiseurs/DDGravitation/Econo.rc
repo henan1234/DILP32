@@ -1,0 +1,535 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include <afxres.h>
+#include <scrnsave.h>
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PAGE1 DIALOGEX 0, 0, 291, 188
+STYLE DS_MODALFRAME | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Informations"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Copyright (c) Lucien PILLONI 1995",IDC_STATIC,70,18,111,
+                    8
+    LTEXT           "Ceci est une version SHAREWARE. Vous pouvez tester ce logiciel et le distribuer librement si vous ne le modifiez pas.\n\nLa version complète permet de changer tous les paramètres du modèle physique.\n\nInstallez WinG pour de meilleures performances.",
+                    IDC_STATIC,70,35,214,55
+    ICON            IDI_LULU,IDC_STATIC,263,7,18,20
+    LTEXT           "Ce programme est conçu pour fonctionner au mieux avec 256 couleurs.",
+                    IDC_STATIC,70,106,214,21
+    LTEXT           "Vous pouvez obtenir la version enregistrée de ce logiciel pour 75 Fr auprès de :\nLucien PILLONI\n110 rue du 8 mai 1945\n38920 Crolles",
+                    IDC_STATIC,70,137,214,44
+    CONTROL         213,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,7,7,
+                    59,174,WS_EX_CLIENTEDGE
+    LTEXT           "Gravitation",IDC_STATIC,70,7,35,8
+    ICON            ID_APP,IDC_STATIC,263,161,18,20
+END
+
+IDD_PAGE2 DIALOG DISCARDABLE  0, 0, 291, 188
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Nombres"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Generic1",IDC_MINIMAL,"msctls_trackbar32",TBS_NOTICKS | 
+                    TBS_ENABLESELRANGE | WS_GROUP | WS_TABSTOP,24,20,219,18,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "Generic1",IDC_INITIAL,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | TBS_ENABLESELRANGE | WS_TABSTOP,24,65,219,
+                    18,WS_EX_CLIENTEDGE
+    CONTROL         "Generic1",IDC_MAXIMAL,"msctls_trackbar32",TBS_TOP | 
+                    TBS_NOTICKS | TBS_ENABLESELRANGE | WS_TABSTOP,24,107,219,
+                    18,WS_EX_CLIENTEDGE
+    RTEXT           "0",IDC_INITIAL_NOMBRE,243,70,22,8
+    RTEXT           "0",IDC_MINIMAL_NOMBRE,243,25,22,8
+    RTEXT           "0",IDC_MAXIMAL_NOMBRE,243,112,22,8
+    LTEXT           "ATTENTION ! Le temps de calcul croit de manière exponentielle en fonction du nombre de corps.\nSur un Pentium 100, ne dépassez par 500 corps.",
+                    IDC_STATIC,7,156,277,25,SS_SUNKEN
+    GROUPBOX        "Nombre minimal de corps",IDC_STATIC,7,7,277,40
+    GROUPBOX        "Nombre initial de corps",IDC_STATIC,7,50,277,40
+    GROUPBOX        "Nombre maximum de corps",IDC_STATIC,7,91,277,45
+END
+
+IDD_PAGE5 DIALOG DISCARDABLE  0, 0, 291, 188
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Création"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Aléatoire, vitesse initiale nulle",IDC_RADIO1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,18,17,107,10
+    CONTROL         "Aléatoire, en orbite autour du centre de gravité",
+                    IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,18,31,162,10
+    CONTROL         "Aléatoire, en orbite approximative autour du centre de gravité",
+                    IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,18,45,207,10
+    CONTROL         "Système solaire",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,
+                    18,59,65,10
+    CONTROL         "Système solaire, sens de rotation aléatoire",IDC_RADIO5,
+                    "Button",BS_AUTORADIOBUTTON,18,73,147,10
+    LTEXT           "Seule la version enregistrée permet le réglage de tous les paramètres.",
+                    IDC_STATIC,7,173,222,8
+    ICON            ID_APP,IDC_STATIC,263,113,18,20
+    ICON            IDI_LULU,IDC_STATIC,263,41,18,20
+    GROUPBOX        "Méthode de départ",IDC_STATIC,7,7,254,89
+END
+
+IDD_PAGE_COMETE DIALOG DISCARDABLE  0, 0, 291, 188
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Comètes"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_VENT,161,42,55,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CREE_COMETES,161,57,55,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX_POUSSIERES,161,71,55,14,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN_MAX,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,216,71,9,14
+    EDITTEXT        IDC_TAILLE_MAX,161,87,55,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VIE_POUSSIERES,161,102,55,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISPERSION,161,116,55,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_DISPERSION,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,215,116,9,14
+    LTEXT           "Attention !\nCes paramètres sont tres délicats à régler, procédez progressivement...\nAucun contrôle ne peut être fait sur certains paramètres, ça risque de planter...",
+                    IDC_STATIC,7,7,277,31
+    LTEXT           "Vent solaire :",IDC_STATIC,18,44,93,8
+    LTEXT           "Durée de vie des poussières (sec):",IDC_STATIC,18,105,
+                    110,8
+    LTEXT           "Taille max des poussières :",IDC_STATIC,18,90,88,8
+    LTEXT           "Nb Max de poussières :",IDC_STATIC,18,74,113,8
+    LTEXT           "Fréquence de création aléatoire (1/x) :",IDC_STATIC,18,
+                    60,109,8
+    LTEXT           "% de dispersion des poussières :",IDC_STATIC,18,119,117,
+                    8
+    LTEXT           "Seule la version enregistrée permet le réglage de tous les paramètres.",
+                    IDC_STATIC,7,173,218,8
+    ICON            ID_APP,IDC_STATIC,263,108,21,20
+    ICON            IDI_LULU,IDC_STATIC,263,26,21,20
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,38,228,99
+END
+
+IDD_PAGE_PHYSIQUE DIALOG DISCARDABLE  0, 0, 291, 188
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Physique"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_G,161,42,55,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEMPS,161,57,55,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISTANCE,161,71,55,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RAYON,161,87,55,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LIBERATION,161,102,55,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_LIBERATION,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,218,101,11,14
+    EDITTEXT        IDC_COLLISION,161,118,55,14,ES_AUTOHSCROLL
+    LTEXT           "Attention !\nCes paramètres sont tres délicats à régler, procédez progressivement...\nAucun contrôle ne peut être fait sur certains paramètres, ça risque de planter...",
+                    IDC_STATIC,7,7,277,31
+    LTEXT           "Constante de gravité (G) :",IDC_STATIC,18,44,93,8
+    LTEXT           "Vitesse de colision max :",IDC_STATIC,18,119,110,8
+    LTEXT           "Multiplicateur vitesse de libération :",IDC_STATIC,18,
+                    105,110,8
+    LTEXT           "Multiplicateur de distance :",IDC_STATIC,18,74,113,8
+    LTEXT           "Multiplicateur de temps :",IDC_STATIC,18,59,109,8
+    LTEXT           "Seule la version enregistrée permet le réglage de tous les paramètres.",
+                    IDC_STATIC,7,173,218,8
+    ICON            ID_APP,IDC_STATIC,253,92,18,20
+    ICON            IDI_LULU,IDC_STATIC,254,44,18,20
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,38,228,100
+    LTEXT           "Multiplicateur de rayon pour collisions :",IDC_STATIC,
+                    18,89,122,8
+END
+
+IDD_PAGE_AFFICHAGE DIALOG DISCARDABLE  0, 0, 291, 154
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Affichage"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_IMAGES,138,42,59,14,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN_IMAGES,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,203,41,10,14
+    EDITTEXT        IDC_TRAVELLING,138,57,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ETOILES,138,73,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ZOOM,138,90,59,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,204,85,9,14
+    CONTROL         "Effacer les trajectoires",IDC_EFFACER,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_LEFT | WS_TABSTOP,18,
+                    122,120,10
+    LTEXT           "Attention !\nCes paramètres sont tres délicats à régler, procédez progressivement...\nAucun contrôle ne peut être fait sur certains paramètres, ça risque de planter...",
+                    -1,7,7,277,31
+    LTEXT           "Images par seconde :",-1,18,44,93,8
+    LTEXT           "Densite d'etoiles ( 1/x ) :",-1,18,76,113,8
+    LTEXT           "Traveling :",-1,18,57,69,8
+    LTEXT           "Seule la version enregistrée permet le réglage de tous les paramètres.",
+                    -1,7,139,218,8
+    ICON            ID_APP,-1,253,92,18,20
+    ICON            IDI_LULU,-1,250,39,18,20
+    CONTROL         "",-1,"Static",SS_ETCHEDFRAME,7,38,228,95
+    LTEXT           "Zoom maximum :",-1,18,92,81,8
+    CONTROL         "Afficher le repère",IDC_REPERE,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,18,108,120,10
+END
+
+IDD_PAGE_MASSES DIALOG DISCARDABLE  0, 0, 291, 188
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Masses"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_M7,43,44,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M6,43,68,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M5,43,91,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M4,43,114,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M3,161,46,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M2,161,70,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M1,161,92,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M0,161,115,59,14,ES_AUTOHSCROLL
+    LTEXT           "Attention !\nCes paramètres sont tres délicats à régler, procédez progressivement...\nAucun contrôle ne peut être fait sur certains paramètres, ça risque de planter...",
+                    IDC_STATIC,7,7,277,31
+    LTEXT           "Seule la version enregistrée permet le réglage de tous les paramètres.",
+                    IDC_STATIC,7,173,218,8
+    ICON            ID_APP,IDC_STATIC,253,92,18,20
+    ICON            IDI_LULU,IDC_STATIC,254,44,18,20
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,35,228,102
+    CONTROL         223,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE | SS_SUNKEN,18,43,18,20,
+                    WS_EX_CLIENTEDGE
+    CONTROL         224,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE | SS_SUNKEN,18,65,18,20,
+                    WS_EX_CLIENTEDGE
+    CONTROL         226,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE | SS_SUNKEN,18,87,18,20,
+                    WS_EX_CLIENTEDGE
+    CONTROL         230,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE | SS_SUNKEN,18,110,18,20,
+                    WS_EX_CLIENTEDGE
+    CONTROL         229,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE | SS_SUNKEN,135,44,18,20,
+                    WS_EX_CLIENTEDGE
+    CONTROL         228,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE | SS_SUNKEN,135,66,18,20,
+                    WS_EX_CLIENTEDGE
+    CONTROL         227,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE | SS_SUNKEN,135,88,18,20,
+                    WS_EX_CLIENTEDGE
+    CONTROL         231,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE | SS_SUNKEN,135,111,18,20,
+                    WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        VERTGUIDE, 70
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_PAGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        VERTGUIDE, 24
+        VERTGUIDE, 243
+        VERTGUIDE, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_PAGE5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        VERTGUIDE, 18
+        VERTGUIDE, 157
+        VERTGUIDE, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_PAGE_COMETE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        VERTGUIDE, 18
+        VERTGUIDE, 161
+        VERTGUIDE, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_PAGE_PHYSIQUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        VERTGUIDE, 18
+        VERTGUIDE, 161
+        VERTGUIDE, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_PAGE_AFFICHAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        VERTGUIDE, 18
+        VERTGUIDE, 138
+        VERTGUIDE, 197
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_PAGE_MASSES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        VERTGUIDE, 18
+        VERTGUIDE, 43
+        VERTGUIDE, 102
+        VERTGUIDE, 161
+        VERTGUIDE, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MASSE7              BITMAP  DISCARDABLE     "bitmap2.bmp"
+IDB_MASSE6              BITMAP  DISCARDABLE     "bmp00001.bmp"
+IDB_MASSE5              BITMAP  DISCARDABLE     "bmp00002.bmp"
+IDB_MASSE1              BITMAP  DISCARDABLE     "masse8.bmp"
+IDB_MASSE2              BITMAP  DISCARDABLE     "masse2.bmp"
+IDB_MASSE3              BITMAP  DISCARDABLE     "masse3.bmp"
+IDB_MASSE4              BITMAP  DISCARDABLE     "masse4.bmp"
+IDB_MASSE0              BITMAP  DISCARDABLE     "bmp00003.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DIB
+//
+
+IDB_EXPLOSION           DIB     DISCARDABLE     "explosion.dib"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_SCRNSAVECONFIGURE DIALOGEX 34, 32, 71, 7
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+CAPTION "Fenetre par defaut pour la configuration du screen saver"
+FONT 8, "Helv", 0, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    DLG_SCRNSAVECONFIGURE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 68
+        VERTGUIDE, 68
+        BOTTOMMARGIN, 3
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "bitmap1.bmp"
+"2000"                  BITMAP  DISCARDABLE     "dib2.bmp"
+"2001"                  BITMAP  DISCARDABLE     "dib4.bmp"
+"2002"                  BITMAP  DISCARDABLE     "dib5.bmp"
+"2003"                  BITMAP  DISCARDABLE     "dib6.bmp"
+"2004"                  BITMAP  DISCARDABLE     "dib8.bmp"
+"2005"                  BITMAP  DISCARDABLE     "dib9.bmp"
+"2006"                  BITMAP  DISCARDABLE     "dib1.bmp"
+"2007"                  BITMAP  DISCARDABLE     "dib10.bmp"
+"8002"                  BITMAP  DISCARDABLE     "dib3.bmp"
+"8006"                  BITMAP  DISCARDABLE     "dib6.bmp"
+"8005"                  BITMAP  DISCARDABLE     "dib7.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ID_APP                  ICON    DISCARDABLE     "ECONO.ICO"
+IDI_LULU                ICON    DISCARDABLE     "lulu.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include <afxres.h>\r\n"
+    "#include <scrnsave.h>\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,1
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04b0"
+        BEGIN
+            VALUE "CompanyName", "Lucien PILLONI\0"
+            VALUE "FileDescription", "Gravitation, économiseur d'écran\0"
+            VALUE "FileVersion", "2, 0, 0, 1\0"
+            VALUE "InternalName", "Gravitation\0"
+            VALUE "LegalCopyright", "Copyright © Lucien PILLONI 1995, 1997\0"
+            VALUE "OriginalFilename", "Gravitation.exe\0"
+            VALUE "ProductName", "Gravitation\0"
+            VALUE "ProductVersion", "2.5\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    1000                    "PWProtected"
+    1001                    "control.ini"
+    1002                    "ScreenSaver"
+    1003                    "Password"
+    1007                    "ScreenSaver.Gravitation"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_NB_MAX_CORPS        "Veuillez saisir un nombre maximum de corps compris entre %d et %d."
+    IDS_NB_MIN_CORPS        "Veuillez saisir un nombre minimum de corps entre %d et %d."
+    IDS_NB_INIT             "Veuillez saisir un nombre initial de corps entre %d et %d."
+    IDS_PHYSIQUE            "Modèle physique"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDP_PARSE_INT_RANGE "Veuillez donner une valeur entre %1 et %2."
+    AFX_IDP_PARSE_REAL_RANGE "Veuillez donner une valeur entre %1 et %2."
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

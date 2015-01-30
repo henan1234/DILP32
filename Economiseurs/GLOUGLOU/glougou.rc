@@ -1,0 +1,186 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include <scrnsave.h>
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include <scrnsave.h>\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BULLE1              BITMAP  DISCARDABLE     "BULLE1.BMP"
+IDB_BULLE2              BITMAP  DISCARDABLE     "BULLE2.BMP"
+IDB_BULLE3              BITMAP  DISCARDABLE     "BULLE3.BMP"
+IDB_ECLATE1             BITMAP  DISCARDABLE     "ECLATE1.BMP"
+IDB_ECLATE2             BITMAP  DISCARDABLE     "ECLATE2.BMP"
+IDB_ECLATE3             BITMAP  DISCARDABLE     "ECLATE3.BMP"
+IDB_VAGUE               BITMAP  DISCARDABLE     "VAGUE.BMP"
+IDB_VAGUE2              BITMAP  DISCARDABLE     "VAGUE2.BMP"
+IDB_VAGUE3              BITMAP  DISCARDABLE     "VAGUE3.BMP"
+IDB_VAGUE4              BITMAP  DISCARDABLE     "VAGUE4.BMP"
+IDB_GOUTTE_1            BITMAP  DISCARDABLE     "goutte1.bmp"
+IDB_GOUTTE_10           BITMAP  DISCARDABLE     "goutte_1.bmp"
+IDB_GOUTTE_2            BITMAP  DISCARDABLE     "goutte_2.bmp"
+IDB_GOUTTE_3            BITMAP  DISCARDABLE     "goutte_3.bmp"
+IDB_GOUTTE_4            BITMAP  DISCARDABLE     "goutte_4.bmp"
+IDB_GOUTTE_6            BITMAP  DISCARDABLE     "goutte_6.bmp"
+IDB_GOUTTE_5            BITMAP  DISCARDABLE     "goutte_5.bmp"
+IDB_GOUTTE_7            BITMAP  DISCARDABLE     "goutte_7.bmp"
+IDB_GOUTTE_8            BITMAP  DISCARDABLE     "goutte_8.bmp"
+IDB_GOUTTE_9            BITMAP  DISCARDABLE     "goutte_9.bmp"
+IDB_GOUTTE_11           BITMAP  DISCARDABLE     "bmp00001.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_SCRNSAVECONFIGURE DIALOGEX 0, 0, 217, 243
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | DS_CENTERMOUSE | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+CAPTION "Configuration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Generic1",IDC_VITESSE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,50,43,107,16
+    CONTROL         "Generic1",IDC_BULLES,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,50,81,107,16
+    CONTROL         "Generic1",IDC_GOUTTES,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,50,120,107,16
+    DEFPUSHBUTTON   "OK",IDOK,47,219,50,14,WS_GROUP
+    PUSHBUTTON      "Annuler",IDCANCEL,119,219,50,14
+    LTEXT           "Glou Glou (Economiseur d'écran mouillé)\nCopyright (c) 1995 Lucien PILLONI",
+                    IDC_STATIC,37,4,134,22
+    ICON            IDI_ICON3,IDC_STATIC,191,4,21,20
+    GROUPBOX        "Rapidité",IDC_STATIC,4,32,208,33
+    LTEXT           "Rapide",IDC_STATIC,11,46,24,8
+    LTEXT           "Lent",IDC_STATIC,164,45,24,8
+    GROUPBOX        "Bulles",IDC_STATIC,4,67,208,38
+    LTEXT           "Eau plate",IDC_STATIC,11,86,41,8
+    LTEXT           "Effervescent",IDC_STATIC,164,85,41,8
+    GROUPBOX        "Gouttes",IDC_STATIC,4,108,208,34
+    LTEXT           "Sec",IDC_STATIC,11,123,40,8
+    LTEXT           "Diluvien",IDC_STATIC,164,123,40,8
+    ICON            IDI_ICON1,IDC_STATIC,4,4,21,20
+    LTEXT           "Version SHAREWARE non enregistrée.\nVous pouvez obtenir une version enregistrée pour 75 Frs auprès de :\nLucien PILLONI\n110 rue du 8 mai 1945\n38920 Crolles\nVous aurez ainsi gratuitement pendant 1 an toutes les évolutions et corrections.",
+                    IDC_STATIC,4,146,208,65,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "icon1.ico"
+IDI_ICON3               ICON    DISCARDABLE     "lpi.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    DLG_SCRNSAVECONFIGURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 212
+        VERTGUIDE, 48
+        VERTGUIDE, 55
+        VERTGUIDE, 157
+        VERTGUIDE, 164
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 233
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MAUVAIS             "Le mot de passe est incorrect\nVeuillez recommencer..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    idsIsPassword           "PWProtected"
+    idsIniFile              "control.ini"
+    idsScreenSaver          "ScreenSaver"
+    idsPassword             "Password"
+    idsDifferentPW          "La confirmation du mot de passe ne correspond pas, recommencez."
+    idsChangePW             "Changer le mot de passe"
+    idsBadOldPW             "L'ancien mot de passe est incorrect.\n\nVérifiez et recommencez."
+    idsAppName              "ScreenSaver.Glouglou"
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

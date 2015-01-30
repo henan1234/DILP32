@@ -1,0 +1,47 @@
+; Fichier de script pour installation du package de screen savers
+;	ATTENTION, l'ordre est important
+;
+;	$Source			:	Fichier source d'installation
+;	$ProgramFilesDir:	Repertoire des fichiers d'application
+;	$SysDir			:	Repertoire systeme
+;	$Windows		:	Repertoire de Windows
+;	$StartMenu		:	Repertoire du menu startup
+;	$Startup		:	Repertoire de demarrage automatique
+;
+;	&AppInstallDir		:	Repertoire d'installation choisi par l'utilisateur
+;
+
+ProgramName	"Screen Savers package"
+
+Installation "$ProgramFilesDir\Screen savers"
+
+; Copie des screen savers dans le repertoire systeme
+CopyFile	"$SourceDir\Gravitation.scr", "$SysDir\Gravitation.scr"
+CopyFile	"$SourceDir\Molecules.scr", "$SysDir\Molecules.scr"
+CopyFile	"$SourceDir\Lens.scr", "$SysDir\Lens.scr"
+CopyFile	"$SourceDir\SandBox.scr", "$SysDir\SandBox.scr"
+
+; Creation du repertoire pour stocker les fichiers d'aide et d'informations generales
+
+CreateDir	"$AppInstallDir"
+CopyFile	"$SourceDir\Order Infos.txt", "$AppInstallDir\Order Infos.txt"
+CopyFile	"$SourceDir\Readme.txt", "$ReadMe.txt"
+
+; Copie du repertoire aide
+CreateDir	"$AppInstallDir\Help"
+CopyDir		"$SourceDir\Help", "$AppInstallDir\Help"
+
+; Creation d'un sous menu dans le menu demarre
+CreateDir	"$ProgramsDir\Lucien PILLONI"
+
+CreateShortcut	"$ProgramsDir\Lucien PILLONI\Order informations.lnk", "$AppInstallDir\Order infos.txt", "Ordering informations", "NOTEPAD.EXE", 0
+CreateShortcut	"$ProgramsDir\Lucien PILLONI\Read Me.lnk", "$AppInstallDir\ReadMe.txt", "Read Me !", "NOTEPAD.EXE", 0
+CreateShortcut	"$ProgramsDir\Lucien PILLONI\Gravitation.lnk", "$SysDir\Gravitation.scr", "Gravitation", "$SysDir\Gravitation.scr", 0
+CreateShortcut	"$ProgramsDir\Lucien PILLONI\Molecules.lnk", "$SysDir\Molecules.scr", "Molecules", "$SysDir\Molecules.scr", 0
+CreateShortcut	"$ProgramsDir\Lucien PILLONI\Lens.lnk", "$SysDir\Lens.scr", "Lens", "$SysDir\Lens.scr", 0
+CreateShortcut	"$ProgramsDir\Lucien PILLONI\SandBox.lnk", "$SysDir\Sandbox.scr", "Sandbox", "$SysDir\Sandbox.scr", 0
+CreateShortcut	"$ProgramsDir\Lucien PILLONI\Gravitation help.lnk", "$AppInstallDir\Help\GravitationHelp.html", "Help on Gravitation, english version", "$SysDir\Gravitation.scr", 0
+CreateShortcut	"$ProgramsDir\Lucien PILLONI\Gravitation Aide.lnk", "$AppInstallDir\Help\GravitationAide.html", "Aide sur Gravitation, version française", "$SysDir\Gravitation.scr", 0
+
+Open		"$SourceDir\ReadMe.txt"
+

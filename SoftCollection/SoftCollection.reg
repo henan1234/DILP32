@@ -1,0 +1,13 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+
+HKEY_CLASSES_ROOT\SoftCollection.Application = SoftCollection Application
+HKEY_CLASSES_ROOT\SoftCollection.Application\CLSID = {5B9340D9-2A92-4F82-A501-C366AC0848F7}
+
+HKEY_CLASSES_ROOT\CLSID\{5B9340D9-2A92-4F82-A501-C366AC0848F7} = SoftCollection Application
+HKEY_CLASSES_ROOT\CLSID\{5B9340D9-2A92-4F82-A501-C366AC0848F7}\ProgId = SoftCollection.Application
+HKEY_CLASSES_ROOT\CLSID\{5B9340D9-2A92-4F82-A501-C366AC0848F7}\LocalServer32 = SOFTCOLLECTION.EXE

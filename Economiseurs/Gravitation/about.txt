@@ -1,0 +1,3 @@
+This is the shareware version of the Gravitation Screen Saver.
+Copyright (c) Lucien PILLONI 1995-1997
+Please read the program configuration dialog box.

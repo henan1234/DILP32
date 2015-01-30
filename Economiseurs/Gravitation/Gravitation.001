@@ -1,0 +1,860 @@
+# Microsoft Developer Studio Project File - Name="Gravitation" - Package Owner=<4>
+# Microsoft Developer Studio Generated Build File, Format Version 5.00
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (x86) Application" 0x0101
+
+CFG=Gravitation - Win32 Debug
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "Gravitation.mak".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "Gravitation.mak" CFG="Gravitation - Win32 Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "Gravitation - Win32 Release" (based on "Win32 (x86) Application")
+!MESSAGE "Gravitation - Win32 Debug" (based on "Win32 (x86) Application")
+!MESSAGE 
+
+# Begin Project
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+CPP=cl.exe
+MTL=midl.exe
+RSC=rc.exe
+
+!IF  "$(CFG)" == "Gravitation - Win32 Release"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "Release"
+# PROP BASE Intermediate_Dir "Release"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 1
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "Release"
+# PROP Intermediate_Dir "Release"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /YX /FD /c
+# ADD CPP /nologo /Gr /MT /W4 /GX /O2 /Ob1 /I "\dilp32\economiseurs\gravitation" /I "\dilp32\economiseurs\economiseur generique" /I "\dilp32\classes" /D "NDEBUG" /D ANNEE_VERSION=98 /D MOIS_VERSION=8 /D JOUR_VERSION=23 /D "WIN32" /D "_WINDOWS" /FD /c
+# SUBTRACT CPP /YX /Yc /Yu
+# ADD BASE MTL /nologo /D "NDEBUG" /mktyplib203 /o NUL /win32
+# ADD MTL /nologo /D "NDEBUG" /mktyplib203 /o NUL /win32
+# ADD BASE RSC /l 0x40c /d "NDEBUG"
+# ADD RSC /l 0x40c /d "NDEBUG"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib /nologo /subsystem:windows /machine:I386
+# ADD LINK32 scrnsave.lib winmm.lib /nologo /subsystem:windows /machine:I386 /out:"Release/Gravitation.scr"
+
+!ELSEIF  "$(CFG)" == "Gravitation - Win32 Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "Debug"
+# PROP BASE Intermediate_Dir "Debug"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 1
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "Debug"
+# PROP Intermediate_Dir "Debug"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /YX /FD /c
+# ADD CPP /nologo /MTd /W3 /Gm /GX /Zi /Od /I "\dilp32\economiseurs\gravitation" /I "\dilp32\economiseurs\economiseur generique" /I "\dilp32\classes" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D ANNEE_VERSION=1998 /D MOIS_VERSION=1 /D JOUR_VERSION=1 /FD /c
+# SUBTRACT CPP /YX /Yc /Yu
+# ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /o NUL /win32
+# ADD MTL /nologo /D "_DEBUG" /mktyplib203 /o NUL /win32
+# ADD BASE RSC /l 0x40c /d "_DEBUG"
+# ADD RSC /l 0x40c /d "_DEBUG"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib /nologo /subsystem:windows /debug /machine:I386 /pdbtype:sept
+# ADD LINK32 winmm.lib scrnsave.lib /nologo /subsystem:windows /debug /machine:I386 /pdbtype:sept
+
+!ENDIF 
+
+# Begin Target
+
+# Name "Gravitation - Win32 Release"
+# Name "Gravitation - Win32 Debug"
+# Begin Source File
+
+SOURCE=.\NouvellesImages\asteroid256.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\bitmap1.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bitmap2.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp00001.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp00002.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp00003.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\caillou256.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\cinema1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\Comete1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\comete256.dib
+# End Source File
+# Begin Source File
+
+SOURCE=".\Images de Fond\Copyright.dib"
+# End Source File
+# Begin Source File
+
+SOURCE=.\creation.ico
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\Classes\DeblocageDlg.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\Classes\DeblocageDlg.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Decor2.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\Decor2256.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\Decor3.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\Decor3256.dib
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\Classes\Dib.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\Classes\Dib.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Dib1.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\Dib10.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\Dib2.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\Dib3.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\Dib4.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\Dib5.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\Dib6.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\Dib7.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\Dib8.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\Dib9.dib
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\Classes\Dibpal.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\Classes\Dibpal.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\Classes\Dibsurface.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\Classes\Dibsurface.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\distance.ico
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\Classes\dlgpriorite.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\Classes\dlgpriorite.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Ecogravitation.h
+# End Source File
+# Begin Source File
+
+SOURCE="..\Economiseur generique\Econo.cpp"
+# End Source File
+# Begin Source File
+
+SOURCE=.\Econo.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\Econo.rc
+
+!IF  "$(CFG)" == "Gravitation - Win32 Release"
+
+!ELSEIF  "$(CFG)" == "Gravitation - Win32 Debug"
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE="..\Economiseur generique\Economiseur.cpp"
+# End Source File
+# Begin Source File
+
+SOURCE="..\Economiseur generique\Economiseur.h"
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace01.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace02.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace03.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace04.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace05.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace06.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace07.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace08.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace09.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace10.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace11.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace12.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace13.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace14.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace15.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace16.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace17.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace18.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace19.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace20.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace21.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace22.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace23.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace24.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace25.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace26.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace27.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace28.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace29.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace30.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace31.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace32.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace33.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace34.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace35.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace36.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace37.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace38.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace39.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace40.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace41.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace42.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace43.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace44.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace45.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace46.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace47.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace48.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace49.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace50.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espace_fond.dib
+# End Source File
+# Begin Source File
+
+SOURCE=".\Images de Fond\espacefond.dib"
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\espacefond.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\Etoilebrillante.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\Etoilebrillante2.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\Etoilebrillante2256.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\Etoilebrillante256.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\Etoilerouge.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\Etoilerouge256.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\etoiles.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\etoiles1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\explosion.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\explosion256.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\fichier.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\g1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\Galaxie.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\Galaxie256.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\Geante256.dib
+# End Source File
+# Begin Source File
+
+SOURCE=".\Gravitation Affichage.cpp"
+# End Source File
+# Begin Source File
+
+SOURCE=.\Gravitation.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\Ico00001.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\Ico00002.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\Ico00003.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\ico00004.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\ico00005.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\ico00006.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\ico00007.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\ico00008.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\icon1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\icon2.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\id_app.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\image1.bin
+# End Source File
+# Begin Source File
+
+SOURCE=.\image1.dib
+# End Source File
+# Begin Source File
+
+SOURCE=".\Images de Fond\Image1.dib"
+# End Source File
+# Begin Source File
+
+SOURCE=".\Images de Fond\Image10.dib"
+# End Source File
+# Begin Source File
+
+SOURCE=".\Images de Fond\Image11.dib"
+# End Source File
+# Begin Source File
+
+SOURCE=.\image2.bin
+# End Source File
+# Begin Source File
+
+SOURCE=".\Images de Fond\Image2.dib"
+# End Source File
+# Begin Source File
+
+SOURCE=.\Unseule\Image256.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\image3.bin
+# End Source File
+# Begin Source File
+
+SOURCE=".\Images de Fond\Image3.dib"
+# End Source File
+# Begin Source File
+
+SOURCE=.\image4.bin
+# End Source File
+# Begin Source File
+
+SOURCE=".\Images de Fond\Image4.dib"
+# End Source File
+# Begin Source File
+
+SOURCE=.\image5.bin
+# End Source File
+# Begin Source File
+
+SOURCE=".\Images de Fond\Image5.dib"
+# End Source File
+# Begin Source File
+
+SOURCE=.\image6.bin
+# End Source File
+# Begin Source File
+
+SOURCE=".\Images de Fond\Image6.dib"
+# End Source File
+# Begin Source File
+
+SOURCE=.\image7.bin
+# End Source File
+# Begin Source File
+
+SOURCE=".\Images de Fond\Image7.dib"
+# End Source File
+# Begin Source File
+
+SOURCE=.\image8.bin
+# End Source File
+# Begin Source File
+
+SOURCE=".\Images de Fond\Image8.dib"
+# End Source File
+# Begin Source File
+
+SOURCE=".\Images de Fond\Image9.dib"
+# End Source File
+# Begin Source File
+
+SOURCE=.\Lulu.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\masse2.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\masse3.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\masse4.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\masse8.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\masse_1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\masse_2.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\masse_3.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\masse_4.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\masse_5.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\masse_6.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\masse_7.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\masses1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\max1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\min.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\min1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\Nebuleuse.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\Nebuleuse256.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\nombres1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\Page1.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\Page1.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\PagesParametres.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\PagesParametres.h
+# End Source File
+# Begin Source File
+
+SOURCE=".\NouvellesImages\petit asteroid256.dib"
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\PetitePlanete256.dib
+# End Source File
+# Begin Source File
+
+SOURCE=.\physique.ico
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\Classes\PropPageRegistering.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\Classes\PropPageRegistering.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\rayon1.ico
+# End Source File
+# Begin Source File
+
+SOURCE="..\Economiseur generique\Rectaffichage.cpp"
+# End Source File
+# Begin Source File
+
+SOURCE="..\Economiseur generique\Rectaffichage.h"
+# End Source File
+# Begin Source File
+
+SOURCE="..\Economiseur generique\RegisterDialogClasses.c"
+# ADD CPP /YX
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\Classes\RegistrationKey.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=..\..\Classes\RegistrationKey.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\repere1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\repere2.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\resource.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SharewareMessageWnd.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SharewareMessageWnd.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\soleil256.dib
+# End Source File
+# Begin Source File
+
+SOURCE="..\Economiseur generique\Specif.h"
+# End Source File
+# Begin Source File
+
+SOURCE=.\StdAfx.cpp
+# ADD CPP /Yc"stdafx.h"
+# End Source File
+# Begin Source File
+
+SOURCE=.\StdAfx.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\NouvellesImages\terre256.dib
+# End Source File
+# End Target
+# End Project
+# Section Gravitation : {00000000-0000-0000-0000-000000000000}
+# 	2:14:CDlgParametres:Palette support added
+# End Section

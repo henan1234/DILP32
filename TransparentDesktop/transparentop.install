@@ -1,0 +1,32 @@
+; Fichier de script pour installation de Transparent Desktop
+;	ATTENTION, l'ordre est important
+;
+;	$Source			:	Fichier source d'installation
+;	$ProgramFiles	:	Repertoire des fichiers d'application
+;	$Windows		:	Repertoire de Windows
+;	$StartMenu		:	Repertoire du menu startup
+;	$Startup		:	Repertoire de demarrage automatique
+;
+;	&InstallDir		:	Repertoire d'installation choisi par l'utilisateur
+;
+
+ProgramName	"Transparent Desktop"
+
+Installation "$ProgramFiles\Transparent Desktop"
+
+CreateDir	"$InstallDir"
+CreateDir	"$InstallDir\Help"
+CreateDir	"$InstallDir\Pages"
+
+CopyFile	"$Source\TransparentDesktop.exe","$InstallDir\TransparentDesktop.exe"
+CopyDir		"$Source\Help", "$InstallDir\Help"
+CopyDir		"$Source\Pages", "$InstallDir\Pages"
+
+CreateShortcut	"$Startup\Transparent Desktop.lnk","$InstallDir\TransparentDesktop.exe","Transparent Desktop", 0
+
+DeleteFile	"$Source\TransparentDesktop.exe"
+DeleteDir	"$Source\Help"
+DeleteDir	"$Source\Pages"
+
+MessageOk	"Transparent Desktop is installed. It will start automatically with Windows 95. You can start it right now by selecting it in the start menu"
+

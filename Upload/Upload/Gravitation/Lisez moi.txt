@@ -1,0 +1,67 @@
+Economiseur d'écran : Gravitation
+Copyright (c) Lucien PILLONI 1995, 1996, 1997
+Ce logiciel ne doit pas être distribué.
+
+
+Principe :
+---------
+Cet économiseur simule la gravitation entre diffèrents corps célestes.
+
+Installation :
+-------------
+Copier le fichier .SCR dans le répertoire système de windows ( généralement C:\WINDOWS\SYSTEM )
+puis le sélectionner dans la page des propriétes d'écran.
+
+Configuration :
+-------------
+Les différentes pages de configuration permettent de modifier les réglages du programme.
+ATTENTION ! Certains réglages sont très sensibles, il faut procéder avec prudence ( un paramètre
+à la fois ) et ne pas hésiter a revenir en arrière.
+
+	Page "Nombre"
+	Cette page permet de régler le nombre initial de corps, le nombre maximum de corps
+	qui seront gérer ( s'il y a création ) et le nombre minimum de corps avant de recommencer.
+	ATTENTION ! Le temps de calcul croit avec le carré du nombre de corps, sur un PENTIUM 200,
+	il ne faut pas depasser 200 corps pour avoir une animation fluide.
+
+	Page "Création"
+	Cette page permet de régler la méthode de création de l'univers
+
+	Page "Physique"
+	Cette page contient les paramètres qui influencent les lois physique de l'univers.
+	-Constante de gravité : intensité de la force qui attire mutuellement les corps
+	-Multiplication de temps : règle la vitesse de l'animation
+	-Multiplicateur de distance : règle le rapport entre les distances sur l'écran et les distances dans l'univers
+	-Multiplicateur de rayon : pris en compte pour détecter les collisions entre les corps
+	-Pourcent de vitesse de libération : % de la vitesse de libération acceptée avant de considérer un objet lointain comme perdu à jamais.
+	-Vitesse de collision max : vitesse relative max pour que 2 corps qui se percutent s'agglomèrent, au-dela ils eclatent.
+
+	Page "Comètes"
+	-Vent solaire : règle l'intensité du vent solaire ( de l'étoile la plus proche ) qui éjecte des poussières de l'étoile.
+	-Fréquence de création aléatoire : règle la fréqence de création aléaoire de comètes.
+	-Nb Max de poussières : nb max de grains de poussières gérés simultanément.
+	-Taille max des poussières : taille max des grains de poussières en pixels.
+	-Durée de vie des poussières : période avant disparition des poussières.
+	-% de dispersion : % moyen de dispersion des poussières quand elles sont éjectées.
+
+	Page "Masse"
+	Règle la masse de chaque type de corps céleste.
+
+	Page "Affichage"
+	Règle les paramètres d'affichage.
+
+Bugs connus :
+----------
+Sur certaines machines, il arrive que le programme se bloque quand on choisit d'afficher le
+repère. Pour éviter ça, il suffit de décocher la case "Afficher le repère" dans la page "Affichage"
+
+
+
+Lucien PILLONI
+110 rue du 8 mai 1945
+38920 Crolles
+
+04 76 92 12 86
+
+pilloni@isl.fr
+

@@ -1,0 +1,248 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include <afxres.h>
+#include <scrnsave.h>
+
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PAGE1 DIALOGEX 0, 0, 282, 146
+STYLE DS_MODALFRAME | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Information"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_LPI,IDC_STATIC,211,7,18,20
+    LTEXT           "Ce logiciel simule un ensemble de particules chargées dans une enceinte close.",
+                    IDC_STATIC,7,7,180,20
+    ICON            100,IDC_STATIC,253,7,18,20
+    LTEXT           "Ceci est une version  SHAREWARE. Vous pouvez la tester et la distribuer librement à des fins non commerciales.\nInstallez WinG pour obtenir de meilleures performances.\nCe programme est conçu pour fonctionner au mieux avec au moins 256 couleurs.",
+                    IDC_STATIC,7,48,268,35,0,WS_EX_CLIENTEDGE
+    LTEXT           "Version enregistrée disponible pour 75f auprès de :\nLucien PILLONI\n110 rue du 8 mai 1945\n38920 Crolles\n\nCette version vous offre tous les réglages du modèle physique.",
+                    IDC_STATIC,7,87,268,53,0,WS_EX_CLIENTEDGE
+END
+
+IDD_PAGE2 DIALOG DISCARDABLE  0, 0, 284, 124
+STYLE DS_MODALFRAME | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Configuration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NB_PARTICULES,89,7,53,13,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Generic1",IDC_BUDDY1,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,135,7,11,13
+    EDITTEXT        IDC_NB_CHARGES,89,20,53,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_BUDDY2,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,136,21,11,14
+    LTEXT           "Nombre de particules:",IDC_STATIC,7,10,72,8
+    LTEXT           "ATTENTION ! Le temps de calcul croit de manière exponentielle en fonction du nombre de particules.",
+                    IDC_STATIC,7,97,270,20,SS_SUNKEN
+    LTEXT           "Nombre de charges:",IDC_STATIC,7,22,69,8
+    LTEXT           "Si le nombre de charges est impaire, toutes les particules s'attirent.",
+                    IDC_STATIC,7,70,269,17,SS_SUNKEN
+    LTEXT           "Vitesse :",IDC_STATIC,7,43,28,8
+    EDITTEXT        IDC_VITESSE,90,39,52,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_PAGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        VERTGUIDE, 90
+        VERTGUIDE, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_SCRNSAVECONFIGURE DIALOGEX 34, 32, 285, 216
+STYLE DS_MODALFRAME | DS_NOIDLEMSG | DS_3DLOOK | DS_CENTER | DS_CENTERMOUSE | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+CAPTION "Mouvement Brownien, configuration"
+FONT 8, "Helv", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_NB_PARTICULES,95,63,46,13,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Generic1",IDC_BUDDY1,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,141,63,
+                    10,13
+    EDITTEXT        IDC_NB_CHARGES,95,76,46,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_BUDDY2,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,142,77,
+                    10,14
+    DEFPUSHBUTTON   "OK",IDOK,225,7,50,16,BS_CENTER | BS_VCENTER | WS_GROUP
+    PUSHBUTTON      "Annuler",IDCANCEL,225,26,50,16
+    GROUPBOX        "Configuration",IDC_STATIC,9,55,268,64
+    LTEXT           "Nombre de particules:",IDC_STATIC,13,66,72,8
+    ICON            IDI_LPI,IDC_STATIC,9,34,18,20
+    LTEXT           "Copyright (c) Lucien PILLONI 1995",IDC_STATIC,7,2,111,8
+    LTEXT           "Ce logiciel simule un ensemble de particules chargées dans une enceinte close.",
+                    IDC_STATIC,7,13,180,20
+    LTEXT           "ATTENTION ! Le temps de calcul croit de manière exponentielle en fonction du nombre de particules.",
+                    IDC_STATIC,14,94,258,20,SS_SUNKEN
+    ICON            100,IDC_STATIC,43,33,18,20
+    LTEXT           "Nombre de charges:",IDC_STATIC,13,78,69,8
+    LTEXT           "Ceci est une version  SHAREWARE. Vous pouvez la tester et la distribuer librement à des fins non commerciales.\nInstallez WinG pour obtenir de meilleures performances.\nCe programme est conçu pour fonctionner au mieux avec au moins 256 couleurs.",
+                    IDC_STATIC,9,120,268,35,0,WS_EX_CLIENTEDGE
+    LTEXT           "Version enregistrée disponible pour 75f auprès de :\nLucien PILLONI\n110 rue du 8 mai 1945\n38920 Crolles\n\nCette version vous offre tous les réglages du modèle physique.",
+                    IDC_STATIC,9,158,268,53,0,WS_EX_CLIENTEDGE
+    LTEXT           "Si le nombre de charges est impaire, toutes les particules s'attirent.",
+                    IDC_STATIC,156,63,115,28,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    DLG_SCRNSAVECONFIGURE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 214
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+100                     ICON    DISCARDABLE     "ECONO.ICO"
+IDI_LPI                 ICON    DISCARDABLE     "lpi.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include <afxres.h>\r\n"
+    "#include <scrnsave.h>\r\n"
+    "\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DIB
+//
+
+IDB_PARTICULES          DIB     DISCARDABLE     "Particules.dib"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    1007                    "ScreenSaver.Mouvement brownien"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    1008                    "Not enough memory to start Help.\n\nQuit one or more applications to increase available memory, and then try again."
+    1009                    "control.hlp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    1                       "Mouvement Brownien"
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

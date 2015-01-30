@@ -1,0 +1,288 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include <scrnsave.h>
+
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPPAGE_REGISTERING DIALOG DISCARDABLE  0, 0, 329, 167
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Registering"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "This is a shareware program. You can freely test it and distribute it. If you decide to use it, you must obtain the registered version.",
+                    IDC_STATIC,7,7,315,17
+    LTEXT           "The registered version gives you all the program functionnalities and you will get all the new versions freely for one year.",
+                    IDC_STATIC,7,26,315,16
+    LTEXT           "To get the registered version, send 15$ ( i will prefer 75F ) to :\nLucien PILLONI\n110 rue du 8 mai 1945\n38920 Crolles\nFRANCE\ne-mail : pilloni@isl.fr",
+                    IDC_STATIC,7,44,315,50,SS_SUNKEN
+    LTEXT           "Please ask for the english or french version. DON'T FORGET to send me the following code number, i will send to you a key number that will unlock your program. Give me your e-mail adress, i will send your key number by mail, it will be quicker.",
+                    IDC_STATIC,7,101,315,25
+    LTEXT           "Your code number is :",IDC_STATIC,7,129,66,8
+    PUSHBUTTON      "Enter the key code...",IDC_ENTERCODE,130,126,73,14
+    LTEXT           "If you have lost your key number or the lock key has changed since you obtained the registered version, don't worry. Just send the new key number.",
+                    IDC_STATIC,7,142,315,18
+    EDITTEXT        IDC_KEY_CODE,76,126,52,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DEBLOCAGE DIALOG DISCARDABLE  0, 0, 229, 112
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter key code"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,105,91,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,172,91,50,14
+    LTEXT           "This key code is necessary to unlock this program.\nTo obtain this key code, you must get the registered version ( please see the registrering page ).\nAfter you have entered the key code, you will get access to all the software functionnalities.",
+                    IDC_STATIC,7,7,215,25
+    LTEXT           "If you already have the registered but you did reinstall Windows, just send me a message asking for the new key code ( don't forget to send me the new lock code ).",
+                    IDC_STATIC,7,37,215,30
+    LTEXT           "Unlock code :",IDC_STATIC,7,72,42,8
+    EDITTEXT        IDC_CODE,65,69,157,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PROPPAGE_REGISTERING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_DEBLOCAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_SCRNSAVECONFIGURE DIALOGEX 0, 0, 320, 199
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Configuration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Ecran",IDC_ECRAN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,176,91,35,10
+    CONTROL         "Feuille &blanche",IDC_BLANC,"Button",BS_AUTORADIOBUTTON,
+                    176,102,63,10
+    CONTROL         "Feuille &noire",IDC_NOIRE,"Button",BS_AUTORADIOBUTTON,
+                    176,113,53,10
+    CONTROL         "Changer la résolution d'écran",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,177,124,110,10
+    COMBOBOX        IDC_TECHNIQUE,162,153,138,89,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,263,7,50,14,WS_GROUP
+    PUSHBUTTON      "Annuler",IDCANCEL,263,25,50,14
+    ICON            IDI_ICON2,IDC_STATIC,152,7,21,20
+    ICON            IDI_ICON4,IDC_STATIC,191,7,21,20
+    ICON            IDI_ICON3,IDC_STATIC,188,168,21,20
+    LTEXT           "Graffiti, économiseur d'écran\nCopyright (c) Lucien PILLONI 1996",
+                    IDC_STATIC,162,44,136,18
+    LTEXT           "S'il vous fait un beau dessin, envoyez le moi !!!",
+                    IDC_STATIC,162,69,147,8
+    ICON            ID_APP,IDC_STATIC,173,19,21,20
+    GROUPBOX        "Départ",IDC_STATIC,162,79,137,59
+    ICON            ID_APP,IDC_STATIC,205,174,21,20
+    ICON            ID_APP,IDC_STATIC,207,17,21,20
+    CONTROL         108,IDC_STATIC,"Static",SS_BITMAP,7,7,136,188,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "Technique :",IDC_STATIC,162,140,39,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    DLG_SCRNSAVECONFIGURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        VERTGUIDE, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 196
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include <scrnsave.h>\r\n"
+    "\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ID_APP                  ICON    DISCARDABLE     "icon1.ico"
+IDI_ICON2               ICON    DISCARDABLE     "icon2.ico"
+IDI_ICON3               ICON    DISCARDABLE     "icon3.ico"
+IDI_ICON4               ICON    DISCARDABLE     "icon4.ico"
+IDI_ICON1               ICON    DISCARDABLE     "ico00001.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+DLG_SCRNSAVECONFIGURE DLGINIT
+BEGIN
+    IDC_TECHNIQUE, 0x403, 16, 0
+0x6f54, 0x7375, 0x6c20, 0x7365, 0x6f20, 0x7475, 0x6c69, 0x0073, 
+    IDC_TECHNIQUE, 0x403, 16, 0
+0x7453, 0x6c79, 0x736f, 0x2b20, 0x5020, 0x756c, 0x656d, 0x0073, 
+    IDC_TECHNIQUE, 0x403, 8, 0
+0x6546, 0x7475, 0x6572, 0x0073, 
+    IDC_TECHNIQUE, 0x403, 7, 0
+0x6150, 0x7473, 0x6c65, "\000" 
+    IDC_TECHNIQUE, 0x403, 13, 0
+0x7243, 0x6961, 0x2065, 0x7267, 0x7361, 0x6573, "\000" 
+    IDC_TECHNIQUE, 0x403, 11, 0
+0xe941, 0x6f72, 0x7267, 0x7061, 0x6568, "\000" 
+    IDC_TECHNIQUE, 0x403, 7, 0
+0x6544, 0x7373, 0x6e69, "\000" 
+    IDC_TECHNIQUE, 0x403, 4, 0
+0x6154, 0x0067, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TOUS                "Tous"
+    IDS_STYLOS_PLUMES       "Stylos + Plumes"
+    IDS_FEUTRES             "Feutres"
+    IDS_PASTEL              "Pastel"
+    IDS_CRAIE_GRASSE        "Craie grasse"
+    IDS_AEROGRAPHE          "Aérographe"
+    IDS_DESSIN              "Dessin"
+    IDS_TAG                 "Tag"
+    IDS_PINCEAUX            "Pinceaux"
+    IDS_CRAYONS             "Crayons"
+    IDS_CRAYONSGRIS         "Crayons gris"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_UNLOCKED            "Congratulation !\nYour software is now unlocked. You will now have access to all this software functionnalities.\nThe Registration page will be removed the next time you launch this program."
+    IDS_NOT_UNLOCKED        "Sorry, you must obtain the registration key.\nThis is a SHAREWARE program.\nPlease see the registration page."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TROP_TARD           "This shareware program is for test only. You had time enough to test it. It is now time for you to obtain the registered version. Please check the configuration box."
+    IDS_MESSAGE_SHAREWARE   "This is a SHAREWARE program.\nYou can use it for testing purpose, if you decide to use it, you must obtain the registered version.\nCheck the configuration dialog box for information about how to obtain the registered version."
+    IDS_TITRE               "Enregistré"
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

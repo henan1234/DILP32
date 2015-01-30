@@ -1,0 +1,66 @@
+
+[Universe Parameters]
+3D Physical Model=1
+Display Lines=0
+Dust scattering=75
+Change Resolution=0
+Escape Velocity %=20
+Comets creation (1/)=500000
+Colision relative speed max=1
+Starfield density ( 0 for no star )=400
+Universe creation method=3
+Max distance=0
+Delete trajectories=1
+Constant of gravity (G)=500
+Time multiplicator=0.1
+Nb images by second=25
+Dust max number=200
+Dust size max=2
+Solar wind=30
+Dust life length=3
+Max zoom factor=1
+Distance multiplicator=30
+Radius multiplicator=0.15
+Time interval max=0
+Initial planets number=50
+Planets max number=300
+Planets min number=1
+Traveling=0.01
+Thread Priority=2
+BlackBackGround=1
+
+[Masses]
+Masse 1=1
+Masse 2=2
+Masse 3=4
+Masse 4=8
+Masse 5=16
+Masse 6=32
+Masse 7=64
+Masse 8=256
+
+[Planet0]
+Mass=500
+Position=0,0,0
+Speed=0,0,0
+Rotation=1
+
+[Planet1]
+Mass=32
+Orbit=0
+Distance=6000
+
+[Planet2]
+Mass=10
+Orbit=1
+Distance=500
+
+[Planet3]
+Orbit=0
+Distance=10000
+Mass=16
+
+[Planet4]
+Orbit=3
+Distance=200
+Mass=1
